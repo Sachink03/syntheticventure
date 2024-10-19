@@ -148,7 +148,62 @@
     font-weight: 550;
     color: green;
 }
-
+input[type=text], textarea{
+    margin-left: 31px;
+}
+.container1 {
+            background-color: #0d0d0d;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 30px;
+            height: 30px;
+        }
+        .header .title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .header .status {
+            color: #00ff00;
+            font-size: 14px;
+        }
+        .content {
+            font-size: 14px;
+        }
+        .content .label {
+            color: #cccccc;
+        }
+        .content .value {
+            color: #ffffff;
+        }
+        .content .highlight {
+            color: #00ff00;
+        }
+        .content .row {
+            margin-bottom: 10px;
+        }
+        .row1{
+            margin-right: 12px;
+            text-align: left;
+        }
+        .row1{
+            margin-right: 12px;
+            text-align: left;
+        }
+        .row{
+            margin-left: 12px;
+            text-align: left;
+        }
 </style>
 <body class="main_en">
     <div id="app" class="applang">
@@ -207,7 +262,7 @@
                         
 
                             </li>
-                            <li>To</li>
+                        
                             <li data-v-6df100a6="" data-v-cfc9a7fc="">
                             <input type="text" id="deposit-input" class="custom-input" placeholder="End Date">
                             </li>
@@ -217,7 +272,7 @@
                         <div data-v-ac2db8a0="" class="container">
                             <div data-v-ac2db8a0="" class="total-income">
                                 <div data-v-ac2db8a0="" class="title_box">
-                                    <div data-v-ac2db8a0="" class="title">@lang('Recent Asset')</div>
+                                    <div data-v-ac2db8a0="" class="title">@lang('Running Record List')</div>
                                     <!-- <div data-v-ac2db8a0="" class="choose_day">
                                         <i data-v-ac2db8a0=""
                                             class="arrow_down van-icon van-icon-arrow-down">
@@ -264,9 +319,82 @@
                                                 <div data-v-65a522d0="" class="b">
                                                     <div data-v-65a522d0="" class="db">
                                                         <div data-v-65a522d0="" class="flexs">
-                                                            <div data-v-65a522d0="" class="n">accept
-                                                            </div>
-                                                            <div data-v-65a522d0="" class="time"> 12</div>
+                                                        <div class="container1">
+   <div class="header">
+    <img src="https://placehold.co/30x30" alt="Icon of a computing package"/>
+    <div class="title">
+     GPU 2 Core Computing Package
+    </div>
+    <div class="status">
+     Success
+    </div>
+   </div>
+   <div class="content">
+    <div class="row1">
+     <span class="label">
+      Run currency
+     </span>
+     :
+     <span class="value">
+      EUR
+     </span>
+    </div>
+    <div class="row">
+     <span class="label">
+      Daily Interest Rate
+     </span>
+     :
+     <span class="highlight">
+      1.77%
+     </span>
+    </div>
+    <div class="row">
+     <span class="label">
+      Running time
+     </span>
+     :
+     <span class="value">
+      1.00 hour
+     </span>
+    </div>
+    <div class="row1">
+     <span class="label">
+      Running amount
+     </span>
+     :
+     <span class="value">
+      229.8365923
+     </span>
+    </div>
+    <div class="row">
+     <span class="label">
+      Profit
+     </span>
+     :
+     <span class="value">
+      4.06810768
+     </span>
+    </div>
+    <div class="row1">
+     <span class="label">
+      Start time
+     </span>
+     :
+     <span class="value">
+      2024-10-18 20:33:20
+     </span>
+    </div>
+    <div class="row">
+     <span class="label">
+      End time
+     </span>
+     :
+     <span class="value">
+      2024-10-18 20:33:20
+     </span>
+    </div>
+   </div>
+  </div>
                                                         </div>
                                                         <div data-v-65a522d0="" class="str"
                                                             style="display: flex;">

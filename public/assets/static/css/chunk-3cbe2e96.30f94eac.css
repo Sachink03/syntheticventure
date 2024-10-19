@@ -4,7 +4,7 @@
 
 .title[data-v-30aca98d] {
     border-radius: .2rem;
-    border: .00862rem solid #ebd103;
+    border: .00862rem solid #55b2c2;
     margin: .28rem 0;
     background: #17181c;
     padding: .18rem .18rem;
@@ -19,7 +19,7 @@
 }
 
 .title .s[data-v-30aca98d] {
-    color: #ebd103;
+    color: #55b2c2;
     flex: 1;
     padding-right: .24rem
 }
@@ -27,7 +27,7 @@
 .title .more[data-v-30aca98d] {
     border-radius: .34rem;
     background: rgba(166, 255, 125, .1);
-    color: #ebd103;
+    color: #55b2c2;
     padding: .2rem .32rem
 }
 
@@ -49,7 +49,7 @@
 .tabs li.activese[data-v-30aca98d] {
     color: #000;
     border-radius: .12rem;
-    background: #ebd103;
+    background: #55b2c2;
 }
 
 .list[data-v-30aca98d] {

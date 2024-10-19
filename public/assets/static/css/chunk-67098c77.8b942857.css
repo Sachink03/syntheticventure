@@ -16,7 +16,7 @@
 }
 
 .tabs-con[data-v-83cbb658] .van-tab--active {
-    color: #ebd103;
+    color: #55b2c2;
     font-size: .36rem;
     font-weight: 600
 }
@@ -25,7 +25,7 @@
     width: .6rem;
     height: .08rem;
     border-radius: .04rem;
-    background: #ebd103;
+    background: #55b2c2;
     bottom: 0
 }
 

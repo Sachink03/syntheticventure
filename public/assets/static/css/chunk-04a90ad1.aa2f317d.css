@@ -25,7 +25,7 @@
 
 .totalBox .name .s[data-v-167ffb9b] {
     font-size: .24rem;
-    color: #ebd103;
+    color: #55b2c2;
 }
 
 .totalBox .name .s img[data-v-167ffb9b] {
@@ -72,7 +72,7 @@
 }
 
 .totalBox ul .z[data-v-167ffb9b] {
-    color: #ebd103;
+    color: #55b2c2;
     font-size: .26rem;
     font-weight: 700;
     letter-spacing: .0052rem
@@ -134,7 +134,7 @@
 }
 
 .orderList .list>li .time[data-v-167ffb9b] {
-    color: #ebd103;
+    color: #55b2c2;
     letter-spacing: .00912rem
 }
 
@@ -152,7 +152,7 @@
 
 .orderList .list>li .status span.on[data-v-167ffb9b] {
     background: rgba(166, 255, 125, .2);
-    color: #ebd103
+    color: #55b2c2
 }
 
 .orderList .list>li ul[data-v-167ffb9b] {
@@ -242,7 +242,7 @@
 }
 
 .popBox .cllist li[data-v-167ffb9b] {
-    background: #ebd103;
+    background: #55b2c2;
     background-size: 100% 100%;
     padding: .32rem;
     position: relative;
@@ -305,7 +305,7 @@
 }
 
 .popBox .cllist li .rate span[data-v-167ffb9b] {
-    color: #ebd103;
+    color: #55b2c2;
     font-size: .34rem;
     font-weight: 700;
     margin-right: .25rem;

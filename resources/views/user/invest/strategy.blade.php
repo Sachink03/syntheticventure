@@ -293,14 +293,14 @@
                                 @lang('Add strategy') </button></div>
                  -->
 
-                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="earn" style="    padding-bottom: 20px;
+                                {{-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="earn" style="    padding-bottom: 20px;
 "><button data-v-167ffb9b=""
                             data-v-cfc9a7fc="" class="btn3 open-model">
                                 @lang('Earn Record') </button></div>
                                 <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="earn" style="    padding-bottom: 20px;
 "><button data-v-167ffb9b=""
                             data-v-cfc9a7fc="" class="btn4 open-model">
-                                @lang('Earning Records') </button></div>
+                                @lang('Earning Records') </button></div> --}}
                                 <div class="show_data">
                                 <div  class="tab"> <div>Total Balance </div><br>
                                     <span class="investment-amount"> {{number_format(Auth::user()->available_balance(),2)}} USDT</span>
@@ -311,7 +311,7 @@
                         <span class="investment-amount">{{currency()}} {{number_format($todaysIncome,2)}}</span> </div>
                         </div>
 
-                      <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black; padding-top='10px'">
+                      <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border: #55b2c2 2px solid; padding-top='10px'">
                            
                             
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
@@ -330,7 +330,7 @@
                             </ul>
                         </div>
                         
-                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black; margin-top:12px">
+                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border: #55b2c2 2px solid; margin-top:12px">
                            
                             
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
@@ -406,7 +406,7 @@
     content: "";
 }
 .Progress .van-slider__bar {
-    background: linear-gradient(270deg, #f1e580, #ead100) !important;
+    background: #55b2c2 !important;
 }
 
 .van-slider__bar {
@@ -515,7 +515,7 @@
 
 
 
-                                <li data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                <li data-v-167ffb9b="" data-v-cfc9a7fc="" style="background:none; border:2px solid #55b2c2;border-radius:10px">
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="ico">
                                             <img data-v-167ffb9b="" data-v-cfc9a7fc=""
@@ -559,7 +559,7 @@
                                         </li>
                                     </ul>
                                     
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style=""><div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons"><div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;"><div class="van-slider__bar" style="background: rgb(0, 0, 0); width: {{$processBar}}%;"><div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50" aria-orientation="horizontal" class="van-slider__button-wrapper"><div class="van-slider__button"></div></div></div></div></div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 0% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 100% </div></div></div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style=""><div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons"><div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;"><div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 69%;"><div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50" aria-orientation="horizontal" class="van-slider__button-wrapper"><div class="van-slider__button"></div></div></div></div></div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 0% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 100% </div></div></div>
                                 </li>
                                 @endforeach
                             </ul>

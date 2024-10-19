@@ -12,7 +12,7 @@
 }
 .iziToast>.iziToast-body .iziToast-message {
     margin: 0 0 10px;
-    color: #ebd100;
+    color: #55b2c2 ;
 }
 .iziToast>.iziToast-close {
   

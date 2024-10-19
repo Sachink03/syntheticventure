@@ -166,7 +166,7 @@
 .btn3{
     height: 33px;
     border-radius: .2rem;
-    background: linear-gradient(180deg, #ebd100, #ebd100);
+    background: #55b2c2 ;
     color: #000;
     font-weight: 500;
     font-size: 14px;
@@ -176,7 +176,7 @@
 .btn4{
     height: 33px;
     border-radius: .2rem;
-    background: linear-gradient(180deg, #ebd100, #ebd100);
+    background: #55b2c2 ;
     color: #000;
     font-weight: 500;
     font-size: 14px;

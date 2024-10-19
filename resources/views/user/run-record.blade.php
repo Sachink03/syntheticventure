@@ -119,15 +119,33 @@
     height: auto;
 }
 .name1{
-    margin: .1rem 17px;
+    /* margin: .1rem 17px; */
 }
 .amount1{
-    color: #000;
-    font-size: .64rem;
+    /* color: #000;
+    font-size: 14px;
     font-weight: 700;
     line-height: 11px;
-    letter-spacing: .02rem;
-    margin: .1rem 17px;
+    letter-spacing: .02rem; */
+    /* margin: .1rem 17px; */
+}
+.balance-item2{
+    display: inline-block;
+    margin-left: 80px;
+}
+.balance-item{
+    display: inline-block;
+    margin-left: 4px;
+}
+.balance-item3{
+    padding-top: 10px;
+    
+    margin-left: 4px;
+}
+.val{
+    font-size:12px;
+    font-weight: 550;
+    color: green;
 }
 </style>
 <body class="main_en">
@@ -161,20 +179,20 @@
                                     </div>
                             </div>
                             
-                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
+                            
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Strategy account')</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> {{currency()}}  {{number_format(Auth::user()->available_balance()+Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Cumulative running total(EUR)')</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> 229.8365923</div>
                                 </div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item2">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Capital account')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val">{{currency()}}  {{number_format(Auth::user()->investment->sum('amount'),2)}}</div>
                                 </div>
                                 
-                            </div>
-                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
+                          
+                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item3">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Capital account')</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount1"> {{number_format(Auth::user()->available_balance(),2)}} <span data-v-6df100a6=""
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> {{number_format(Auth::user()->available_balance(),2)}} <span data-v-6df100a6=""
                                     data-v-cfc9a7fc="">USDT</span></div>                                </div>
                             
                            

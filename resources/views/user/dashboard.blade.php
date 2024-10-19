@@ -81,7 +81,8 @@
 
 
     </style>
-<style>
+<style> 
+
     .Progress {
             margin-top: .32rem;
         }

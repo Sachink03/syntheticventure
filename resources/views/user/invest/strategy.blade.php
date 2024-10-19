@@ -125,6 +125,110 @@
     margin-bottom: .38rem;
     margin-top: .1rem;
 }
+.para{
+    line-height: normal;
+    font-size: 12px;
+    padding: 0px;
+   /* Adjust to increase left space */
+    }
+    .pa{
+        margin: 11px;
+    }
+    .totalBox1 ul[data-v-167ffb9b] {
+    display: flex;
+    /* border-top: .02rem solid #4e4b66; */
+    padding-top: -1.68rem;
+    margin-top: 0.16rem;
+    justify-content: space-between;
+}
+.totalBox1[data-v-167ffb9b] {
+    background: url(../../images/1.png) no-repeat;
+    background-size: 100% 100%;
+    padding: .28rem;
+}
+
+.title{
+    font-size: 13px;
+    font-weight: bold;
+}
+.t{
+    font-size: 11px;
+    line-height: normal;
+}
+
+.tab{
+    padding: 7px 0 .24rem 0;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+}
+.btn3{
+    height: 33px;
+    border-radius: .2rem;
+    background: linear-gradient(180deg, #ebd100, #ebd100);
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    width: 115%;
+    border: 0;
+}
+.btn4{
+    height: 33px;
+    border-radius: .2rem;
+    background: linear-gradient(180deg, #ebd100, #ebd100);
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    width: 115%;
+    border: 0;
+}
+.earn{
+    display: inline-block;
+    padding-top: 20px; /* Consistent padding */
+    margin-right: 25px; /* Space between buttons */
+   
+}
+.investment-amount{
+   font-size: 14px;
+}
+.ft-l{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px 0;
+        margin-bottom: 9px;
+}
+.title{
+    color: #ffffffd9;
+        text-align: left;
+        font-family: PingFang SC;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0;
+}
+.til{
+    color: #ffffffd9;
+        text-align: left;
+        font-family: PingFang SC;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0;
+}
+.ftw-r-img{position: absolute;
+        top: 0;
+        right: 0;
+        width: 175px;
+        height: auto;
+    }
+    .content-container{
+        position: relative; 
+    }
 </style>
 <body class="mein_cn">
     <div id="app" class="applang">
@@ -149,7 +253,9 @@
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="container">
-                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black;">
+                    <div data-v-9aac4ed6="" class="ft-l"><div data-v-9aac4ed6="" class="title">AI computing power</div><div data-v-9aac4ed6="" class="til">Simple, Secure, High Yield</div></div>
+                    <img data-v-9aac4ed6="" class="ftw-r-img" src="https://h5.whatchat3.com/static/png/big-bg-14ffbd66.png" alt="">
+                    <!-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black;">
                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="name flex">
                                 <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex1">@lang('Total Balance')</div>
                                 <a href="{{route('user.wallet')}}">
@@ -178,13 +284,99 @@
                                             data-v-167ffb9b="" data-v-cfc9a7fc="" style=""></span></div>
                                 </li>
                             </ul>
-                        </div>
-                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="add" style="    padding-top: 1rem;
+                        </div> -->
+
+                        <!-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="add" style="    padding-top: 1rem;
 "><button data-v-167ffb9b=""
                             data-v-cfc9a7fc="" class="btn2 open-model"><img data-v-167ffb9b="" data-v-cfc9a7fc=""
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAxAQMAAACmkLhhAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABpJREFUGNNjIAqwP6Anxf4fCB4QQdHZZSQAALGHOjODQZQ0AAAAAElFTkSuQmCC">
                                 @lang('Add strategy') </button></div>
-                </div>
+                 -->
+
+                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="earn" style="    padding-bottom: 20px;
+"><button data-v-167ffb9b=""
+                            data-v-cfc9a7fc="" class="btn3 open-model">
+                                @lang('Earn Record') </button></div>
+                                <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="earn" style="    padding-bottom: 20px;
+"><button data-v-167ffb9b=""
+                            data-v-cfc9a7fc="" class="btn4 open-model">
+                                @lang('Earning Records') </button></div>
+                                <div class="show_data">
+                                <div  class="tab"> <div>Total Balance </div><br>
+                                    <span class="investment-amount"> {{number_format(Auth::user()->available_balance(),2)}} USDT</span>
+                                </div>
+                        <div   class="tab" style="color: grey;"> <div>Total Revenue</div> <br>
+                        <span class="investment-amount">{{currency()}} {{number_format($totalRoi,2)}}</span> </div>
+                        <div   class="tab" style="color: grey;"> <div>Today's Earnings</div> <br>
+                        <span class="investment-amount">{{currency()}} {{number_format($todaysIncome,2)}}</span> </div>
+                        </div>
+
+                      <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black; padding-top='10px'">
+                           
+                            
+                            <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                <li data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";"><img data-v-9aac4ed6="" src="https://h5.whatchat3.com/static/png/level-big-icon-1-751bc9b1.png" alt="" height="auto" width="44px">
+                                    </div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
+                                        style=""> <span
+                                    data-v-167ffb9b="" data-v-cfc9a7fc="">Level:P1</span></div>
+                                </li>
+                                <li data-v-167ffb9b="" data-v-cfc9a7fc=""class="pa">
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class=" n" style=""> </div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s" style="">  <span
+                                            data-v-167ffb9b="" data-v-cfc9a7fc="" class="para">Recharge 0 EUR, recommend 0 valid users, and recommend 3 P1 to upgrade to P2</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black; margin-top:12px">
+                           
+                            
+                            <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                <li data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";"><img data-v-9aac4ed6="" src="data:image/png;base64,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" alt="" width="24px" height="24px" >
+                                    </div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
+                                        style="">  <span data-v-167ffb9b=""
+                                            data-v-cfc9a7fc="" class="title">Become a member</span></div>
+                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" 
+                                        style="">  <span data-v-167ffb9b=""
+                                            data-v-cfc9a7fc="" class="t" >Only members with P level 1 or above can run the computing power package</span></div>        
+                                </li>
+                               
+                            </ul>
+                            <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                <li data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";"><img data-v-9aac4ed6="" src="data:image/png;base64,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" alt="" width="24px" height="24px" >
+                                    </div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
+                                        style="">  <span data-v-167ffb9b=""
+                                            data-v-cfc9a7fc="" class="title">Run computing power package</span></div>
+                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" 
+                                        style="">  <span data-v-167ffb9b=""
+                                            data-v-cfc9a7fc="" class="t" >The system will run the computing power package according to the maximum runnable amount of the current user level</span></div>        
+                                </li>
+                               
+                            </ul>
+                            <ul data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                <li data-v-167ffb9b="" data-v-cfc9a7fc="">
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n" style=";"><img data-v-9aac4ed6="" src="data:image/png;base64,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" alt="" width="24px" height="24px" >
+                                    </div>
+                                    <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
+                                        style="">  <span data-v-167ffb9b=""
+                                            data-v-cfc9a7fc="" class="title">distribute income</span></div>
+                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" 
+                                        style="">  <span data-v-167ffb9b=""
+                                            data-v-cfc9a7fc="" class="t" >The principal and income will be returned in one go after the operation is completed</span></div>        
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div  class="tab"> My Computing Power </div>
+                        <div   class="tab" style="color: grey;"> Computing Power Rental </div>
+
+                        </div>
                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="orderList">
                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="cname">@lang('My Strategy')</div>
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list">

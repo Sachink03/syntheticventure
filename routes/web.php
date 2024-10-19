@@ -27,6 +27,9 @@ Route::get('/clear', function() {
 Route::get('/', function () {
     return view('auth.login');
 });
+Route::get('/run-record', function () {
+  return view('user.run-record');
+});
 
 Auth::routes();
 
@@ -135,6 +138,7 @@ Route::post('/change-trxpasswword', [App\Http\Controllers\UserPanel\Profile::cla
 
 
 //quality
+
 Route::get('/quality', [App\Http\Controllers\UserPanel\Invest::class, 'quality'])->name('user.quality');
 Route::get('/quality/records', [App\Http\Controllers\UserPanel\Invest::class, 'records'])->name('user.record');
 // add fund

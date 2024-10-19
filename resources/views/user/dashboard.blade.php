@@ -76,7 +76,7 @@
         html,
         body {
             width: 100%;
-            background-color: #000;
+            background-color: #000; 
         }
 
 
@@ -114,7 +114,7 @@
         content: "";
     }
     .Progress .van-slider__bar {
-        background: linear-gradient(270deg, #f1e580, #ead100) !important;
+        background: #55b2c2 !important;
     }
     
     .van-slider__bar {

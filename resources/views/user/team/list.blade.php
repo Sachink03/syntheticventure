@@ -140,9 +140,9 @@
 }
 
  .pagination .active span {
-      background-color: #ebd103;
+      background-color: #55b2c2;
     color: black;
-    border-color: #ebd103;
+    border-color: #55b2c2;
 }
 
  .pagination .disabled span {

@@ -118,6 +118,17 @@
     position: relative;
     height: auto;
 }
+.name1{
+    margin: .1rem 17px;
+}
+.amount1{
+    color: #000;
+    font-size: .64rem;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: .02rem;
+    margin: .1rem 17px;
+}
 </style>
 <body class="main_en">
     <div id="app" class="applang">
@@ -141,13 +152,9 @@
                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="container">
                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="com-1">
                            
-                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount"> {{number_format(Auth::user()->available_balance(),2)}} <span data-v-6df100a6=""
-                                    data-v-cfc9a7fc="">USDT</span></div>
+                            
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-left"><span data-v-6df100a6=""
-                                        data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAD1BMVEUAAAAE3AAD3AAE2wAE3ABuQteJAAAABHRSTlMAgFBAnsFh3gAAADNJREFUKM9jGAXogEkBQ0jEEV2E0cVFAF2Ri4sjhiJ0ZSogIWcUIRNMISZBIDBgGAUoAABJbwaD+etRRAAAAABJRU5ErkJggg==">
-                                       % </span><span data-v-6df100a6="" data-v-cfc9a7fc="">12</span></div>
+                             
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right">
                                     <!-- <span data-v-6df100a6=""
                                         data-v-cfc9a7fc="">Pending: 0 U</span> -->
@@ -163,16 +170,14 @@
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Capital account')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val">{{currency()}}  {{number_format(Auth::user()->investment->sum('amount'),2)}}</div>
                                 </div>
+                                
                             </div>
-                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="n">@lang('Total Balance')</div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s"> <a href="{{ route('user.recharge') }}">@lang('Detail')
-                                    <img data-v-6df100a6=""
-                                        data-v-cfc9a7fc=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAOVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAABra2v4+PgAAAAAAAAAAADk5OQAAADd3d2goKAAAADy8vL///+hq0BzAAAAEnRSTlMzACwYLwYdTOUoIRKzDKZmD9OK32BQAAABUklEQVRYw7WX0XKEIAxFLwlJC9TW+v8f2yk7O26tGE12z3uOERBzkQZI01oIAKhUniUN2BdMSthAOp0WcMYu1MQW9PIhWcUSrOWjLg4FUmBCMhZwxgkyjwSKk/C+QHGauicouED5L1Bcom4FjIvoXwHjMvwokIzLZHkQEByUVdDggu8CIbjId4HCCd8EkuEk3wQNbrgLCG7yr2BCgCnBXMLP5fvt4EDDeoOvZVnehwZKEFiCQ4NghsHHoaGBETIoKkKGioKQoYAQMtBo77dsDObW7fP5CkH4FcKLGN7G+EHSUD0YLVSPOfw5Ry+U6JVWn3Gppgw31P8LDDetC/wtZOkCfwuausDdAkkX+Fto64hT4IDCQ9bTxryOOuu7oFMjo2582O7UwLh/cSX1RZHn5Mxa5DD2NbIebwVP0WyUm9FXGlnldviuofDdkZnX+K9N0oAfKgMTw/lKDHwAAAAASUVORK5CYII=">
-                                    </a>
-                                </div>
-                            </div>
+                            <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Capital account')</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount1"> {{number_format(Auth::user()->available_balance(),2)}} <span data-v-6df100a6=""
+                                    data-v-cfc9a7fc="">USDT</span></div>                                </div>
+                            
+                           
                         </div>
                         
                         <ul data-v-6df100a6="" data-v-cfc9a7fc="" class="tab flex">

@@ -5,32 +5,32 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.strategy')}}"> <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/deposit.png"><alt=""></div><span data-v-6049d237="">@lang('AI Strategy')</span></a>
+                                        src="{{ asset('') }}assets/static/img/powerf.png"><alt=""></div><span data-v-6049d237="">@lang('AI Power')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.Market')}}"> <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/market.png"><alt=""></div><span data-v-6049d237="">@lang('Market')</span></a>
+                                        src="{{ asset('') }}assets/static/img/taskf.png"><alt=""></div><span data-v-6049d237="">@lang('Market')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="on">
                                 <a href="{{route('user.dashboard')}}" > <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/icons8-home-100.png" style="width:50px;width:50px;"
+                                        src="{{ asset('') }}assets/static/img/homef.png" style="width:45px;height:51px;"
                                         alt=""></div><span data-v-6049d237="" style="color:white;">@lang('Home')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.wallet')}}">  <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/1222.png"  alt=""></div><span data-v-6049d237="">@lang('Wallet')</span></a>
+                                        src="{{ asset('') }}assets/static/img/walletf.png"  alt=""></div><span data-v-6049d237="">@lang('Wallet')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.Mine')}}"><div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/p.png" alt=""></div><span data-v-6049d237="">@lang('Mine')</span></a>
+                                        src="{{ asset('') }}assets/static/img/profilef.png" alt=""></div><span data-v-6049d237="">@lang('Mine')</span></a>
                             </div>
                         </div>
                     </div>

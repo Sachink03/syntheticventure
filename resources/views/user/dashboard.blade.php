@@ -259,9 +259,9 @@
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <!---->
                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="home">
-                        <div data-v-45836ea7="" data-v-6df716d9="" class="banner" data-v-cfc9a7fc=""  style="margin:0 10px;border-radius:5px">
+                        <div data-v-45836ea7="" data-v-6df716d9="" class="banner" data-v-cfc9a7fc=""  style="margin:0 10px;border-radius:15px">
                             <div data-v-45836ea7=""
-                                class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight" style="border-radius:5px">
+                                class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight" style="border-radius:15px">
                                 <div class="swiper-wrapper"
                                     style="transition-duration: 0ms; transform: translate3d(-850px, 0px, 0px); height: 239px;">
                                     <div data-v-45836ea7=""

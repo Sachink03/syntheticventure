@@ -100,6 +100,8 @@
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
     <script charset="utf-8" src="{{asset('')}}assets/static/js/rolldate.min.js"></script>
 
+    <script charset="utf-8" src="{{asset('')}}assets/static/js/rolldate.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-21a2b91c.0ed7b871.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-73ab94aa.2e0ec155.css">
@@ -117,6 +119,9 @@
     <link rel="stylesheet" href="drum.css">
 
 
+    <link rel="stylesheet" href="drum.css">
+
+
 </head>
 <style>
     .total-income .info[data-v-ac2db8a0] {
@@ -126,9 +131,8 @@
 .name1 {
     font-size: 10px; /* Sets the text to 8px */
     text-align: left; /* Change to 'center', 'right', or another value if you want different alignment */
-    margin-right: -73px; /* Adjust margin if spacing needs to change */
+    margin-right: -49px; /* Adjust margin if spacing needs to change */
     padding: 0; /* Adjust padding if necessary */
-    color: #ffffffab;;
 }
 .amount1{
     /* color: #000;
@@ -161,7 +165,10 @@ input[type=text], textarea{
     margin-left: 31px;
 }
 
+
 .container1 {
+            background-color: #2b2b2b;
+            border-radius: 10px;
             background-color: #2b2b2b;
             border-radius: 10px;
             padding: 20px;
@@ -174,12 +181,12 @@ input[type=text], textarea{
             margin-bottom: 20px;
         }
         .header img {
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
         }
         .header .title {
-            font-size: 13px;
-            /* font-weight: bold; */
+            font-size: 16px;
+            font-weight: bold;
             flex-grow: 1;
             text-align: center;
         }
@@ -195,7 +202,15 @@ input[type=text], textarea{
             justify-content: space-between;
             margin-bottom: 10px;
         }
+        .content .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
         .content .label {
+            color: #aaaaaa;
+            padding-top: 6px;
+            font-size: 10px;
             color: #aaaaaa;
             padding-top: 6px;
             font-size: 10px;
@@ -205,11 +220,17 @@ input[type=text], textarea{
             padding-top: 6px;
             font-size: 10px;
             text-align: center;
+        .content .label1 {
+            color: #aaaaaa;
+            padding-top: 6px;
+            font-size: 10px;
+            text-align: center;
         }
 
+
         .content .highlight {
-            color: #55b2c2;
-            font-size: 12px;
+            color: #00ff00;
+            font-size: 14px;
             font-weight: bold;
             text-align: center;
         
@@ -218,8 +239,6 @@ input[type=text], textarea{
         }
         .data{
             margin-top:-7px;
-            font-size: 12px;
-            padding-top: 4px;
         }
         div.date_wrapper {
 width: 265px;
@@ -354,17 +373,21 @@ margin: 0 2px;
                             <li data-v-6df100a6="" data-v-cfc9a7fc="">
         
         <input type="text" readonly class="custom-input" id="date-group1-2" placeholder="Start Date" >
+        <input type="text" readonly class="custom-input" id="date-group1-2" placeholder="Start Date" >
     
                         
 
                             </li>
-                            <li  style="display: flex; align-items: center; justify-content: center; font-size: 16px; color:#ffffffb3;">
+                            <li  style="display: flex; align-items: center; justify-content: center; font-size: 20;">
         to
     </li>
                             <li data-v-6df100a6="" data-v-cfc9a7fc="">
                             <input type="text" id="date-group1-1" readonly class="custom-input" placeholder="End Date">
+                            <input type="text" id="date-group1-1" readonly class="custom-input" placeholder="End Date">
                             </li>
                         </ul>
+
+
 
 
                     </div>
@@ -422,6 +445,7 @@ margin: 0 2px;
                                                         <div class="container1">
    <div class="header">
     <img alt="Icon representing GPU 2 Core Computing Package" src="https://placehold.co/40x40" />
+    <img alt="Icon representing GPU 2 Core Computing Package" src="https://placehold.co/40x40" />
     <div class="title">
      GPU 2 Core Computing Package
     </div>
@@ -431,12 +455,23 @@ margin: 0 2px;
    </div>
    <div class="content">
    <div class="label1">
+   <div class="label1">
       Run currency
      </div>
     <div class="highlight">
      1.77%
     </div>  
+     </div>
+    <div class="highlight">
+     1.77%
+    </div>  
     <div class="row">
+     <div class="label">
+      Run currency
+     </div>
+     <div class="label">
+     Running time
+     </div>
      <div class="label">
       Run currency
      </div>
@@ -449,12 +484,24 @@ margin: 0 2px;
       EUR
      </div>
      <div class="data">
+     <div class="data">
+      EUR
+     </div>
+     <div class="data">
       1.00 hour
+     </div>
      </div>
     </div>
     <div class="row">
      <div class="label">
+    <div class="row">
+     <div class="label">
       Running amount
+     </div>
+     <div class="label">
+     Profit
+      
+     </div>
      </div>
      <div class="label">
      Profit
@@ -466,12 +513,24 @@ margin: 0 2px;
      229.8365923
      </div>
      <div class="data">
+     <div class="data">
+     229.8365923
+     </div>
+     <div class="data">
       4.06810768
+     </div>
      </div>
     </div>
     <div class="row">
      <div class="label">
+    <div class="row">
+     <div class="label">
       Start time
+     </div>
+     <div class="label">
+     End time
+      
+     </div>
      </div>
      <div class="label">
      End time
@@ -483,11 +542,18 @@ margin: 0 2px;
      2024-10-18 20:33:20
      </div>
      <div class="data">
+     <div class="data">
+     2024-10-18 20:33:20
+     </div>
+     <div class="data">
       2024-10-18 20:33:20
+     </div>
      </div>
     </div>
    </div>
   </div>
+                                                
+                                                        
                                                 
                                                         
                                                         <!---->
@@ -499,14 +565,18 @@ margin: 0 2px;
                                     </div>
 
                                     
+
+                                    
                                 </div>
                             </div>
                         </div>
+                        
                         
                         <div data-v-4c14e1cc="" data-v-ac2db8a0="">
                             <!---->
                         </div>
                     </div>
+                    
                     
                     <div data-v-372e76f5="" data-v-6df100a6="" class="revenue" data-v-cfc9a7fc="">
                         <!-- <div data-v-372e76f5="" class="container">
@@ -537,8 +607,8 @@ margin: 0 2px;
 			new Rolldate({
 				el: '#date-group1-2',
 				format: 'YYYY-MM-DD',
-				beginYear: 2023,
-				endYear: 2024,
+				beginYear: 2000,
+				endYear: 2100,
                 lang: {
         title: 'Select Date',     // The title text, translate this if needed
         cancel: 'Cancel',         // Text for the cancel button
@@ -552,8 +622,8 @@ margin: 0 2px;
             new Rolldate({
 				el: '#date-group1-1',
 				format: 'YYYY-MM-DD',
-				beginYear: 2023,
-				endYear: 2024,
+				beginYear: 2000,
+				endYear: 2100,
                 lang: {
         title: 'Select Date',     // The title text, translate this if needed
         cancel: 'Cancel',         // Text for the cancel button

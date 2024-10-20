@@ -27,9 +27,7 @@ Route::get('/clear', function() {
 Route::get('/', function () {
     return view('auth.login');
 });
-Route::get('/run-record', function () {
-  return view('user.run-record');
-});
+
 
 Auth::routes();
 
@@ -62,6 +60,8 @@ Route::get('/register_sucess', [App\Http\Controllers\Register::class, 'index'])-
 Route::post('/sendCodeEmail', [App\Http\Controllers\Register::class, 'sendCodeEmail'])->name('sendCodeEmail');
 
 Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->name('Index');
+Route::get('/run-record', [App\Http\Controllers\FrontController::class, 'run_record'])->name('run-record');
+
 Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])->name('about-us');
 Route::get('/services', [App\Http\Controllers\FrontController::class, 'services'])->name('services');
 Route::get('/contact-us', [App\Http\Controllers\FrontController::class, 'contact'])->name('contact-us');

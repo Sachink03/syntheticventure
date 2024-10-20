@@ -533,8 +533,8 @@ margin: 0 2px;
 			new Rolldate({
 				el: '#date-group1-2',
 				format: 'YYYY-MM-DD',
-				beginYear: 2000,
-				endYear: 2100,
+				beginYear: 2023,
+				endYear: 2024,
                 lang: {
         title: 'Select Date',     // The title text, translate this if needed
         cancel: 'Cancel',         // Text for the cancel button
@@ -548,8 +548,8 @@ margin: 0 2px;
             new Rolldate({
 				el: '#date-group1-1',
 				format: 'YYYY-MM-DD',
-				beginYear: 2000,
-				endYear: 2100,
+				beginYear: 2023,
+				endYear: 2024,
                 lang: {
         title: 'Select Date',     // The title text, translate this if needed
         cancel: 'Cancel',         // Text for the cancel button

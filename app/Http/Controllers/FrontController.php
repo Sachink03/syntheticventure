@@ -43,7 +43,10 @@ class FrontController extends Controller
     {
         return view('main.faq');
     }
-   
+    public function run_record()
+    {
+        return view('user.run-record');
+    }
     public function tutorial()
     {
         return view('main.tutorial');

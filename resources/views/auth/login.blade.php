@@ -99,7 +99,7 @@
 
     </style>
     <style>
-     .iti__country-list {
+    .iti__country-list {
         position: absolute;
         z-index: 2;
         list-style: none;
@@ -118,8 +118,8 @@
     margin-top: .4rem;
     color: var(--COcolor3);
     font-size: .26rem;
-    text-align: left;
-    margin-bottom: .4em;
+    text-align: center;
+    margin-bottom: 6em;
 }
 body {
     background: none;
@@ -133,10 +133,6 @@ body {
     transform: translateX(-50%);
     font-family: Poppins,PingFang SC,Microsoft Yahei,sans-serif
 }
-.agreement{
-    color:var(--COcolor3);;
-}
-
 </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -158,23 +154,9 @@ body {
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
- <style>
-    .go .wrap[data-v-a34da882] {
-    margin-top: .4rem;
-    color: var(--COcolor3);
-    font-size: .26rem;
-    display: flex;
-    justify-content: left;
-    margin-bottom: .4em;
-}
-.go .wrap .wr[data-v-a34da882] {
-    
-    color: var(--COcolor3);
-    font-size: .26rem;
-    display: flex;
-    justify-content: left;
-    margin-bottom: .4em;}
- </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 </head>
 
 <body class="mein_cn">
@@ -193,7 +175,18 @@ body {
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
+                <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
                                 data-v-cfc9a7fc=""
+                                src="{{asset('')}}assets/static/img/bg-image.png">
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s" ></div>
+                        </div>
+                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="container">
+                       
+                        <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo" style="padding-top:80px">
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s" style="
+    text-align: left;
+    font-size: 14px;
+">@lang('Please enter your email and password to complete')</div>
                                 src="{{asset('')}}assets/static/img/bg-image.png">
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="s" ></div>
                         </div>
@@ -208,9 +201,11 @@ body {
                         <form action="{{route('login')}}" method="POST">
                                 {{ csrf_field() }}
                         
+                        
                         <div data-v-a34da882="" data-v-cfc9a7fc="" class="item">
                             <!---->
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="it input-container">
+                               
                             <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
 
@@ -229,6 +224,7 @@ body {
                             </div>
                            
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="it">
+                               
                                
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="flex inp val">
                                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="ico"></div>
@@ -370,42 +366,48 @@ body {
         });
     </script>
       <script>
-        var input = document.querySelector('#phone');
-        var info = document.querySelector('#info');
-        var status = document.getElementById('status');
-        var iti = window.intlTelInput(input, {
-            initialCountry: "us",
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Load the utilities script
-        });
+        $('.code-btn').click(function(e) {
+            e.preventDefault(); // Prevent the default form submission
+            var emailId = $('#emailId').val();
 
-        input.addEventListener('blur', function() {
-            if (iti.isValidNumber()) {
-                status.textContent = 'Valid number';
-                status.className = 'valid-number';
-            } else {
-                status.textContent = 'Invalid number';
-                status.className = 'invalid-number';
+            if (emailId == "") {
+                iziToast.error({
+                    message: 'Enter Email ID!',
+                    position: "topRight"
+                });
+                return false;
+
             }
+            $.ajax({
+                type: "POST",
+                url: "{{ route('sendCodeEmail') }}",
+                data: {
+                    emailId: emailId,
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(response) {
+                    if (response) {
+                        iziToast.success({
+                            message: 'Email sent successfully',
+                            position: "topRight"
+                        });
+                    } else {
+                        iziToast.error({
+                            message: 'Error!',
+                            position: "topRight"
+                        });
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('AJAX Error:', error);
+                    iziToast.error({
+                        message: 'Error: ' + xhr.responseText,
+                        position: "topRight"
+                    });
+                }
+            });
         });
-
-        input.addEventListener('countrychange', function() {
-            updateCountryInfo(); // Update the information displayed when the country changes
-        });
-
-        function updateCountryInfo() {
-            var countryData = iti.getSelectedCountryData();
-            console.log(countryData)
-
-            $('#country-name').val(countryData.name)
-            $('#dial-code').val(countryData.dialCode)
-            $('#country_iso').val(countryData.iso2)
-
-        }
-
-        // Initialize with the current selected country's info
-        document.addEventListener('DOMContentLoaded', updateCountryInfo);
     </script>
-
 
 </body>
 

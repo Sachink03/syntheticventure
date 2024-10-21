@@ -130,7 +130,6 @@
                     <div data-v-397da544="" class="container flex">
                         <!---->
                         <div data-v-397da544="" class="left_title">@lang('Asset') </div>
-                        <div data-v-397da544="" class="left_title">@lang('Asset') </div>
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
@@ -146,7 +145,6 @@
                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="com-1">
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="n">@lang('My Assets')</div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="n">@lang('My Assets')</div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s"> <a href="{{ route('user.recharge') }}">@lang('Detail')
                                     <img data-v-6df100a6=""
                                         data-v-cfc9a7fc=""
@@ -156,15 +154,22 @@
                             </div>
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount"> {{number_format(Auth::user()->available_balance(),2)}} <span data-v-6df100a6=""
                                     data-v-cfc9a7fc="">USDT</span></div>
-                           
+                            <!-- <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col">
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-left"><span data-v-6df100a6=""
+                                        data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAD1BMVEUAAAAE3AAD3AAE2wAE3ABuQteJAAAABHRSTlMAgFBAnsFh3gAAADNJREFUKM9jGAXogEkBQ0jEEV2E0cVFAF2Ri4sjhiJ0ZSogIWcUIRNMISZBIDBgGAUoAABJbwaD+etRRAAAAABJRU5ErkJggg==">
+                                        {{$percentage}}% </span><span data-v-6df100a6="" data-v-cfc9a7fc="">(+${{number_format($todaysRoi,2)}})</span></div>
+                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right">
+                                    <span data-v-6df100a6=""
+                                        data-v-cfc9a7fc="">Pending: 0 U</span>
+                                    </div>
+                            </div> -->
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Subscribe Amount')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Subscribe Amount')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> {{currency()}}  {{number_format(Auth::user()->available_balance()+Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</div>
                                 </div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Withdraw Fund')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Withdraw Fund')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val">{{currency()}}  {{number_format(Auth::user()->investment->sum('amount'),2)}}</div>
                                 </div>
@@ -176,7 +181,6 @@
                                 <a href="{{route('user.strategy')}}" style="color: #fff">
                                 <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                 src="{{asset('')}}assets/static/img/deposit_i.png"> 
-                       
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">@lang('Deposit')    </a></div>
                         
 
@@ -184,6 +188,7 @@
                             <li data-v-6df100a6="" data-v-cfc9a7fc="">
                                 <a href="{{route('user.Withdraw')}}" style="color: #fff">
                                 <img data-v-6df100a6="" data-v-cfc9a7fc=""
+                                src="{{asset('')}}assets/static/img/Withdraw_i.png">
                                 src="{{asset('')}}assets/static/img/Withdraw_i.png">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">@lang('Withdraw')  </a> </div>
                             </li>

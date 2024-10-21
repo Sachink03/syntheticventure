@@ -24,7 +24,7 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.wallet')}}">  <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/walletf.png"  alt=""></div><span data-v-6049d237="">@lang('Wallet')</span></a>
+                                        src="{{ asset('') }}assets/static/img/walletf.png"  alt=""></div><span data-v-6049d237="">@lang('Asset')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">

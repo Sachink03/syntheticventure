@@ -33,7 +33,9 @@
 }
 
 .totalBox[data-v-757d6f7f] {
-    background: url(../../static/img/team_bg1.8adde0d8.png) no-repeat;
+    /* background: url(../../static/img/team_bg1.8adde0d8.png) no-repeat; */
+    background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);
+    border-radius: .2rem;
     background-size: 100% 100%;
     font-size: .28rem;
     display: flex;
@@ -42,11 +44,11 @@
 }
 
 .totalBox .n[data-v-757d6f7f] {
-    color: #d9dbe9
+    color: #000;
 }
 
 .totalBox .s[data-v-757d6f7f] {
-    color: #ffffff;
+    color: #000;
     font-weight: 700;
     letter-spacing: .02rem
 }
@@ -152,14 +154,17 @@
     letter-spacing: .015rem;
     opacity: .5;
     font-size: .24rem;
-    font-weight: 400
+    font-weight: 400;
+    color: #000;
+
 }
 
 .com-2 li .s[data-v-757d6f7f] {
     font-size: .32rem;
     font-weight: 700;
     letter-spacing: .015rem;
-    line-height: .48rem
+    line-height: .48rem;
+    color:#000;
 }
 
 .com-2 li img[data-v-757d6f7f] {

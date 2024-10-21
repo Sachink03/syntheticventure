@@ -173,23 +173,22 @@ body {
 <body class="main_en">
     <div id="app" class="applang">
         <div data-v-cfc9a7fc="" data-v-607a0cfb="" class="page">
-            <div data-v-cfc9a7fc="" class="headers">
+            <!-- <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-607a0cfb="" class="head head_isModule" is-left="true" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
-                        <!---->
+                      
                         <div data-v-397da544="" class="left_title"> @lang('Registration') </div>
-                        <!---->
+                      
                         <div data-v-397da544="" class="flex1"></div>
                         <div data-v-397da544="" class="lang"> <a href="{{route('user.lang')}}"> <img data-v-397da544=""
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAZlBMVEUAAAAVFRUWFhYQEBAVFRUWFhYVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUYGBgQEBAWFhbOzs5ycnK3t7ctLS1bW1tmZmYhISHDw8N+fn6goKBERESsrKyJiYmUlJQ4ODhQUFA5OTlkLOJfAAAAEHRSTlMA7+AQz7CggHBAkI/AYCAgGfxI1gAAAitJREFUWMPll9miqiAUhhE1tREC1Jyq93/JI4tD6LZdTHf7u8jVhV+sXxlCa6oyxwn5SpLlRYV+JS0S4gDeXd5rDsSZd6oyIR7g00/PgXhyWLd1JN5kKTJkJIDjpq/g7k4kkBIBFxwqSlRMOwIEN3chEUhhQBEoZhGOIUoQqkgUKlTEEZUojyPKURZHhFESR5Qg8gFxl5/PlsG1F+QDH0Q9Y/LCGaUtl1XLhIeouVF6lcVIZ26yus7XxlXEh/l2LgsqaRvpngvGnUTQD+0gJwrUsu7A5CJq2OvmSYkmWdeyGhoH0Q1u7iFhJWohfihvliLTjizv9D/cWHtrETSmInpokVAhSZitCAZkHrniCi1rqZ1oWDyoUYtGlTbQ2Yk4VTx0M8C0bJRbiWqq6PXoALaMvrYSTcufZSsR131aicRV0UDYGhhEY75sRV78dVG9DLt+G7awEo3fH//k9ELeV6IB1hGnF5Jv5rukc58ipPs2aQe3ZWQMW0ZMMIOWAg/Xhc1k2urATPStGlDw4n93XfxJM+hYttsRa/w2yFrn675BGhPs07I3s3sP3PsQcXu9CsL9EAEIpp5bq/thrPdcRgTc+GTtE66CfCDe0Q/HEWXxjsdlHFER7y9EnLQxQnH+jOxmURpDdEYz+xgDkqTBKeEzAspQ0Qk04c3t0Ytj2OwwpJm/55iiJfvAvgwn7KNJSrThvPMYjmprq8JOoymMZkNV5Fli4cB5WaEV/wDnFTWJG/z43wAAAABJRU5ErkJggg==">
                             </a>
                         </div>
-                        <!---->
-                        <!---->
+                        
                         <div data-v-397da544="" class="head_right"></div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <form action="{{ route('registers') }}" method="POST" name="login_frm" id="form-id" style="overflow: scroll;">
                 {{ csrf_field() }}
 
@@ -200,17 +199,20 @@ body {
 
                 <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                     <div data-v-cfc9a7fc="" id="content" class="content-scroll">
+                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
+                                data-v-cfc9a7fc=""
+                                src="{{asset('')}}assets/static/img/bg-image.png">
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s"></div>
+                        </div>
                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="container">
-                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="item">
-                               <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Name')</div>
-                                <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input data-v-607a0cfb=""
-                                            data-v-cfc9a7fc="" type="text"  name="name" placeholder="Name"></div>
-                                </div>
-                            </div> 
+                        <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo" style="padding-top:80px">
+                            <div data-v-a34da882="" data-v-cfc9a7fc="" class="s">@lang('Registraion')</div>
+                        </div>
+                            <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="item" style="
+    margin-top: 8px;
+">
+                             
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Mobile phone')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
 
                                         <input type="hidden" id="country-name" name="country" value="">
@@ -225,11 +227,11 @@ body {
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Email')</div>
+                                   
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="email" id="emailId"
-                                                type="text" placeholder="Please enter your email address"></div>
+                                                type="text" placeholder="Email"></div>
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
@@ -253,7 +255,6 @@ body {
                                       
 
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('invitation code')</div>
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="sponsor" value="{{$sponsor}}" id="sponsor"
@@ -261,11 +262,11 @@ body {
                                     </div>
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n"> @lang('password')  </div>
+                                    
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input id="passwordInput"
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="password"
-                                                placeholder="Enter password" type="password"></div>
+                                                placeholder="Password" type="password"></div>
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><i  onclick="togglePasswordVisibility()" class="fa fa-eye-slash check" style="    font-size: 20px;
                                             margin-top: -10px;"></i>
                                         </div>
@@ -274,11 +275,11 @@ body {
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="doc">
                                 </div>
                                 <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
-                                    <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="n">@lang('Confirm password')</div>
+                         
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="inp flex">
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex1"><input
                                                 data-v-607a0cfb="" data-v-cfc9a7fc="" name="password_confirmation" id="passwordInput2"
-                                                placeholder="Please enter your password again" type="password"></div>
+                                                placeholder="Confirm password" type="password"></div>
                                         <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="yj"><i onclick="togglePasswordVisibility()" class="fa fa-eye-slash check" style="    font-size: 20px;
                                             margin-top: -10px;"></i>
                                         </div>

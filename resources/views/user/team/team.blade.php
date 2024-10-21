@@ -280,7 +280,7 @@ blockquote, body, dd, del, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, 
                                     <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"><span data-v-757d6f7f=""
                                             data-v-cfc9a7fc=""><a href="{{route('user.list')}}" style="color:#fff;">@lang('Team List')</a></span></div>
                                 </div>
-                                <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2">
+                                <ul data-v-757d6f7f="" data-v-cfc9a7fc="" class="com-2" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);">
                                     <li data-v-757d6f7f="" data-v-cfc9a7fc="">
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="n">@lang('Total member')</div>
                                         <div data-v-757d6f7f="" data-v-cfc9a7fc="" class="s"> {{$totalTeam}}<a href="{{route('user.list')}}" style="color:#fff;"><img data-v-757d6f7f=""

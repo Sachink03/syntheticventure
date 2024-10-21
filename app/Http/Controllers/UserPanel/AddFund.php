@@ -80,17 +80,8 @@ return $this->dashboard_layout();
 
 }
 
-public function fund(Request $request)
-{
 
-   
-$this->data['page'] = 'user.fund.addFund';
-return $this->dashboard_layout();
-
-}
-
-
-public function confirmDeposit(Request $request) 
+public function confirmDeposit(Request $request)
 {
 try{
  $validation =  Validator::make($request->all(), [

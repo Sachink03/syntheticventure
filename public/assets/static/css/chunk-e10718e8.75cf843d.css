@@ -21,7 +21,7 @@
 }
 
 .popup_box .scroll .ul .active[data-v-4c14e1cc] {
-    color: #ebd100 !important
+    color: #55b2c2  !important
 }
 
 .popup_box .esc[data-v-4c14e1cc] {
@@ -137,7 +137,7 @@
 }
 
 .itemBox .val span[data-v-ca43a44c] {
-    color:#ebd100;
+    color:#55b2c2 ;
     font-weight: 700;
     display: block;
     border-left: .04rem solid #fff;

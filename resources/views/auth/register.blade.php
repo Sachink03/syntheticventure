@@ -305,7 +305,7 @@ body {
                                    @lang('Registration') </button>
                                 <p data-v-607a0cfb="" data-v-cfc9a7fc=""> @lang('Already have an account') <span
                                         data-v-607a0cfb="" data-v-cfc9a7fc=""><a href="{{ route('login') }}"
-                                            style="color:#ebd100;">@lang('Log in now')</a></span></p>
+                                            style="color:#55b2c2 ;">@lang('Log in now')</a></span></p>
                                 <!---->
             </form>
         </div>

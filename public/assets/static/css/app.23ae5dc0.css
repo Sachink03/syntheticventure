@@ -24,7 +24,7 @@
 
 .start-page .start button[data-v-e73e51fc] {
     border-radius: .2rem;
-    background: linear-gradient(180deg,#ebd100,#bef3a1);
+    background: linear-gradient(180deg,#55b2c2 ,#bef3a1);
     color: #000;
     padding: .24rem .32rem;
     display: flex;
@@ -108,7 +108,7 @@
 .btn2 {
     height: 1rem;
     border-radius: .2rem;
-    background: linear-gradient(180deg, #ebd100, #ebd100);
+    background: #55b2c2 ;
     color: #000;
     font-weight: 500;
     font-size: .32rem;
@@ -286,7 +286,7 @@
 
 :root {
     --COcolor1: #fff;
-    --COcolor2: #ebd100;
+    --COcolor2: #55b2c2 ;
     --COcolor3: #929292;
     --COcolor4: #fff;
     --COcolor5: grey;
@@ -295,7 +295,7 @@
     --COborder2: 0.02rem solid #333;
     --COborder3: 0.02rem solid #ffadb5;
     --CObackgroundLinear1: linear-gradient(270deg,#0571fd,#7b02fe 100%,#7b02fe 0);
-    --CObackgroundLinear2: #ebd100;
+    --CObackgroundLinear2: #55b2c2 ;
     --CObackgroundLinear3: #0e0f10;
     --CObackgroundLinear4: hsla(0,0%,100%,0.8);
     --CObackgroundLinear5: linear-gradient(90deg,#e7625d,#e24a43)
@@ -333,7 +333,7 @@ input {
 
 .qdBox .start button {
     border-radius: .2rem;
-    background: linear-gradient(180deg,#ebd100,#bef3a1);
+    background: linear-gradient(180deg,#55b2c2 ,#bef3a1);
     color: #000;
     padding: .24rem .32rem;
     display: flex;

@@ -98,12 +98,12 @@
 
 .list .item .top .ri .but1[data-v-30aca98d] {
     color: #000;
-    background: #ebd100
+    background: #55b2c2 
 }
 
 .list .item .top .ri .but2[data-v-30aca98d] {
-    color: #ebd100;
-    border: .02rem solid #ebd100
+    color: #55b2c2 ;
+    border: .02rem solid #55b2c2 
 }
 
 .list .item .top .ri .but3[data-v-30aca98d] {
@@ -133,7 +133,7 @@
 }
 
 .list .item .bot .ri span[data-v-30aca98d] {
-    color: #ebd100
+    color: #55b2c2 
 }
 
 .dialog[data-v-30aca98d] {
@@ -189,7 +189,7 @@
 
 .dialog .item .s[data-v-30aca98d] {
     margin-top: .24rem;
-    color: #ebd100;
+    color: #55b2c2 ;
     text-align: center;
     font-size: .64rem;
     font-style: normal;
@@ -200,7 +200,7 @@
 .dialog .item .but[data-v-30aca98d] {
     margin-top: .48rem;
     border-radius: .24rem;
-    background: #ebd100;
+    background: #55b2c2 ;
     width: 100%;
     color: #fff;
     padding: .3rem;

@@ -252,13 +252,13 @@
 
 .popBox .cllist li[data-v-167ffb9b]:first-child {
     background-image: url(../../static/img/11.png);
-    /* background-color:#ebd100; */
+    /* background-color:#55b2c2 ; */
     border-radius: 15px;
 }
 
 .popBox .cllist li[data-v-167ffb9b]:nth-child(2) {
     /* background-image: url(../../static/img/quant_bg4.69518881.png) */
-    background-color:#ebd100;
+    background-color:#55b2c2 ;
     border-radius: 15px;
 }
 
@@ -287,7 +287,7 @@
     top: 0;
     right: 0;
     border-radius: 0 .24rem 0 .24rem;
-    background: linear-gradient(180deg, #ebd100, #ebd100);
+    background: #55b2c2 ;
     color: #000;
     padding: .1rem .14rem
 }

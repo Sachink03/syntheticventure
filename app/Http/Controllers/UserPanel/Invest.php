@@ -192,7 +192,7 @@ public function viewdetail($txnId)
         }
         
        
-    
+     
 }
 
     public function confirmDeposit(Request $request)

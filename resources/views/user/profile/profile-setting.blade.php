@@ -161,7 +161,7 @@
                                 </div> -->
                             </div>
                         </div>
-                        <div data-v-636522ac="" data-v-cfc9a7fc="" class="incomeBox">
+                        <!-- <div data-v-636522ac="" data-v-cfc9a7fc="" class="incomeBox">
                             <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Invitation Code')：</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="right" > <span id="clipboardright">{{Auth::user()->username}}</span><img data-v-636522ac="" id="copy-button" 
@@ -169,8 +169,8 @@
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAn2DfgCAQ78+/sJCPUIWfNBMAAACISURBVCjPY6AekHv37vExJD7jOyB4iaLAUHDxO4VcJAUCDKzvBOwcYAoeAwUY3gkASagCU5gAzAQnFAEWoA0wAYSdDigCSkpKDCgCQIIOAgEgihUuwPTOShAIxN8pwPwy7x0YvGCACWTbgfjP3aACCMAKF1AUFISaAhUAaoCaAgX7gByIKdQBAOGIZAwmCV4kAAAAAElFTkSuQmCC">
                                 </div>
                             </div>
-                        </div>
-                        <ul data-v-636522ac="" data-v-cfc9a7fc="" class="list">
+                        </div> -->
+                        <!-- <ul data-v-636522ac="" data-v-cfc9a7fc="" class="list">
                             <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico"><img data-v-636522ac=""
                                         data-v-cfc9a7fc=""
@@ -180,13 +180,13 @@
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
                                         data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-                                        <!----></i></div>
+                                       </i></div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="upimg">
                                     <div data-v-636522ac="" class="van-uploader" data-v-cfc9a7fc="">
                                         <div class="van-uploader__wrapper">
                                             <div class="van-uploader__upload" style="width: 2rem; height: 2rem;"><i
                                                     class="van-icon van-icon-photograph van-uploader__upload-icon">
-                                                    <!----></i><input multiple="multiple" type="file" accept="image/*"
+                                                 </i><input multiple="multiple" type="file" accept="image/*"
                                                     class="van-uploader__input"></div>
                                         </div>
                                     </div>
@@ -202,12 +202,11 @@
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">
                                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
                                         data-v-cfc9a7fc="" class="van-icon van-icon-arrow" style="color:white;">
-                                        <!----></i></div>
+                                        </i></div>
                                     </a>
                                 </div>
     
-                                <!---->
-                                <!---->
+                               
                             </li>
                           
                             <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
@@ -217,8 +216,7 @@
                                 </div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Phone number')</div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">{{Auth::user()->phone}}</div>
-                                <!---->
-                                <!---->
+                               
                             </li>
                             <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.ChangePass')}}" style="color:white;"><img data-v-636522ac=""
@@ -229,10 +227,127 @@
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></a></div>
                                 <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><i data-v-636522ac=""
                                     data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
+                                    </i></div>
+                           
+                            </li>
+                        </ul> -->
+
+                        <ul data-v-636522ac="" data-v-cfc9a7fc="" class="list">
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('User Name')</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">99999999999</div>  
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr">
+                                  
+                                <i data-v-636522ac=""
+                                        data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
+                                        <!----></i></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="upimg">
+                                    <div data-v-636522ac="" class="van-uploader" data-v-cfc9a7fc="">
+                                        <div class="van-uploader__wrapper">
+                                            <div class="van-uploader__upload" style="width: 2rem; height: 2rem;"><i
+                                                    class="van-icon van-icon-photograph van-uploader__upload-icon">
+                                                    <!----></i><input multiple="multiple" type="file" accept="image/*"
+                                                    class="van-uploader__input"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">
+                                    <a href="{{route('user.ChangeMail')}}" style="color:white;"> @lang('Account')</div>
+                                    
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1">
+
+                                
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">+9999999999</div>  
+                                        </a>
+                                    </div>
+                                    
+    
+                                <!---->
+                                <!---->
+                            </li>
+                          
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Email')</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">123@gmail.com</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr">
+                                  
+                                  <i data-v-636522ac=""
+                                          data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
+                                          <!----></i></div>
+                                <!---->
+                                <!---->
+                            </li>
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Uid')</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n"><span id="clipboardright">{{Auth::user()->username}}</span></div>
+
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr"><img data-v-636522ac="" id="copy-button" 
+                                        data-v-cfc9a7fc=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAn2DfgCAQ78+/sJCPUIWfNBMAAACISURBVCjPY6AekHv37vExJD7jOyB4iaLAUHDxO4VcJAUCDKzvBOwcYAoeAwUY3gkASagCU5gAzAQnFAEWoA0wAYSdDigCSkpKDCgCQIIOAgEgihUuwPTOShAIxN8pwPwy7x0YvGCACWTbgfjP3aACCMAKF1AUFISaAhUAaoCaAgX7gByIKdQBAOGIZAwmCV4kAAAAAElFTkSuQmCC">
                                     <!----></i></div>
                                 <!---->
                             </li>
+                        
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Phone')</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">998399999</div>  
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="arr">
+                                  
+                                <i data-v-636522ac=""
+                                        data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
+                                        <!----></i></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="upimg">
+                                    <div data-v-636522ac="" class="van-uploader" data-v-cfc9a7fc="">
+                                        <div class="van-uploader__wrapper">
+                                            <div class="van-uploader__upload" style="width: 2rem; height: 2rem;"><i
+                                                    class="van-icon van-icon-photograph van-uploader__upload-icon">
+                                                    <!----></i><input multiple="multiple" type="file" accept="image/*"
+                                                    class="van-uploader__input"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                     
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Registration Time')</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">12-05-2024</div>
+                              
+                                <!---->
+                                <!---->
+                            </li>
+                            <li data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="ico">
+                                </div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">@lang('Membership Package')</div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1 overflow1"></div>
+                                <div data-v-636522ac="" data-v-cfc9a7fc="" class="n">Upgrade</span></div>
+
+                                
+                                <!---->
+                            </li>
+                      
+                          
+                            
                         </ul>
+
+                      
                     </div>
                 </div>
             </div>

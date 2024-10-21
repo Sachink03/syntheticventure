@@ -140,9 +140,10 @@
 
 .com-1 .name .n[data-v-6df100a6] {
     font-size: .32rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: .52rem;
-    letter-spacing: .015rem
+    letter-spacing: .015rem;
+    padding-left: 33%;
 }
 
 .com-1 .name img[data-v-6df100a6] {
@@ -157,7 +158,8 @@
     font-weight: 700;
     line-height: .68rem;
     letter-spacing: .02rem;
-    margin: .1rem 0
+    margin: -2px 0;
+    padding-left: 22%;
 }
 
 .com-1 .amount span[data-v-6df100a6] {
@@ -217,7 +219,7 @@
     padding: .32rem 0;
     border-radius: .2rem;
     border: .02rem solid #fff;
-    background: linear-gradient(92deg, #fff 1.36%, #c0ffc5 103.37%);
+    background: linear-gradient(92deg, #55B2C2  1.36%, #fff 103.37%);
     box-shadow: inset 0 .06rem .08rem 0 rgba(1, 52, 8, .2)
 }
 

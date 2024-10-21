@@ -39,18 +39,19 @@
 .logo[data-v-a34da882] {
     position: relative;
     text-align: center;
-    padding-top: 1.4rem
+    /* padding-top: 1.4rem */
 }
 
 .logo img[data-v-a34da882] {
-    height: 1.72769rem;
+   width: 100%;
 }
 
 .logo .s[data-v-a34da882] {
-    margin-top: .32rem;
-    font-size: .36rem;
+    margin-top: -36px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: .56rem
+    line-height: .56rem;
+    /* text-align: left; */
 }
 
 .tab[data-v-a34da882] {
@@ -118,7 +119,7 @@
 
 .go[data-v-a34da882] {
     margin-top: .82rem;
-    padding-bottom: .3rem
+    padding-bottom: .3rem;
 }
 
 .go .wrap[data-v-a34da882] {

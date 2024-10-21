@@ -41,16 +41,18 @@ class Login extends Controller
     {
       
             $validation =  Validator::make($request->all(), [
-                $this->username() => 'required|unique:users',
+                'phone' => 'required|unique:users',
                 'password' => 'required|string',
 
             ]);
         
             // dd($request);
             $post_array  = $request->all();
-            $credentials = $request->only($this->username(), 'password');
-                 
-            if (Auth::attempt($credentials)) {
+            $credentials = $request->only('phone', 'password');
+            $exists = User::where('country_iso', $post_array['country_iso']) ->where('phone', $post_array['phone'])
+            ->exists();
+         
+           if (Auth::attempt($credentials)) {
                 $user = Auth::user();
 
                 if($user->active_status=="Block")
@@ -58,13 +60,20 @@ class Login extends Controller
                 Auth::logout();
                return Redirect::back()->withErrors(array('You are Blocked by admin'));
                 }
-                return redirect()->route('user.dashboard');
+                if( $exists && $exists!=''){
+                return redirect()->route('user.dashboard'); }
+                else{
+                    Auth::logout();
+                    return Redirect::back()->withErrors(array('Invalid Country Code !'));
+        
+                }
             }
             else
             {
                 // echo "credentials are invalid"; die;
                 return Redirect::back()->withErrors(array('Invalid Username & Password !'));
             }
+       
         
         }
 

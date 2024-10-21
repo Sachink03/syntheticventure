@@ -32,7 +32,8 @@
 .page .content-container[data-v-cfc9a7fc] {
     width: 100%;
     flex: 1;
-    overflow-y: auto
+    overflow-y: auto;
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%);
 }
 
 .page .back-top[data-v-cfc9a7fc] {

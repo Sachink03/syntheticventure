@@ -126,8 +126,9 @@
 .name1 {
     font-size: 10px; /* Sets the text to 8px */
     text-align: left; /* Change to 'center', 'right', or another value if you want different alignment */
-    margin-right: -49px; /* Adjust margin if spacing needs to change */
+    margin-right: -73px; /* Adjust margin if spacing needs to change */
     padding: 0; /* Adjust padding if necessary */
+    color: #ffffffab;;
 }
 .amount1{
     /* color: #000;
@@ -153,7 +154,8 @@
 .val{
     font-size:12px;
     font-weight: 550;
-    color: green;
+    color: #fff;
+    padding-top: 4px;
 }
 input[type=text], textarea{
     margin-left: 31px;
@@ -172,18 +174,18 @@ input[type=text], textarea{
             margin-bottom: 20px;
         }
         .header img {
-            width: 40px;
-            height: 40px;
+            width: 20px;
+            height: 20px;
         }
         .header .title {
-            font-size: 16px;
-            font-weight: bold;
+            font-size: 13px;
+            /* font-weight: bold; */
             flex-grow: 1;
             text-align: center;
         }
         .header .status {
-            color: #00ff00;
-            font-size: 14px;
+            color: #55b2c2;
+            font-size: 9px;
         }
         .content {
             font-size: 14px;
@@ -206,8 +208,8 @@ input[type=text], textarea{
         }
 
         .content .highlight {
-            color: #00ff00;
-            font-size: 14px;
+            color: #55b2c2;
+            font-size: 12px;
             font-weight: bold;
             text-align: center;
         
@@ -216,6 +218,8 @@ input[type=text], textarea{
         }
         .data{
             margin-top:-7px;
+            font-size: 12px;
+            padding-top: 4px;
         }
         div.date_wrapper {
 width: 265px;
@@ -354,7 +358,7 @@ margin: 0 2px;
                         
 
                             </li>
-                            <li  style="display: flex; align-items: center; justify-content: center; font-size: 20;">
+                            <li  style="display: flex; align-items: center; justify-content: center; font-size: 16px; color:#ffffffb3;">
         to
     </li>
                             <li data-v-6df100a6="" data-v-cfc9a7fc="">
@@ -368,7 +372,7 @@ margin: 0 2px;
                         <div data-v-ac2db8a0="" class="container">
                             <div data-v-ac2db8a0="" class="total-income">
                                 <div data-v-ac2db8a0="" class="title_box">
-                                    <div data-v-ac2db8a0="" class="title">@lang('Running Record List')</div>
+                                    <div data-v-ac2db8a0="" class="title" style="font-size: 14px">@lang('Running Record List')</div>
                                     <!-- <div data-v-ac2db8a0="" class="choose_day">
                                         <i data-v-ac2db8a0=""
                                             class="arrow_down van-icon van-icon-arrow-down">

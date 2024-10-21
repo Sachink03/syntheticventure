@@ -179,6 +179,7 @@
     margin-bottom: .625rem;
 }
 
+
     
     </style>
 
@@ -325,7 +326,7 @@
                                 
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc="">
-                                        <a href="{{route('user.strategy')}}" style="color:white;">
+                                        <a href="{{route('run-record')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/13.png" class="icon-custom">

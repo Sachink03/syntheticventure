@@ -123,9 +123,10 @@
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="cid">  <span
                                                 data-v-3d4e4f5e="" data-v-cfc9a7fc=""></span></div>
                                     </div>
-                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.setting')}}"><img data-v-3d4e4f5e=""
+                                    <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico">
+                                        <!-- <a href="{{route('user.setting')}}"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/img/setting.png"></a>
+                                            src="{{asset('')}}assets/static/img/setting.png"></a> -->
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="notice"><a href="{{route('user.meassage')}}"><img
                                                 data-v-3d4e4f5e="" data-v-cfc9a7fc=""
                                                 src="{{asset('')}}assets/static/img/bell.png"></a>
@@ -139,7 +140,7 @@
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
-                                                src="{{asset('')}}assets/static/img/1212.png">
+                                                src="{{asset('')}}assets/static/img/dollar.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Strategy account'):</div>
@@ -149,7 +150,7 @@
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
-                                                src="{{asset('')}}assets/static/img/w1.png">
+                                                src="{{asset('')}}assets/static/img/wallet_i.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Capital account'):</div>
@@ -159,7 +160,7 @@
                                 </ul>
                                 <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="str"><a href="{{route('user.profile')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                         data-v-cfc9a7fc=""
-                                        src="{{asset('')}}assets/static/img/a.png"></a><span
+                                        src="{{asset('')}}assets/static/img/profile_i.png"></a><span
                                         data-v-3d4e4f5e="" data-v-cfc9a7fc="" style="color:#fff;">@lang('Profile')</span></div>
                             </div>
                         </div>
@@ -211,7 +212,7 @@
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
-                                                src="{{asset('')}}assets/static/img/121212.png">
+                                                src="{{asset('')}}assets/static/img/support.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="https://t.me/Viom_m" target="_blank" style="color:#fff;">@lang('Customer service')
                                         @lang('support')</a></div>
@@ -261,9 +262,29 @@
                                     </li>
 
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico">
+                                            <a href="{{route('user.setting')}}"  style="color:#fff;">
+                                            <img data-v-3d4e4f5e=""
+                                                data-v-cfc9a7fc=""
+                                                src="{{asset('')}}assets/static/img/secure.png">
+                                        </div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">@lang('Security')</a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
+                                            <!---->
+                                            <a href="https://t.me/synthetic_venture" target="_blank" style="color:#fff;">
+                                            <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
+                                                class="van-icon van-icon-arrow">
+                                                <!----></i>
+                                            </a>
+                                            
+                                            </div>
+                                    </li>
+
+
+                                    <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""
-                                                src="{{asset('')}}assets/static/img/abouts.png">
+                                                src="{{asset('')}}assets/static/img/about.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.about')}}" style="color:#fff;">@lang('About us')</a></div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
@@ -278,8 +299,8 @@
                                       <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico">
                                              <img data-v-3d4e4f5e=""
-                                                data-v-cfc9a7fc="" style="    height: .3rem;"
-                                                src="{{asset('')}}assets/images-removebg-preview.png">
+                                                data-v-cfc9a7fc="" style="   "
+                                                src="{{asset('')}}assets/static/img/download_i.png">
                                                 
                                           
                                            

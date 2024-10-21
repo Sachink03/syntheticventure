@@ -101,6 +101,29 @@
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-21a2b91c.12695023.1717187934571.chunk.js"></script>
 </head>
 
+<style>
+    .line[data-v-3d4e4f5e] {
+    border-radius: .1rem;
+    background: transparent;
+    padding: 0 .32rem
+}
+.btn_list .go button[data-v-3d4e4f5e] {
+    width: 100%;
+    border-radius: .24rem;
+    background: none;
+    border: .02rem solid #222;
+    height: .88rem;
+    font-size: .28rem;
+    color: #121313;
+    background: #54b2c2;
+}
+.btn_list .go button img[data-v-3d4e4f5e] {
+    height: .33rem;
+    margin-right: .2rem;
+    vertical-align: middle;
+    filter: brightness(7) saturate(94%) invert(89%) sepia(0%) saturate(7500%) hue-rotate(343deg) brightness(104%) contrast(104%);
+}
+</style>
 <body class="mein_cn">
     <div id="app" class="applang">
         <div data-v-cfc9a7fc="" data-v-3d4e4f5e="" class="page">
@@ -143,7 +166,7 @@
                                                 src="{{asset('')}}assets/static/img/dollar.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Strategy account'):</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Withdraw Fund'):</div>
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->available_balance()+Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}} USDT</div>
                                         </div>
                                     </li>
@@ -153,7 +176,7 @@
                                                 src="{{asset('')}}assets/static/img/wallet_i.png">
                                         </div>
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
-                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Capital account'):</div>
+                                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Subscribe Amount'):</div>
                                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="s">{{number_format(Auth::user()->investment->sum('amount'),2)}} USDT</div>
                                         </div>
                                     </li>

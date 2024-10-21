@@ -1,3 +1,11 @@
+
+<style>
+    .footers.home[data-v-6049d237] {
+    background-color: #1f3836 !important;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAACfBAMAAABU0kG0AAAAD1BMVEX///8AAAD///////////9cEmbOAAAABXRSTlMaAAoSBe0yiBgAAAG/SURBVHja7d3RTeNAEAbg1S4NbC4FnIECLvEWcAb3XxM88IKExMYmnkX6vhJGo3/GEytOjyNY13qcdX15DJdGMT/XA5yf5sRn5e6VPyn6l1q9p/NT4mvXej+nf4njC/+a+D5qlP1oU32n7IcrS/15fxLfeag/7pyISBqbTI9Sq3CPcJEy3QYerX8TAUv8KdHd8Nq916i7pHS/xWSZCZHt7n1GbXgXgttkU7XPmA1vqt7qwVTtNeAOb6rerHlW7TbaWfJ/IuAseRYzGxTLe7exVknL+yZZzHQaa5UUMxs1MdNroMnqRrDZRcz0Ganhxcx2k5jpNsgq6RS5x+IU2W2IVdIpcpeyiJleQ6ySYmafImb6jNHwfvHYK4uZbuHPTm4E+2U3ghiLG0GIJmZClMVUDdEs7yGK5T3GxXsEIYqpGuNiqobIpmqMybNqiKzdY0zaPUTW7jEm7R4ia/cYk3YPURbtHqJp9xiTy0yIsjhEhsju7jGuUiZGs8vEaP5XP8ZV2WPMi9fdQ5TmkykxyrOqxyjX9aPoLz7KdLR5nk1TAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA3+UN6JxWQIw15+oAAAAASUVORK5CYII=) no-repeat 50%;
+    background-size: 100% 100%;
+}
+</style>
 <div data-v-cfc9a7fc="" class="footer">
                 <div data-v-6049d237="" data-v-6df716d9="" class="footers-con" data-v-cfc9a7fc="">
                     <div data-v-6049d237="" class="footers-h"></div>
@@ -11,7 +19,7 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.Market')}}"> <div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/taskf.png"><alt=""></div><span data-v-6049d237="">@lang('Market')</span></a>
+                                        src="{{ asset('') }}assets/static/img/ai-chat.png"><alt=""></div><span data-v-6049d237="">@lang('AI')</span></a>
                             </div>
                         </div>
                         <div data-v-6049d237="" class="item">
@@ -30,7 +38,7 @@
                         <div data-v-6049d237="" class="item">
                             <div data-v-6049d237="" class="">
                                 <a href="{{route('user.Mine')}}"><div data-v-6049d237="" class="icon"><img data-v-6049d237=""
-                                        src="{{ asset('') }}assets/static/img/profilef.png" alt=""></div><span data-v-6049d237="">@lang('Mine')</span></a>
+                                        src="{{ asset('') }}assets/static/img/profilef.png" alt=""></div><span data-v-6049d237="">@lang('Account')</span></a>
                             </div>
                         </div>
                     </div>

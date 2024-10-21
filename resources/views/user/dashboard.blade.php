@@ -178,7 +178,18 @@
     width: calc(33.3% - .39375rem);
     margin-bottom: .625rem;
 }
-
+.page[data-v-cfc9a7fc] {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 8.5rem;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%);
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%);
+    display: flex;
+    flex-direction: column;
+}
 
     
     </style>

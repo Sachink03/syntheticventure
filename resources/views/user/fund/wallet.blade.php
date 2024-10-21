@@ -118,6 +118,9 @@
     position: relative;
     height: auto;
 }
+.head[data-v-397da544] {
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%);
+}
 </style>
 <body class="main_en">
     <div id="app" class="applang">

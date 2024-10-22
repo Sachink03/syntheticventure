@@ -472,133 +472,69 @@ margin: 0 2px;
 
                        
                     </div>
-                    <div data-v-ac2db8a0="" data-v-6df100a6="" class="revenue" data-v-cfc9a7fc="">
-                        <div data-v-ac2db8a0="" class="container">
-                            <div data-v-ac2db8a0="" class="total-income">
-                                <div data-v-ac2db8a0="" class="title_box">
-                                   
-                                    <!-- <div data-v-ac2db8a0="" class="choose_day">
-                                        <i data-v-ac2db8a0=""
-                                            class="arrow_down van-icon van-icon-arrow-down">
-                                            </i>
-                                    </div> -->
-                                </div>
-
-                                <style>
-                                    .list .it .n[data-v-65a522d0], .list .it .str[data-v-65a522d0] {
-                                                font-size: .28rem;
-                                                line-height: 1em;
-                                                font-weight: 500;
-                                            }
-
-                                        .db {
-                                            display: flex;
-                                            display: -webkit-box;
-                                            box-align: center;
-                                            -webkit-box-align: center;
-                                        }
-                                            .list .it .b[data-v-65a522d0] {
-                                            padding: .32rem 0;
-                                        }
-                                        .list .it[data-v-65a522d0] {
-                                        border-bottom: .02rem solid hsla(0, 0%, 100%, .2);
-                                    }
-                                .list .it .time[data-v-65a522d0] {
-                                        margin-top: .16rem;
-                                        color: #929292;
-                                        font-size: .24rem;
-                                        line-height: 1em;
-                                    }
-                                </style>
-                                <div data-v-ac2db8a0=""  data-v-cfc9a7fc="" class="info list">
-                                    <!---->
-                                    
-                                        
-                                       
-<!-- 
-                                    <div data-v-65a522d0="" class="it">
-                                        <div data-v-65a522d0="" class="jbox_07">
-                                            <div data-v-65a522d0="" class="jt"></div>
-                                            <div data-v-65a522d0="" class="jc c">
-                                                <div data-v-65a522d0="" class="b">
-                                                    <div data-v-65a522d0="" class="db">
-                                                        <div data-v-65a522d0="" class="flexs">
-                                                        <div class="container1">
-   <div class="header">
-    <img alt="Icon representing GPU 2 Core Computing Package" src="{{asset('')}}assets/static/img/vip1.png" style="
-    margin-right: -120px;
-"  />
-    <div class="title">
-     SeverCore Prime
-    </div>
-    <button class="status">
-  Success
-</button>
-   </div>
-   <div class="content">
-    <div class="center">
-   <div class="label1">
-        Yield
-     </div>
-    <div class="highlight">
-     1.77%
-    </div>  
-    </div>
-    <div class="row">
-     <div class="label">
-      Run currency
-     </div>
-     <div class="label">
-     Running time
-     </div>
-    </div>
-    <div class="row">
-     <div class="data">
-      USDT
-     </div>
-     <div class="data">
-      1.00 hour
-     </div>
-    </div>
-    <div class="row">
-     <div class="label">
-      Running amount
-     </div>
-     <div class="label">
-     Profit
-      
-     </div>
-    </div>
-    <div class="row">
-     <div class="data">
-     229.8365923
-     </div>
-     <div class="data">
-      4.06810768
-     </div>
-    </div>
-    <div class="row">
-     <div class="label">
-      Start time
-     </div>
-     <div class="label">
-     End time
-      
-     </div>
-    </div>
-    <div class="row">
-     <div class="data">
-     2024-10-18 20:33:20
-     </div>
-     <div class="data">
-      2024-10-18 20:33:20
-     </div>
-    </div>
+                 
+    
+    
+   
    </div>
   </div>
-                                                
+  <div class="container1">
+ 
+ <div class="content">
+ 
+  <div class="row">
+   <div class="label">
+    Team Income
+   </div>
+   <div class="label">
+   55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
+   <!----></i>
+   </div>
+  </div>
+  <div class="row">
+   <div class="data">
+    12-3-23
+   </div>
+   <div class="data">
+    Already Distrubed
+   </div>
+  </div>
+  
+  
+  
+ 
+ </div>
+</div>
+
+<div class="container1">
+ 
+ <div class="content">
+ 
+  <div class="row">
+   <div class="label">
+    Computing Power Income
+   </div>
+   <div class="label">
+   55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
+   <!----></i>
+   </div>
+  </div>
+  <div class="row">
+   <div class="data">
+    12-3-23
+   </div>
+   <div class="data">
+    Already Distrubed
+   </div>
+  </div>
+  
+  
+  
+ 
+ </div>
+</div>
                                                         
-                                                      
+                                                        <!---->
                                                     </div>
                                                 </div>
                                             </div>
@@ -607,9 +543,8 @@ margin: 0 2px;
                                     </div>
 
                                     
-                                </div> -->
+                                </div>
 
-                               
 
                             </div>
                         </div>
@@ -641,7 +576,7 @@ margin: 0 2px;
                 </div>
 
 
-                
+
             </div>
             <script>
 		window.onload = function() {

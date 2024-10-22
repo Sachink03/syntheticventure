@@ -131,9 +131,9 @@
 .name1 {
     font-size: 10px; /* Sets the text to 8px */
     text-align: left; /* Change to 'center', 'right', or another value if you want different alignment */
-    margin-right: -73px; /* Adjust margin if spacing needs to change */
+    margin-right: -80px; /* Adjust margin if spacing needs to change */
     padding: 0; /* Adjust padding if necessary */
-    color: #ffffffab;;
+    color: #00000087;;
 }
 .amount1{
     /* color: #000;
@@ -159,7 +159,7 @@
 .val{
     font-size:12px;
     font-weight: 550;
-    color: #fff;
+    color: #000;
     padding-top: 4px;
 }
 input[type=text], textarea{
@@ -182,8 +182,8 @@ input[type=text], textarea{
             margin-bottom: 20px;
         }
         .header img {
-            width: 20px;
-            height: 20px;
+            width: 50px;
+            height: 43px;
         }
         .header .title {
             font-size: 13px;
@@ -191,9 +191,15 @@ input[type=text], textarea{
             flex-grow: 1;
             text-align: center;
         }
-        .header .status {
-            color: #55b2c2;
+        .header button.status {
+            color: #000;
             font-size: 9px;
+            border: black;
+            
+    height: 21px;
+    width: 61px;
+    border-radius: 15px;
+    background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);
         }
         .content {
             font-size: 14px;
@@ -210,22 +216,17 @@ input[type=text], textarea{
         }
         .content .label {
             color: #aaaaaa;
-            padding-top: 6px;
+            /* padding-top: 6px; */
             font-size: 10px;
-            color: #aaaaaa;
-            padding-top: 6px;
-            font-size: 10px;
+            font-family: PingFang SC;
+            margin-top: -3px;
         }
         .content .label1 {
             color: #aaaaaa;
             padding-top: 6px;
             font-size: 10px;
             text-align: center;
-        .content .label1 {
-            color: #aaaaaa;
-            padding-top: 6px;
-            font-size: 10px;
-            text-align: center;
+            font-family: PingFang SC;
         }
 
 
@@ -235,13 +236,14 @@ input[type=text], textarea{
             font-weight: bold;
             text-align: center;
         
-            margin-bottom: -31px;
+            margin-bottom: -33px;
             margin-top: 2px;
         }
         .data{
             margin-top:-7px;
             font-size: 12px;
             padding-top: 4px;
+            font-family: PingFang SC;
         }
         div.date_wrapper {
 width: 265px;
@@ -319,6 +321,10 @@ margin: 0 2px;
     max-height: 300px; /* Set max height to create a scrollable area */
     overflow-y: auto; /* Allows vertical scrolling if the content exceeds the height */
 }
+.dollar{
+    font-weight: 600;
+    font-size: 13;
+}
 /* Black theme for the date picker container */
             </style>
          
@@ -356,12 +362,12 @@ margin: 0 2px;
                             
                             
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Cumulative running total(EUR)')</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> 229.8365923</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Cumulative running total(USDT)')</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span class="dollar">$</span> 229.8365923</div>
                                 </div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item2">
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Computing power income(EUR)')</div>
-                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val">4.06810768</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Computing power income(USDT)')</div>
+                                    <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span class="dollar">$</span> 4.06810768</div>
                                 </div>
                                 
                           
@@ -447,27 +453,25 @@ margin: 0 2px;
                                                         <div data-v-65a522d0="" class="flexs">
                                                         <div class="container1">
    <div class="header">
-    <img alt="Icon representing GPU 2 Core Computing Package" src="https://placehold.co/40x40" />
-    <img alt="Icon representing GPU 2 Core Computing Package" src="https://placehold.co/40x40" />
+    <img alt="Icon representing GPU 2 Core Computing Package" src="{{asset('')}}assets/static/img/vip1.png" style="
+    margin-right: -120px;
+"  />
     <div class="title">
-     GPU 2 Core Computing Package
+     SeverCore Prime
     </div>
-    <div class="status">
-     Success
-    </div>
+    <button class="status">
+  Success
+</button>
    </div>
    <div class="content">
+    <div class="center">
    <div class="label1">
-   <div class="label1">
-      Run currency
+        Yield
      </div>
     <div class="highlight">
      1.77%
     </div>  
-     </div>
-    <div class="highlight">
-     1.77%
-    </div>  
+    </div>
     <div class="row">
      <div class="label">
       Run currency
@@ -484,11 +488,11 @@ margin: 0 2px;
     </div>
     <div class="row">
      <div class="data">
-      EUR
+      USDT
      </div>
      <div class="data">
      <div class="data">
-      EUR
+      USDT
      </div>
      <div class="data">
       1.00 hour
@@ -647,7 +651,7 @@ margin: 0 2px;
 		}
 	</script>
 
-           
+   @include('layouts.upnl.footer')     
         <!----><!---->
 
           

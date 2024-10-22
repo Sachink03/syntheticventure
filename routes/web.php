@@ -63,6 +63,8 @@ Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->na
 Route::get('/run-record', [App\Http\Controllers\FrontController::class, 'run_record'])->name('run-record');
 
 Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])->name('about-us');
+Route::get('/service-agreement', [App\Http\Controllers\FrontController::class, 'agreement'])->name('service-agreement');
+
 Route::get('/services', [App\Http\Controllers\FrontController::class, 'services'])->name('services');
 Route::get('/contact-us', [App\Http\Controllers\FrontController::class, 'contact'])->name('contact-us');
 Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');

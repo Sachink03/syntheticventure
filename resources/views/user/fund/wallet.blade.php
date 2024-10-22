@@ -156,20 +156,7 @@
                             </div>
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="amount"> {{number_format(Auth::user()->available_balance(),2)}} <span data-v-6df100a6=""
                                     data-v-cfc9a7fc="">USDT</span></div>
-                            <!-- <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col">
-                            <!-- <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col">
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-left"><span data-v-6df100a6=""
-                                        data-v-cfc9a7fc=""><img data-v-6df100a6="" data-v-cfc9a7fc=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAD1BMVEUAAAAE3AAD3AAE2wAE3ABuQteJAAAABHRSTlMAgFBAnsFh3gAAADNJREFUKM9jGAXogEkBQ0jEEV2E0cVFAF2Ri4sjhiJ0ZSogIWcUIRNMISZBIDBgGAUoAABJbwaD+etRRAAAAABJRU5ErkJggg==">
-                                        {{$percentage}}% </span><span data-v-6df100a6="" data-v-cfc9a7fc="">(+${{number_format($todaysRoi,2)}})</span></div>
-                                <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right">
-                                    <span data-v-6df100a6=""
-                                        data-v-cfc9a7fc="">Pending: 0 U</span>
-                                    <span data-v-6df100a6=""
-                                        data-v-cfc9a7fc="">Pending: 0 U</span>
-                                    </div>
-                            </div> -->
-                            </div> -->
+                           
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Subscribe Amount')</div>
@@ -189,7 +176,7 @@
                                 <a href="{{route('user.strategy')}}" style="color: #fff">
                                 <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                 src="{{asset('')}}assets/static/img/deposit_i.png"> 
-                                src="{{asset('')}}assets/static/img/deposit_i.png"> 
+                       
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">@lang('Deposit')    </a></div>
                         
 

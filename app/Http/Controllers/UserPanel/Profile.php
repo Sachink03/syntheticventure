@@ -105,6 +105,20 @@ class Profile extends Controller
 
     }
 
+    public function computing_power()
+    {
+    $this->data['page'] = 'user.profile.computing-power';
+    return $this->dashboard_layout();
+
+    }
+
+    public function team_record()
+    {
+    $this->data['page'] = 'user.profile.team-record';
+    return $this->dashboard_layout();
+
+    }
+
     public function tpassword()
     {
     $this->data['page'] = 'user.profile.ChangeSecurityPass';

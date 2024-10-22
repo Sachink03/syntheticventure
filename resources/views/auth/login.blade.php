@@ -99,7 +99,11 @@
 
     </style>
     <style>
+<<<<<<< HEAD
      .iti__country-list {
+=======
+    .iti__country-list {
+>>>>>>> e4ee04219773ae473d8dddecdb79985f4278b6ea
         position: absolute;
         z-index: 2;
         list-style: none;
@@ -154,7 +158,13 @@ body {
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
+<<<<<<< HEAD
  
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+>>>>>>> e4ee04219773ae473d8dddecdb79985f4278b6ea
 </head>
 
 <body class="mein_cn">
@@ -191,6 +201,10 @@ body {
                         <div data-v-a34da882="" data-v-cfc9a7fc="" class="item">
                             <!---->
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="it input-container">
+<<<<<<< HEAD
+=======
+                               
+>>>>>>> e4ee04219773ae473d8dddecdb79985f4278b6ea
                             <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="it">
                                     <div data-v-607a0cfb="" data-v-cfc9a7fc="" class="flex inp">
 
@@ -338,6 +352,7 @@ body {
         });
     </script>
       <script>
+<<<<<<< HEAD
         var input = document.querySelector('#phone');
         var info = document.querySelector('#info');
         var status = document.getElementById('status');
@@ -375,6 +390,51 @@ body {
     </script>
 
 
+=======
+        $('.code-btn').click(function(e) {
+            e.preventDefault(); // Prevent the default form submission
+            var emailId = $('#emailId').val();
+
+            if (emailId == "") {
+                iziToast.error({
+                    message: 'Enter Email ID!',
+                    position: "topRight"
+                });
+                return false;
+
+            }
+            $.ajax({
+                type: "POST",
+                url: "{{ route('sendCodeEmail') }}",
+                data: {
+                    emailId: emailId,
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(response) {
+                    if (response) {
+                        iziToast.success({
+                            message: 'Email sent successfully',
+                            position: "topRight"
+                        });
+                    } else {
+                        iziToast.error({
+                            message: 'Error!',
+                            position: "topRight"
+                        });
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('AJAX Error:', error);
+                    iziToast.error({
+                        message: 'Error: ' + xhr.responseText,
+                        position: "topRight"
+                    });
+                }
+            });
+        });
+    </script>
+
+>>>>>>> e4ee04219773ae473d8dddecdb79985f4278b6ea
 </body>
 
 

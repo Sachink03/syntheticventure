@@ -259,7 +259,7 @@
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="container">
-                    <div data-v-9aac4ed6="" class="ft-l"><div data-v-9aac4ed6="" class="title">AI computing power</div><div data-v-9aac4ed6="" class="til">Simple, Secure, High Yield</div></div>
+                    <div data-v-9aac4ed6="" class="ft-l"><div data-v-9aac4ed6="" class="title" style="color:#fff">AI computing power</div><div data-v-9aac4ed6="" class="til">Simple, Secure, High Yield</div></div>
                     <img data-v-9aac4ed6="" class="ftw-r-img" src="https://h5.whatchat3.com/static/png/big-bg-14ffbd66.png" alt="">
                     <!-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="totalBox" style="border-radius: 4%;border-color: black;">
                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="name flex">
@@ -345,7 +345,7 @@
                                     </div>
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
                                         style="">  <span data-v-167ffb9b=""
-                                            data-v-cfc9a7fc="" class="title">Become a member</span></div>
+                                            data-v-cfc9a7fc="" class="title" style="color:#fff">Become a member</span></div>
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" 
                                         style="">  <span data-v-167ffb9b=""
                                             data-v-cfc9a7fc="" class="t" >Only members with P level 1 or above can run the computing power package</span></div>        
@@ -358,7 +358,7 @@
                                     </div>
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
                                         style="">  <span data-v-167ffb9b=""
-                                            data-v-cfc9a7fc="" class="title">Run computing power package</span></div>
+                                            data-v-cfc9a7fc="" class="title" style="color:#fff">Run computing power package</span></div>
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" 
                                         style="">  <span data-v-167ffb9b=""
                                             data-v-cfc9a7fc="" class="t" >The system will run the computing power package according to the maximum runnable amount of the current user level</span></div>        
@@ -371,7 +371,7 @@
                                     </div>
                                     <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"
                                         style="">  <span data-v-167ffb9b=""
-                                            data-v-cfc9a7fc="" class="title">distribute income</span></div>
+                                            data-v-cfc9a7fc="" class="title" style="color:#fff">distribute income</span></div>
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" 
                                         style="">  <span data-v-167ffb9b=""
                                             data-v-cfc9a7fc="" class="t" >The principal and income will be returned in one go after the operation is completed</span></div>        

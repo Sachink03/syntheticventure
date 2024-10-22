@@ -29,6 +29,10 @@ class FrontController extends Controller
     {
         return view('main.about');
     }
+    public function agreement()
+    {
+        return view('user.service-agreement');
+    }
 
     public function services()
     {

@@ -142,7 +142,7 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.strategy')}}"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> VIP{{$id}} </div>
+                        <div data-v-397da544="" class="name tac"> Confirm Package</div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
@@ -159,174 +159,123 @@
                         <div data-v-cc3ce6d2="" data-v-1fa86597="" class="levelBox" data-v-cfc9a7fc=""><img
                                 data-v-cc3ce6d2="" src="{{asset('')}}assets/static/img/lv{{$id}}.0c323966.png" class="leve-bg">
                             <div data-v-cc3ce6d2="" class="levelBox-head">
-                                <div data-v-cc3ce6d2="" class="left"><img data-v-cc3ce6d2=""
-                                        src="{{asset('')}}assets/static/img/v{{$id}}.7b83cd44.png" style="pointer-events: none;"></div>
-                                <div data-v-cc3ce6d2="" class="more">
+                                <div data-v-cc3ce6d2="" class="left">LV {{$id}}</div>
+                                {{-- <div data-v-cc3ce6d2="" class="more">
                                     <a href="{{route('user.recharge')}}">
                                    @lang('Package list')<img data-v-cc3ce6d2=""
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAAB3RSTlMAgECgUJBwE7RqWgAAAFBJREFUKM9joBtgcoAQcKBeCCHgwL1cAELAAGN5IYSAA3GQrDhpSlhBsqzISsxBsuZISpjLy8AEpgCmFkxDMa1FOIywAgzv4w4gJgUIQUcAAPJCHQUHfZ8eAAAAAElFTkSuQmCC">
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                             <div data-v-cc3ce6d2="" class="bann">
-                                <div data-v-cc3ce6d2=""
-                                    class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-autoheight">
-                                    <div class="swiper-wrapper"
-                                        style="height: 160px; transform: translate3d(0px, 0px, 0px);">
-                                        <div data-v-cc3ce6d2="" class="swiper-slide swiper-slide-active"
-                                            style="width: 385px;">
-                                            <div data-v-cc3ce6d2="" class="item">
-                                                <div data-v-cc3ce6d2="" class="has1"><img data-v-cc3ce6d2=""
-                                                        src="{{asset('')}}assets/static/img/lv{{$id}}.0c323966.png"
-                                                        style="pointer-events: none;"></div>
-                                            </div>
-                                        </div>
-                                        <div data-v-cc3ce6d2="" class="swiper-slide swiper-slide-next"
-                                            style="width: 385px;">
-                                            <div data-v-cc3ce6d2="" class="item">
-                                                <div data-v-cc3ce6d2="" class="has1"><img data-v-cc3ce6d2=""
-                                                        src="{{asset('')}}assets/static/img/lv2.a931375e.png"
-                                                        style="pointer-events: none;"></div>
-                                            </div>
-                                        </div>
-                                        <div data-v-cc3ce6d2="" class="swiper-slide" style="width: 385px;">
-                                            <div data-v-cc3ce6d2="" class="item">
-                                                <div data-v-cc3ce6d2="" class="has1"><img data-v-cc3ce6d2=""
-                                                        src="{{asset('')}}assets/static/img/lv3.6365482c.png"
-                                                        style="pointer-events: none;"></div>
-                                            </div>
-                                        </div>
-                                        <div data-v-cc3ce6d2="" class="swiper-slide" style="width: 385px;">
-                                            <div data-v-cc3ce6d2="" class="item">
-                                                <div data-v-cc3ce6d2="" class="has1"><img data-v-cc3ce6d2=""
-                                                        src="{{asset('')}}assets/static/img/lv4.22669802.png"
-                                                        style="pointer-events: none;"></div>
-                                            </div>
-                                        </div>
-                                        <div data-v-cc3ce6d2="" class="swiper-slide" style="width: 385px;">
-                                            <div data-v-cc3ce6d2="" class="item">
-                                                <div data-v-cc3ce6d2="" class="has1"><img data-v-cc3ce6d2=""
-                                                        src="{{asset('')}}assets/static/img/lv5.f80e388c.png"
-                                                        style="pointer-events: none;"></div>
-                                            </div>
-                                        </div>
-                                        <div data-v-cc3ce6d2="" class="swiper-slide" style="width: 385px;">
-                                            <div data-v-cc3ce6d2="" class="item">
-                                                <div data-v-cc3ce6d2="" class="has1"><img data-v-cc3ce6d2=""
-                                                        src="{{asset('')}}assets/static/img/lv6.dbc20bb9.png"
-                                                        style="pointer-events: none;"></div>
-                                            </div>
-                                        </div>
-                                    </div> <span class="swiper-notification" aria-live="assertive"
-                                        aria-atomic="true"></span>
-                                </div>
-                                <?php 
-                                  $nextSlide = ($id+1>4)?4:$id+1;
-                                  $previousSlide = ($id-1<1)?1:$id-1;
-                                ?>
-                                <div data-v-cc3ce6d2="" class="swiper-next" tabindex="0"  role="button"
-                                    aria-label="Next slide" aria-disabled="false">
-                                     <a href="{{route('edit',['id'=>$nextSlide])}}">
-                                    <img data-v-cc3ce6d2=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAABNVBMVEUAAAD////////////////////////////////////////////////////+//7////////////////////9//3////+//75/fr////+//73/fj////+//75/vrr+u3Y9dzP89TF8czA78fm+em878S27L77//vs+u3u++/3/fjt++/q+uzT9dnb9t7X9dvT9NjI8s+57cHF8cvA8Mjs+fD4//jD8Mvt/O/W9dv0/PXy/PPv/PHv+/Di9+bi9+Tc9+Db9t/N8tLK8dDI8c/Q89ax67q57cHr/e/1/fb+//7z/PTx+/Pf9+Lm+enh9+XS89ff9+Pe9+LK8dG98MWs6rW37b/m9+j1/Pb+//75/vrn+enx+/Pd9uPy/PPj+Obh+ObO8tP5//v9/f2v7Lq768K067zI8sy7MG6gAAAAZ3RSTlMABwoEDA4QEhYUGhgfJR0gJyEcIjAjKT0rLjos+/TZt6iVjdGGez8zJtHCurCknZeGgYB4NzYzKSXr5+Pfy8nAvqKenJBzcC/t1MrIxbKvrqypjnNraC3t4drSz8XEt7WIfnNgS0E8Y/EC1QAAAzdJREFUSMeN1mV36kAQBuBbKAnRTQLBbr0UaEuFGtRdbt2vu/z/n3BndnYrpzB0vuY8553V7Jv2lUwme55UEuvxazeUkKVld4aEqpdgd0dRKKBSqV6ExHilTArKMAyEyr1KGVCmiVA7XhECYmGBhEBw2CajCIFJY/l/l0zMI8ZmpSAJkOM4duv37W3LVHGdVI9SFiLbtqPa3f7+PsUxjBT0ByhyXbd5MDY2dpe2DIPS2A4l8l0h7ucb5fKBjywl0xhlmqAAhZnDuZGRkfnQSVumapJRFiohMnF1dnh4eK4WEUPVjuk5BOW6mdirXu/s7Mw2XWCmoRivRMbzFmaGhob2cq5vO1Z7Rh3iMpMKYy9YmL64qM8UYiFZh2VLgqOBKVWaGhwcnC56IdsjhtHU275Ul5ubm1PZIA6pRx32skk1sEh4Xi7/fWNj4zIbeB70yITJDWzIFjNekJ8cHR09W8wFXkw9UtjLNDky2aLwcpWJgYGBycUCsNC10xaGJdruEDkyCgsqx6urqxOlt8CwRzaMeoSwuDK+vLx8UioC82IRORazHYHhhMDkVz729/eP57NZZBm3C0soVvnQ19f3DhSkBcDkPOLIePaLFDKcER8ZhXVkFrCf1CKwQiGAneWk9eZnWXH8/dHRMTX5LI2dEj/Mf15ZWflagjS9bMzYaN3Sju/G+ZO1tbUJWABiDndEk0+WO0+bhGYyesXgME7EHm7JT2eLuG7Cxy47OnXa9Fb+tr6+fg4HIA5dfW6YLtXZhuN2/uX09AocnFJ9cDqdN31MRQbc1dbW1lRRd0ms471lmOAiAdfWgrwUDoHpS6E9U46u1hDcdL1en8kJ7BLWgBkdDc/C2z+Ey1VeeE1gDrAUXSb89RrhVV7d297e/lHj7klkD9OCeb4QYfV6d3d3tmbT4KjLtnm6TzlAVxzKn0Do0I+KWDcXAbyXvxyfWTnd56Ozo8htzpfL5RsaGzj2100OIFTtptFo/OMZOcqTEKoFv+ElAxn7DlLPEgMC6YXR+rOkw1Dxjp4zSE1TZkn2uieXfjxpBYx3GlKh4hlBciixEkp1ZQC1TCikw3hIjiQhVN3dizf2c/YfUshakhni7aYAAAAASUVORK5CYII=">
-                                    </a>
-                                </div>
-                                <div data-v-cc3ce6d2="" class="swiper-prev swiper-button-disabled" tabindex="0"
-                                    role="button" aria-label="Previous slide" aria-disabled="true">
-                                    <a href="{{route('edit',['id'=>$previousSlide])}}">
-                                    <img
-                                        data-v-cc3ce6d2=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAABNVBMVEUAAAD////////////////////////////////////////////////////+//7////////////////////9//3////+//75/fr////+//73/fj////+//75/vrr+u3Y9dzP89TF8czA78fm+em878S27L77//vs+u3u++/3/fjt++/q+uzT9dnb9t7X9dvT9NjI8s+57cHF8cvA8Mjs+fD4//jD8Mvt/O/W9dv0/PXy/PPv/PHv+/Di9+bi9+Tc9+Db9t/N8tLK8dDI8c/Q89ax67q57cHr/e/1/fb+//7z/PTx+/Pf9+Lm+enh9+XS89ff9+Pe9+LK8dG98MWs6rW37b/m9+j1/Pb+//75/vrn+enx+/Pd9uPy/PPj+Obh+ObO8tP5//v9/f2v7Lq768K067zI8sy7MG6gAAAAZ3RSTlMABwoEDA4QEhYUGhgfJR0gJyEcIjAjKT0rLjos+/TZt6iVjdGGez8zJtHCurCknZeGgYB4NzYzKSXr5+Pfy8nAvqKenJBzcC/t1MrIxbKvrqypjnNraC3t4drSz8XEt7WIfnNgS0E8Y/EC1QAAAzdJREFUSMeN1mV36kAQBuBbKAnRTQLBbr0UaEuFGtRdbt2vu/z/n3BndnYrpzB0vuY8553V7Jv2lUwme55UEuvxazeUkKVld4aEqpdgd0dRKKBSqV6ExHilTArKMAyEyr1KGVCmiVA7XhECYmGBhEBw2CajCIFJY/l/l0zMI8ZmpSAJkOM4duv37W3LVHGdVI9SFiLbtqPa3f7+PsUxjBT0ByhyXbd5MDY2dpe2DIPS2A4l8l0h7ucb5fKBjywl0xhlmqAAhZnDuZGRkfnQSVumapJRFiohMnF1dnh4eK4WEUPVjuk5BOW6mdirXu/s7Mw2XWCmoRivRMbzFmaGhob2cq5vO1Z7Rh3iMpMKYy9YmL64qM8UYiFZh2VLgqOBKVWaGhwcnC56IdsjhtHU275Ul5ubm1PZIA6pRx32skk1sEh4Xi7/fWNj4zIbeB70yITJDWzIFjNekJ8cHR09W8wFXkw9UtjLNDky2aLwcpWJgYGBycUCsNC10xaGJdruEDkyCgsqx6urqxOlt8CwRzaMeoSwuDK+vLx8UioC82IRORazHYHhhMDkVz729/eP57NZZBm3C0soVvnQ19f3DhSkBcDkPOLIePaLFDKcER8ZhXVkFrCf1CKwQiGAneWk9eZnWXH8/dHRMTX5LI2dEj/Mf15ZWflagjS9bMzYaN3Sju/G+ZO1tbUJWABiDndEk0+WO0+bhGYyesXgME7EHm7JT2eLuG7Cxy47OnXa9Fb+tr6+fg4HIA5dfW6YLtXZhuN2/uX09AocnFJ9cDqdN31MRQbc1dbW1lRRd0ms471lmOAiAdfWgrwUDoHpS6E9U46u1hDcdL1en8kJ7BLWgBkdDc/C2z+Ey1VeeE1gDrAUXSb89RrhVV7d297e/lHj7klkD9OCeb4QYfV6d3d3tmbT4KjLtnm6TzlAVxzKn0Do0I+KWDcXAbyXvxyfWTnd56Ozo8htzpfL5RsaGzj2100OIFTtptFo/OMZOcqTEKoFv+ElAxn7DlLPEgMC6YXR+rOkw1Dxjp4zSE1TZkn2uieXfjxpBYx3GlKh4hlBciixEkp1ZQC1TCikw3hIjiQhVN3dizf2c/YfUshakhni7aYAAAAASUVORK5CYII=">
-                                    </a>
-                                </div>
-                                <div data-v-cc3ce6d2=""
-                                    class="pagination swiper-pagination-clickable swiper-pagination-bullets"><span
-                                        class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
-                                        role="button" aria-label="Go to slide 1"></span><span
-                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                        aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
-                                        tabindex="0" role="button" aria-label="Go to slide 3"></span><span
-                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                        aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
-                                        tabindex="0" role="button" aria-label="Go to slide 5"></span><span
-                                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                                        aria-label="Go to slide 6"></span></div>
+                               <div>
+                                <img data-v-cc3ce6d2="" src="{{ asset('')}}assets/static/img/vip7.png">
+                            </div>
+                                
 										
                                 <div data-v-cc3ce6d2="" class="cur-level">
+                                    @php
+                                    $package=["ServerCore","ServerCore Prime","ServerCore Plus","ServerCore Max","ServerCore Pro","ServerCore Edge","ServerCore Hub"]
+
+                                   @endphp
 									
-								<span data-v-cc3ce6d2="">VIP{{$profile->id}}
+								<span data-v-cc3ce6d2="">{{$package[$id-1]}}
                                         </span></div>
                             </div>
-                            <ul data-v-cc3ce6d2="">
-                                <li data-v-cc3ce6d2="">
-                                    <div data-v-cc3ce6d2="" class="flex1">Earning Range</div>
-                                    <div data-v-cc3ce6d2="" class="s">   @if ($profile->id==1)
-                                        1% to 1.3%
-                                        @elseif ($profile->id==2)
-                                        1.3% to 1.5%
-                                        @elseif($profile->id==3)
-                                        1.5% to 2%
-                                        @else
-                                        2% to 2.5%
-                                        @endif</div>
-                                </li>
-                                <li data-v-cc3ce6d2="">
-                                    <div data-v-cc3ce6d2="" class="flex1">Team Rewards</div>
-                                    <div data-v-cc3ce6d2="" class="s">{{ $profile->level1}}%|{{ $profile->level2}}%|{{ $profile->level3}}%|</div>
-                                </li>
-                                <li data-v-cc3ce6d2="" class="next-level">
-                                    <div data-v-cc3ce6d2="" class="flex1">@lang('Investment range')</div>
-                                    <div data-v-cc3ce6d2="" class="s">
-                                        <div data-v-cc3ce6d2="" class="teamCount">
-                                            <div data-v-cc3ce6d2=""> ${{ $profile->min}} -{{ ($profile->mix)?"$".$profile->mix:"Above"}}<img data-v-cc3ce6d2=""
-                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAOVBMVEX///8AAAAODg7////////////h4eH///////////+FhYUsLCxqamr///////////+lpaWVlZVKSko8tlaaAAAAE3RSTlOAAIBwEAiAeFBIgICAaDAYgICAwZP9dQAAAMtJREFUOMuV1NEWgyAIBmAyCVzTtr3/w06XR1h4sv6bbr7DoYBgasHEkQAocsJJpREfCCTsDcEAhwT8J34Gk9lrsonQZhMiNUydSrAJY7AS6dQk7MTDSfyP8BkJhSD08nztT8JMUlc4V03KhPvCPeokMomnAmImbXjL0hFAmTSxrosSLYp8nCtGhBBqVYoxgmq7YkSodhm0UUJeOoEyWsinQ9LmKADLGAMo8z4IvrIM45UaL+Z4vcdHMj61Owdb4xkkFMzZj38eNjfJF4TTBjZGDKh+AAAAAElFTkSuQmCC">
-                                            </div>
-                                            <div data-v-cc3ce6d2="" style="display: none;"> B: 0 @lang('People') 0/0 <img
-                                                    data-v-cc3ce6d2=""
-                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAS1BMVEUAAACj/3ym/32m/3ym/36m/32l/3yf/4Cf/3Cl/3um/32m/3ym/32l/32n/3qm/30NDQ1ZhUUgKxtGaDeT4W+T4G9tpFNjlEwzSSmgfRuoAAAAD3RSTlMAIO+g39+QEBBg0M+PMGAvI4cvAAAA4ElEQVQ4y63TS5KDMAwEUJCIP3ymPQyT5P4nDSbEVpBxZZFev2oJSm5ynOeBABrYu6aU1hByuFXAjThkdIeKC1Qub0VTFNpMqqPS45JQ5rXPiNOM+xhU8hzFNWKisCjl74otFLfxRRHCbnyao0T4xRZeyVAV6FdC2LMsBQFaSRLzvGgBCHIPYTVKQAz6n6NRgvZ1s8lCrMuQRoj80R7CSJF/nSVpjgLbORgIczsI/vQYGlO/hRjbnYnOpvPuTkQrHklXFFMCqUd3yFijNrX62TNyyIgK2eS5J4B6/rHN1/MAcuUvL+WPD1EAAAAASUVORK5CYII=">
-                                            </div>
-                                            <div data-v-cc3ce6d2="" style="display: none;"> C: 0 @lang('People') 0/0 <img
-                                                    data-v-cc3ce6d2=""
-                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAMAAAANmfvwAAAAS1BMVEUAAACj/3ym/32m/3ym/36m/32l/3yf/4Cf/3Cl/3um/32m/3ym/32l/32n/3qm/30NDQ1ZhUUgKxtGaDeT4W+T4G9tpFNjlEwzSSmgfRuoAAAAD3RSTlMAIO+g39+QEBBg0M+PMGAvI4cvAAAA4ElEQVQ4y63TS5KDMAwEUJCIP3ymPQyT5P4nDSbEVpBxZZFev2oJSm5ynOeBABrYu6aU1hByuFXAjThkdIeKC1Qub0VTFNpMqqPS45JQ5rXPiNOM+xhU8hzFNWKisCjl74otFLfxRRHCbnyao0T4xRZeyVAV6FdC2LMsBQFaSRLzvGgBCHIPYTVKQAz6n6NRgvZ1s8lCrMuQRoj80R7CSJF/nSVpjgLbORgIczsI/vQYGlO/hRjbnYnOpvPuTkQrHklXFFMCqUd3yFijNrX62TNyyIgK2eS5J4B6/rHN1/MAcuUvL+WPD1EAAAAASUVORK5CYII=">
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </li>
-                            </ul>
+                          
                         </div>
-                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="buySeting">
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="title flex"><img data-v-1fa86597=""
+                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="buySeting" style="background:none">
+                            {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="title flex"><img data-v-1fa86597=""
                                     data-v-cfc9a7fc=""
                                     src="data:image/png;base64,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">
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex1"> @lang('Arbitrage parameters') </div>
-                            </div>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex1"> @lang('Package Information') </div>
+                            </div> --}}
                             <ul data-v-1fa86597="" data-v-cfc9a7fc="" class="com-1">
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Subscription</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                        @if($id=="1")
+                                           $30
+                                        @elseif($id=="2")
+                                        $120
+                                        @elseif($id=="3")
+                                        $300
+                                        @elseif($id=="4")
+                                        $1200
+                                        @elseif($id=="5")
+                                        $3600
+                                        @elseif($id=="6")
+                                        $6000
+                                        @elseif($id=="7")
+                                        $15000
+                                        @endif
+
+                                    </div>
+                                </li>
+                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">@if ($profile->id==1)
-                                        1% to 1.3%
-                                        @elseif ($profile->id==2)
-                                        1.3% to 1.5%
-                                        @elseif($profile->id==3)
-                                        1.5% to 2%
-                                        @else
-                                        2% to 2.5%
-                                        @endif  </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                        @if($id=="1")
+                                           $1
+                                        @elseif($id=="2")
+                                        $4
+                                        @elseif($id=="3")
+                                        $10
+                                        @elseif($id=="4")
+                                        $40
+                                        @elseif($id=="5")
+                                        $120
+                                        @elseif($id=="6")
+                                        $200
+                                        @elseif($id=="7")
+                                        $500
+                                        @endif
+
+                                    </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Investment range</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> ${{ $profile->min}} - {{ ($profile->mix)?"$".$profile->mix:"Above"}} </div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Subscription Duration')</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">  60 @lang('Days')</div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Duration')</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> {{ $profile->days}} @lang('Days')</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Total Reward</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                        @if($id=="1")
+                                           $60
+                                        @elseif($id=="2")
+                                        $240
+                                        @elseif($id=="3")
+                                        $600
+                                        @elseif($id=="4")
+                                        $2400
+                                        @elseif($id=="5")
+                                        $7200
+                                        @elseif($id=="6")
+                                        $12000
+                                        @elseif($id=="7")
+                                        $30000
+                                        @endif
+
+                                    </div>
+                                </li>
+                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Run Time</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                        1 hour
+
+                                    </div>
+                                </li>
+                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Maximum Quantity</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                        1 
+                                    </div>
                                 </li>
                             </ul>
 							
                             <form method="post" name="add" action="{{ route('user.confirmDeposit') }}" onsubmit="return validateForm()">
                                 {{ csrf_field() }}
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
+                                {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
                                         <input data-v-1fa86597="" data-v-cfc9a7fc="" id="amount" name="Sum" type="text" style="color:white;" placeholder="Enter Amount">
                                     </div>
@@ -351,12 +300,12 @@
                                     
                                 </div>
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
-                                </br></br></br>
+                                </br></br></br> --}}
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
-                                    <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Create') </button>
+                                    <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Confirm') </button>
                                 </div>
                             </form>
-                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
+                            {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
                                 <div data-v-1fa86597="" role="checkbox" tabindex="0" aria-checked="true"
                                     class="van-checkbox" data-v-cfc9a7fc="">
                                     <div
@@ -368,7 +317,7 @@
                                                 data-v-1fa86597="">[@lang('the Fund Agreement')]</span></div>
                                     </span>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                       
                     </div>
@@ -376,7 +325,7 @@
                 </div>
             </div>
 
-            <script>
+            {{-- <script>
                 function validateForm() {
                     var amount = document.getElementById('amount').value;
                     var minAmount = {{ $profile->min }};
@@ -399,6 +348,6 @@
             
                     return true;
                 }
-            </script>
+            </script> --}}
          
             @include('layouts.upnl.footer')

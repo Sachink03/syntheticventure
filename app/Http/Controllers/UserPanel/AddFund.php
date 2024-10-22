@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Hexters\CoinPayment\CoinPayment;
 use App\Models\CoinpaymentTransaction;
+use Illuminate\Support\Facades\Http;
+
 use Log;
 use Redirect;
 class AddFund extends Controller
@@ -78,8 +80,17 @@ return $this->dashboard_layout();
 
 }
 
+public function fund(Request $request)
+{
 
-public function confirmDeposit(Request $request)
+   
+$this->data['page'] = 'user.fund.addFund';
+return $this->dashboard_layout();
+
+}
+
+
+public function confirmDeposit(Request $request) 
 {
 try{
  $validation =  Validator::make($request->all(), [

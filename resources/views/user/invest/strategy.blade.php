@@ -235,6 +235,11 @@
     .content-container{
         position: relative; 
     }
+
+   .mini {
+    font-size: 14px;
+    font-weight: 500;
+}
 </style>
 <body class="mein_cn">
     <div id="app" class="applang">
@@ -611,38 +616,65 @@
                     <div data-v-167ffb9b="" 
                        >
                        <div data-v-167ffb9b="" class="popBox" style="background: none;" id="popBox">
+                         @php
+                          $vip = 1;
+
+// Determine VIP level based on conditions
+if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
+    $vip = 7;
+} elseif ($active_gen_team1total >= 15 && $active_gen_team23total >= 20) {
+  $vip = 6;
+} elseif ($active_gen_team1total >= 8 && $active_gen_team23total >= 15) {
+    $vip = 5;
+} elseif ($active_gen_team1total >= 5 && $active_gen_team23total >= 10) {
+    $vip = 4;
+} elseif ($active_gen_team1total >= 3 && $active_gen_team23total >= 5) {
+    $vip = 3;
+} elseif ($active_gen_team1total >= 2) {
+    $vip = 2;
+} elseif ($active_gen_team1total > 0 || $active_gen_team2total > 0 || $active_gen_team3total > 0) {
+    $vip = 1;
+}
+
+       
+
+@endphp
                             
                            
                             <ul data-v-167ffb9b="" class="cllist" style="scroll:none">
-                                <li data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                <li class="serverCoreItem" data-id="1" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%); color: #000;">
                                     <div data-v-167ffb9b="" class="title">ServerCore</div>
                                     <div data-v-167ffb9b="" class="mini">$30</div>
                                     <div data-v-167ffb9b="" class="rate">
-                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">.33%</span>
-                                            Yield
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom: 5px;">
+                                            <span style="color: #170529d9;" data-v-167ffb9b="">$1</span> Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
-                                           </div>
-                                         
-                                            <div style="font-size:11px">1 hour</div>
-
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top: 5px;">
+                                            <div><span style="font-size: 11px; margin-right: 269px;">1 times</span></div>
+                                            <div style="font-size: 11px;">1 hour</div>
                                         </div>
                                     </div>
-                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
-                                        src="{{ asset('') }}assets/static/img/lock.png"> Locked
-                                    </div><img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip1.png" style="padding:8px;bottom:43"class="img">
-                                        <div class="flex" style="opacity:0.7">
-                                        <div style="margin-right:180px">  Daily Run Times</div>
-                                        <div> Running time</div>
-                                        </div>
-
-                                </li>
-                                <li data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                    @if($vip >= 1)
+                                    <div data-v-167ffb9b="" class="lv">
+                                        <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv">
+                                        <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/vip1.png" style="padding: 8px; bottom: 43px;" class="img">
+                                    <div class="flex" style="opacity: 0.7;">
+                                        <div style="margin-right: 180px;">Daily Run Times</div>
+                                        <div>Running time</div>
+                                    </div>
+                                </li>                                
+                                <li class="serverCoreItem" data-id="2" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
                                     <div data-v-167ffb9b="" class="title">ServerCore Prime</div>
                                     <div data-v-167ffb9b="" class="mini">$120</div>
                                     <div data-v-167ffb9b="" class="rate">
-                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">.33%</span>
-                                            Yield
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$4</span>
+                                            Daily Reward
                                         </div>
                                         <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
                                            </div>
@@ -651,21 +683,28 @@
 
                                         </div>
                                     </div>
+                                    @if($vip>=2)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/lock.png"> Locked
-                                    </div><img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip2.png" style="padding:8px;bottom:43"class="img">
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip2.png" style="padding:8px;bottom:43"class="img">
                                         <div class="flex" style="opacity:0.7">
                                         <div style="margin-right:180px">  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
                                 </li>
-                                <li data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                <li class="serverCoreItem" data-id="3" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
                                     <div data-v-167ffb9b="" class="title">ServerCore Plus</div>
                                     <div data-v-167ffb9b="" class="mini">$300</div>
                                     <div data-v-167ffb9b="" class="rate">
-                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">.33%</span>
-                                            Yield
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$10</span>
+                                            Daily Reward
                                         </div>
                                         <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
                                            </div>
@@ -674,21 +713,28 @@
 
                                         </div>
                                     </div>
+                                    @if($vip>=3)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/lock.png"> Locked
-                                    </div><img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip3.png" style="padding:8px;bottom:43"class="img">
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip3.png" style="padding:8px;bottom:43"class="img">
                                         <div class="flex" style="opacity:0.7">
                                         <div style="margin-right:180px">  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
                                 </li>
-                                <li data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                <li class="serverCoreItem" data-id="4" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
                                     <div data-v-167ffb9b="" class="title">ServerCore Max</div>
                                     <div data-v-167ffb9b="" class="mini">$1200</div>
                                     <div data-v-167ffb9b="" class="rate">
-                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">.33%</span>
-                                            Yield
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$40</span>
+                                            Daily Reward
                                         </div>
                                         <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
                                            </div>
@@ -697,21 +743,28 @@
 
                                         </div>
                                     </div>
+                                    @if($vip>=4)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/lock.png"> Locked
-                                    </div><img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip4.png" style="padding:8px;bottom:43"class="img">
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip4.png" style="padding:8px;bottom:43"class="img">
                                         <div class="flex" style="opacity:0.7">
                                         <div style="margin-right:180px">  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
                                 </li>
-                                <li data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                <li class="serverCoreItem" data-id="5" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
                                     <div data-v-167ffb9b="" class="title">ServerCore Pro</div>
                                     <div data-v-167ffb9b="" class="mini">$3600</div>
                                     <div data-v-167ffb9b="" class="rate">
-                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">.33%</span>
-                                            Yield
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$120</span>
+                                            Daily Reward
                                         </div>
                                         <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
                                            </div>
@@ -719,22 +772,29 @@
                                             <div style="font-size:11px">1 hour</div>
 
                                         </div>
+                                    </div> 
+                                    @if($vip>=5)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
                                     </div>
+                                    @else
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/lock.png"> Locked
-                                    </div><img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip5.png" style="padding:8px;bottom:43"class="img">
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip5.png" style="padding:8px;bottom:43"class="img">
                                         <div class="flex" style="opacity:0.7">
                                         <div style="margin-right:180px">  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
                                 </li>
-                                <li data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                <li class="serverCoreItem" data-id="6" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
                                     <div data-v-167ffb9b="" class="title">ServerCore Edge</div>
                                     <div data-v-167ffb9b="" class="mini">$6000</div>
                                     <div data-v-167ffb9b="" class="rate">
-                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">.33%</span>
-                                            Yield
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$200</span>
+                                            Daily Reward
                                         </div>
                                         <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
                                            </div>
@@ -743,21 +803,28 @@
 
                                         </div>
                                     </div>
+                                    @if($vip>=6)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/lock.png"> Locked
-                                    </div><img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip6.png" style="padding:8px;bottom:43"class="img">
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip6.png" style="padding:8px;bottom:43"class="img">
                                         <div class="flex" style="opacity:0.7">
                                         <div style="margin-right:180px">  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
                                 </li>
-                                <li data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                <li class="serverCoreItem" data-id="7" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
                                     <div data-v-167ffb9b="" class="title">ServerCore Hub</div>
                                     <div data-v-167ffb9b="" class="mini">$15000</div>
                                     <div data-v-167ffb9b="" class="rate">
-                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">.33%</span>
-                                            Yield
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$500</span>
+                                            Daily Reward
                                         </div>
                                         <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
                                            </div>
@@ -766,9 +833,16 @@
 
                                         </div>
                                     </div>
+                                    @if($vip>=7)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/lock.png"> Locked
-                                    </div><img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip7.png" style="padding:8px;bottom:43"class="img">
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip7.png" style="padding:8px;bottom:43"class="img">
                                         <div class="flex" style="opacity:0.7">
                                         <div style="margin-right:180px">  Daily Run Times</div>
                                         <div> Running time</div>
@@ -825,8 +899,27 @@
                   popBox.style.display = 'block'; // Show popBox
                   orderList.style.display = 'none'; // Hide orderList
                 });
+
+                document.querySelectorAll('.serverCoreItem').forEach(function(item) {
+    item.addEventListener('click', function() {
+        // Check if the element contains the unlocked image
+        var isUnlocked = item.querySelector('.lv img[src*="unlock.png"]');
+
+        if (isUnlocked) {
+            // Get the data-id value for dynamic redirection
+            var dataId = item.getAttribute('data-id');
+            // Redirect to the corresponding page using the data-id
+            window.location.href = `/user/edit/${dataId}`;
+        } else {
+            // Optionally show a message or prevent action
+            alert('This item is locked.');
+        }
+    });
+});
+
               </script>
-              
+          
+            
           
 
             @include('layouts.upnl.footer')

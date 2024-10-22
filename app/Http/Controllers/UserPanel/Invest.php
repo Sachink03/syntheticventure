@@ -121,7 +121,64 @@ class Invest extends Controller
     
     
         $notes = DB::table('plans')->get();
-    
+
+        
+        $my_level_team=$this->my_level_team_count($user->id);
+        $gen_team1 =  (array_key_exists(1,$my_level_team) ? $my_level_team[1]:array());
+        $gen_team2 =  (array_key_exists(2,$my_level_team) ? $my_level_team[2]:array());
+        $gen_team3 =  (array_key_exists(3,$my_level_team) ? $my_level_team[3]:array());
+      
+        $gen_team1 = User::where(function($query) use($gen_team1)
+                {
+                  if(!empty($gen_team1)){
+                    foreach ($gen_team1 as $key => $value) {
+                    //   $f = explode(",", $value);
+                    //   print_r($f)."<br>";
+                      $query->orWhere('id', $value);
+                    }
+                  }else{$query->where('id',null);}
+                })->orderBy('id', 'DESC')->get();
+                
+          $gen_team2 = User::where(function($query) use($gen_team2)
+                {
+                  if(!empty($gen_team2)){
+                    foreach ($gen_team2 as $key => $value) {
+                    //   $f = explode(",", $value);
+                    //   print_r($f)."<br>";
+                      $query->orWhere('id', $value);
+                    }
+                  }else{$query->where('id',null);}
+                })->orderBy('id', 'DESC')->get();
+           $gen_team3 = User::where(function($query) use($gen_team3)
+                {
+                  if(!empty($gen_team3)){
+                    foreach ($gen_team3 as $key => $value) {
+                    //   $f = explode(",", $value);
+                    //   print_r($f)."<br>";
+                      $query->orWhere('id', $value);
+                    }
+                  }else{$query->where('id',null);}
+                })->orderBy('id', 'DESC')->get();
+  
+  
+        
+  // Calculate totals
+$gen_team1total = $gen_team1->count();
+$active_gen_team1total = $gen_team1->where('active_status', 'Active')->count();
+
+$gen_team2total = $gen_team2->count();
+$active_gen_team2total = $gen_team2->where('active_status', 'Active')->count();
+
+$gen_team3total = $gen_team3->count();
+$active_gen_team3total = $gen_team3->where('active_status', 'Active')->count();
+
+// Combine totals for team 2 and team 3
+$active_gen_team23total = $active_gen_team2total + $active_gen_team3total;
+
+
+$this->data['active_gen_team1total'] = $gen_team1total;
+$this->data['active_gen_team23total'] = $active_gen_team23total;
+
         $this->data['recharges'] = ($invest_check) ? $invest_check : [];
         $this->data['data'] = $notes;
         $this->data['todaysIncome'] = $todaysIncome;

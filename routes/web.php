@@ -147,6 +147,8 @@ Route::get('/wallet', [App\Http\Controllers\UserPanel\AddFund::class, 'index'])-
 Route::get('/fundpass', [App\Http\Controllers\UserPanel\AddFund::class, 'fundpass'])->name('user.fundpass');
 Route::get('/recharge1', [App\Http\Controllers\UserPanel\AddFund::class, 'fundHistory'])->name('user.recharge1');
 Route::any('/SubmitBuyFund', [App\Http\Controllers\UserPanel\AddFund::class, 'SubmitBuyFund'])->name('user.SubmitBuyFund');
+Route::get('/rechargeFunds', [App\Http\Controllers\UserPanel\AddFund::class, 'fund'])->name('user.fund');
+
 // end add fund
 
 // invest
@@ -169,6 +171,9 @@ Route::get('/cancel-payment/{id}', [App\Http\Controllers\UserPanel\Invest::class
 Route::post('/fundActivation', [App\Http\Controllers\UserPanel\Invest::class, 'fundActivation'])->name('user.fundActivation');
 Route::any('/confirmDeposit', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposit'])->name('user.confirmDeposit');
 Route::any('/confirmDeposit_new', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposit_new'])->name('user.confirmDeposit_new');
+
+
+Route::any('/confirmFundDeposit', [App\Http\Controllers\UserPanel\AddFund::class, 'confirmDeposit'])->name('user.confirmFundDeposit');
 
 Route::get('/DepositHistory', [App\Http\Controllers\UserPanel\Invest::class, 'invest_list'])->name('user.DepositHistory');
 

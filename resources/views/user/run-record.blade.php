@@ -131,9 +131,9 @@
 .name1 {
     font-size: 10px; /* Sets the text to 8px */
     text-align: left; /* Change to 'center', 'right', or another value if you want different alignment */
-    margin-right: -73px; /* Adjust margin if spacing needs to change */
+    margin-right: -80px; /* Adjust margin if spacing needs to change */
     padding: 0; /* Adjust padding if necessary */
-    color: #ffffffab;;
+    color: #00000087;;
 }
 .amount1{
     /* color: #000;
@@ -160,6 +160,7 @@
     font-size:12px;
     font-weight: 550;
     color: #000;
+    color: #000;
     padding-top: 4px;
 }
 input[type=text], textarea{
@@ -182,8 +183,8 @@ input[type=text], textarea{
             margin-bottom: 20px;
         }
         .header img {
-            width: 20px;
-            height: 20px;
+            width: 50px;
+            height: 43px;
         }
         .header .title {
             font-size: 13px;
@@ -193,7 +194,15 @@ input[type=text], textarea{
         }
         .header button.status {
             color: #000;
+        .header button.status {
+            color: #000;
             font-size: 9px;
+            border: black;
+            
+    height: 21px;
+    width: 61px;
+    border-radius: 15px;
+    background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);
             border: black;
             
     height: 21px;
@@ -216,22 +225,17 @@ input[type=text], textarea{
         }
         .content .label {
             color: #aaaaaa;
-            padding-top: 6px;
+            /* padding-top: 6px; */
             font-size: 10px;
-            color: #aaaaaa;
-            padding-top: 6px;
-            font-size: 10px;
+            font-family: PingFang SC;
+            margin-top: -3px;
         }
         .content .label1 {
             color: #aaaaaa;
             padding-top: 6px;
             font-size: 10px;
             text-align: center;
-        .content .label1 {
-            color: #aaaaaa;
-            padding-top: 6px;
-            font-size: 10px;
-            text-align: center;
+            font-family: PingFang SC;
         }
 
 
@@ -242,12 +246,14 @@ input[type=text], textarea{
             text-align: center;
         
             margin-bottom: -33px;
+            margin-bottom: -33px;
             margin-top: 2px;
         }
         .data{
             margin-top:-7px;
             font-size: 12px;
             padding-top: 4px;
+            font-family: PingFang SC;
         }
         div.date_wrapper {
 width: 265px;
@@ -324,6 +330,10 @@ margin: 0 2px;
     scroll-behavior: smooth; /* Enables smooth scrolling */
     max-height: 300px; /* Set max height to create a scrollable area */
     overflow-y: auto; /* Allows vertical scrolling if the content exceeds the height */
+}
+.dollar{
+    font-weight: 600;
+    font-size: 13;
 }
 .dollar{
     font-weight: 600;
@@ -462,8 +472,9 @@ margin: 0 2px;
                                                         <div data-v-65a522d0="" class="flexs">
                                                         <div class="container1">
    <div class="header">
-    <img alt="Icon representing GPU 2 Core Computing Package" src="https://placehold.co/40x40" />
-    <img alt="Icon representing GPU 2 Core Computing Package" src="https://placehold.co/40x40" />
+    <img alt="Icon representing GPU 2 Core Computing Package" src="{{asset('')}}assets/static/img/vip1.png" style="
+    margin-right: -120px;
+"  />
     <div class="title">
      SeverCore Prime
      SeverCore Prime
@@ -476,17 +487,14 @@ margin: 0 2px;
 </button>
    </div>
    <div class="content">
-   <div class="label1">
+    <div class="center">
    <div class="label1">
         Yield
      </div>
     <div class="highlight">
      1.77%
     </div>  
-     </div>
-    <div class="highlight">
-     1.77%
-    </div>  
+    </div>
     <div class="row">
      <div class="label">
       Run currency
@@ -503,11 +511,7 @@ margin: 0 2px;
     </div>
     <div class="row">
      <div class="data">
-      EUR
-     </div>
-     <div class="data">
-     <div class="data">
-      EUR
+      USDT
      </div>
      <div class="data">
      <div class="data">
@@ -670,6 +674,7 @@ margin: 0 2px;
 		}
 	</script>
 
+   @include('layouts.upnl.footer')     
    @include('layouts.upnl.footer')     
         <!----><!---->
 

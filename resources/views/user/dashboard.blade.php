@@ -341,7 +341,7 @@
                                 
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc="">
-                                        <a href="{{route('run-record')}}" style="color:white;">
+                                        <a href="{{route('user.strategy')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/13.png" class="icon-custom">
@@ -349,21 +349,21 @@
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;"><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="#" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/14.png" class="icon-custom">
                                              <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Tutorial')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.team')}}" style="color:white;"><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.invite')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png" class="icon-custom">
                                         <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Invitation')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.invite')}}" style="color:white;">
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/15.png" class="icon-custom">
@@ -397,7 +397,7 @@
                                        
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
                                           
-                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount" style="font-size: .25rem;">Today's training progress</div>
+                                           
                                            
                                         </div>
                                     </li>

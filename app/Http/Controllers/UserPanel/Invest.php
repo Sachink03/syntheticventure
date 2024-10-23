@@ -176,7 +176,11 @@ $active_gen_team3total = $gen_team3->where('active_status', 'Active')->count();
 $active_gen_team23total = $active_gen_team2total + $active_gen_team3total;
 
 
-$this->data['active_gen_team1total'] = $gen_team1total;
+$this->data['active_gen_team1total'] = $active_gen_team1total;
+$this->data['active_gen_team2total'] = $active_gen_team2total;
+$this->data['active_gen_team3total'] = $active_gen_team3total;
+
+
 $this->data['active_gen_team23total'] = $active_gen_team23total;
 
         $this->data['recharges'] = ($invest_check) ? $invest_check : [];

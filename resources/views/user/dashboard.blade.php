@@ -386,10 +386,10 @@
                                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">@lang('Daily Yield')</div>
                                         </div>
                                     </li>
-                                    <li data-v-6df716d9="" data-v-cfc9a7fc="" class="x">
+                                    <!-- <li data-v-6df716d9="" data-v-cfc9a7fc="" class="x">
                                         <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style="width:100%"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons"><div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;"><div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 50%;"><div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50" aria-orientation="horizontal" class="van-slider__button-wrapper"><div class="van-slider__button"></div></div></div></div></div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 0% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 100% </div></div></div>
 
-                                    </li>
+                                    </li> -->
                                     <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                        
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
@@ -406,14 +406,15 @@
 
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con" style="margin-top:0">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                        <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Make Profit')</div>
+
+                                        <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Assets')</div>
                                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span>
                                             <img data-v-6df716d9="" 
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/pie.png" style="height: .5rem;width: .5rem;margin-right: 20px;">
                                         </span> 
                                             
-                                            <span style="padding-top: 35px;">{{currency()}}  {{number_format(Auth::user()->available_balance()+Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</span></div>
+                                           <a href="{{route('user.recharge')}}"><span style="padding-top: 35px;">{{currency()}}  {{number_format(Auth::user()->available_balance()+Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</span> </a> </div>
                                     </div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Node Partner')</div>

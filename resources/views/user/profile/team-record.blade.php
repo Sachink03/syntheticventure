@@ -174,6 +174,7 @@ input[type=text], textarea{
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            font-family: PingFang SC;
         }
         .header img {
             width: 50px;
@@ -207,7 +208,7 @@ input[type=text], textarea{
             /* color: #aaaaaa; */
             color: #fff;
             /* padding-top: 6px; */
-            font-size: 12px;
+            font-size: 10px;
             font-family: PingFang SC;
             margin-top: -3px;
         }
@@ -318,12 +319,11 @@ margin: 0 2px;
 /* Black theme for the date picker container */
 
 .invest {
-            background-color: #2a2a2a;
-            border-radius: 10px;
-            padding: 20px 40px;
+          
+            padding: 0px 22px;
             display: flex;
             justify-content: space-between;
-            width: 100%;
+           
         }
         .invest div {
             text-align: center;
@@ -337,7 +337,7 @@ margin: 0 2px;
         .invest div .content {
             font-size: 14px;
             color: #ffff;
-            padding-top:8px;
+            padding-top:4px;
             font-family: PingFang SC;
         }
 
@@ -347,6 +347,8 @@ margin: 0 2px;
             background-color: #2b2b2b;
             border-radius: 5px;
             margin: 15px auto;
+            padding-top: 8px;
+    padding-bottom: 3px;
         }
         .header {
             font-size: 14px;
@@ -359,17 +361,96 @@ margin: 0 2px;
             color: #b3b3b3;
         }
         .item {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            font-family: PingFang SC;
         }
         .label {
-            font-size: 12px;
+            font-size: 10px;
             color: #f4fafa59;
         }
         .value {
             float: right;
+            font-size: 12px;
+        }
+        .member-level {
+            background-color: #2b3c4d;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .member-level img {
+            margin-right: 10px;
         }
 
+        .team {
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding-top: 1px;
+    padding-bottom: 8px;
+        }
+        .team div {
+            margin: 5px 0;
+        }
+        .earnings {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+        }
+        .total-earnings {
+            color: #00ffff;
+            font-size: 24px;
+        }
+        .earnings-generation {
+            color: #cccccc;
+        }
+        .member-level {
+            background-color: #2b3c4d;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .member-level img {
+            margin-right: 10px;
+        }
+      .title{
+
+      }
         
+      .left_title[data-v-397da544] {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.container {
+    padding: 8px .4rem;
+}
+.head_right[data-v-397da544] {
+    margin-right: 139px;
+}
+a {
+    text-decoration: none;
+    color: #ebf4f2;
+    font-size: 22px;
+}
+.head_right[data-v-397da544] {
+    margin-left: auto;
+    font-size: 12px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 50%;
+    width: 5rem;
+    margin-left: -2.5rem;
+}
             </style>
          
 
@@ -380,13 +461,14 @@ margin: 0 2px;
                 <div data-v-397da544="" data-v-6df100a6="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <!---->
-                        <div data-v-397da544="" class="left_title">@lang('Computing Power Income') </div>
+                        <div data-v-397da544="" class="left_title"><a href="{{route('user.recharge')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <!----></i></a></div>
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
                         <!---->
-                        <div data-v-397da544="" class="head_right"></div>
+                        <div data-v-397da544="" class="head_right">@lang('Team Income Details')</div>
                     </div>
                 </div>
             </div>
@@ -428,6 +510,7 @@ margin: 0 2px;
         </div>
         <button class="button">Claim</button>
     </div> -->
+    <div class="team">
     <div class="invest">
         <div>
             <span>Total Investment:</span>
@@ -439,31 +522,36 @@ margin: 0 2px;
         </div>
     </div>
 
+   <div class="member-level">
+    <img alt="Icon representing current member level" height="20" src="https://storage.googleapis.com/a1aa/image/mtac1Dr36naAO9FdxKG7fsawn02USkfJ7Hspfwrek6uSkMmOB.jpg" width="20"/>
+    <span>
+     Current Member Level: V2
+    </span>
+   </div>
+  </div>
+
     <div class="history">
-        <div class="header">
-            Computing power income
+        <!-- <div class="header">
+            Team income
             <span class="status">Already Disbursed</span>
-        </div>
+        </div> -->
         <div class="item">
-            <span class="label">Run product</span>
-            <span class="value">GPU 4-core computing package</span>
-        </div>
-        <div class="item">
-            <span class="label">Earning Currency</span>
-            <span class="value">EUR</span>
+            <span class="label">User Name</span>
+            <span class="value">11223344</span>
         </div>
         <div class="item">
             <span class="label">Quantity</span>
-            <span class="value">5.57189603</span>
+            <span class="value">0.856373</span>
         </div>
         <div class="item">
-            <span class="label">Running total</span>
-            <span class="value">327.84449773</span>
+            <span class="label">Genration</span>
+            <span class="value">3 Genration</span>
         </div>
         <div class="item">
-            <span class="label">Daily Interest Rate</span>
-            <span class="value">1.9%</span>
+            <span class="label">Yield</span>
+            <span class="value">3%</span>
         </div>
+        
         <div class="item">
             <span class="label">Issuing Time</span>
             <span class="value">2024-10-22</span>
@@ -472,69 +560,133 @@ margin: 0 2px;
 
                        
                     </div>
-                 
-    
-    
-   
-   </div>
-  </div>
-  <div class="container1">
- 
- <div class="content">
- 
-  <div class="row">
-   <div class="label">
-    Team Income
-   </div>
-   <div class="label">
-   55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-   <!----></i>
-   </div>
-  </div>
-  <div class="row">
-   <div class="data">
-    12-3-23
-   </div>
-   <div class="data">
-    Already Distrubed
-   </div>
-  </div>
-  
-  
-  
- 
- </div>
-</div>
+                    <div data-v-ac2db8a0="" data-v-6df100a6="" class="revenue" data-v-cfc9a7fc="">
+                        <div data-v-ac2db8a0="" class="container">
+                            <div data-v-ac2db8a0="" class="total-income">
+                                <div data-v-ac2db8a0="" class="title_box">
+                                   
+                                    <!-- <div data-v-ac2db8a0="" class="choose_day">
+                                        <i data-v-ac2db8a0=""
+                                            class="arrow_down van-icon van-icon-arrow-down">
+                                            </i>
+                                    </div> -->
+                                </div>
 
-<div class="container1">
- 
- <div class="content">
- 
-  <div class="row">
-   <div class="label">
-    Computing Power Income
+                                <style>
+                                    .list .it .n[data-v-65a522d0], .list .it .str[data-v-65a522d0] {
+                                                font-size: .28rem;
+                                                line-height: 1em;
+                                                font-weight: 500;
+                                            }
+
+                                        .db {
+                                            display: flex;
+                                            display: -webkit-box;
+                                            box-align: center;
+                                            -webkit-box-align: center;
+                                        }
+                                            .list .it .b[data-v-65a522d0] {
+                                            padding: .32rem 0;
+                                        }
+                                        .list .it[data-v-65a522d0] {
+                                        border-bottom: .02rem solid hsla(0, 0%, 100%, .2);
+                                    }
+                                .list .it .time[data-v-65a522d0] {
+                                        margin-top: .16rem;
+                                        color: #929292;
+                                        font-size: .24rem;
+                                        line-height: 1em;
+                                    }
+                                </style>
+                                <div data-v-ac2db8a0=""  data-v-cfc9a7fc="" class="info list">
+                                    <!---->
+                                    
+                                        
+                                       
+<!-- 
+                                    <div data-v-65a522d0="" class="it">
+                                        <div data-v-65a522d0="" class="jbox_07">
+                                            <div data-v-65a522d0="" class="jt"></div>
+                                            <div data-v-65a522d0="" class="jc c">
+                                                <div data-v-65a522d0="" class="b">
+                                                    <div data-v-65a522d0="" class="db">
+                                                        <div data-v-65a522d0="" class="flexs">
+                                                        <div class="container1">
+   <div class="header">
+    <img alt="Icon representing GPU 2 Core Computing Package" src="{{asset('')}}assets/static/img/vip1.png" style="
+    margin-right: -120px;
+"  />
+    <div class="title">
+     SeverCore Prime
+    </div>
+    <button class="status">
+  Success
+</button>
    </div>
-   <div class="label">
-   55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
-   <!----></i>
+   <div class="content">
+    <div class="center">
+   <div class="label1">
+        Yield
+     </div>
+    <div class="highlight">
+     1.77%
+    </div>  
+    </div>
+    <div class="row">
+     <div class="label">
+      Run currency
+     </div>
+     <div class="label">
+     Running time
+     </div>
+    </div>
+    <div class="row">
+     <div class="data">
+      USDT
+     </div>
+     <div class="data">
+      1.00 hour
+     </div>
+    </div>
+    <div class="row">
+     <div class="label">
+      Running amount
+     </div>
+     <div class="label">
+     Profit
+      
+     </div>
+    </div>
+    <div class="row">
+     <div class="data">
+     229.8365923
+     </div>
+     <div class="data">
+      4.06810768
+     </div>
+    </div>
+    <div class="row">
+     <div class="label">
+      Start time
+     </div>
+     <div class="label">
+     End time
+      
+     </div>
+    </div>
+    <div class="row">
+     <div class="data">
+     2024-10-18 20:33:20
+     </div>
+     <div class="data">
+      2024-10-18 20:33:20
+     </div>
+    </div>
    </div>
   </div>
-  <div class="row">
-   <div class="data">
-    12-3-23
-   </div>
-   <div class="data">
-    Already Distrubed
-   </div>
-  </div>
-  
-  
-  
- 
- </div>
-</div>
+                                                
                                                         
-                                                        <!---->
+                                                      
                                                     </div>
                                                 </div>
                                             </div>
@@ -543,8 +695,9 @@ margin: 0 2px;
                                     </div>
 
                                     
-                                </div>
+                                </div> -->
 
+                               
 
                             </div>
                         </div>
@@ -576,7 +729,7 @@ margin: 0 2px;
                 </div>
 
 
-
+                
             </div>
             <script>
 		window.onload = function() {

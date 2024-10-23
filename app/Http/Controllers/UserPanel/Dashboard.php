@@ -475,7 +475,7 @@ public function tradeOn()
 
          $user = Auth::user();
           $orderId=$request->orderId;
-         $checkStatus= \DB::table('investments')->where('user_id',$user->id)->where('orderId',$orderId)->where('status','Active')->first();
+         $checkStatus= \DB::table('buy_funds')->where('user_id',$user->id)->where('orderId',$orderId)->where('status','Active')->first();
         
         if($checkStatus)
         {

@@ -120,12 +120,12 @@ $amount = $request->Sum;
 
 
 
- $invest_check=BuyFund::where('user_id',$user->id)->where('status','Pending')->first();
+//  $invest_check=BuyFund::where('user_id',$user->id)->where('status','Pending')->first();
 
-if ($invest_check) 
-{
-  return  redirect()->route('user.DepositHistory')->withErrors(array('your deposit already pending'));
-}
+// if ($invest_check) 
+// {
+//   return  redirect()->route('user.DepositHistory')->withErrors(array('your deposit already pending'));
+// }
 
 
 $amountTotal= $request->Sum;
@@ -193,7 +193,7 @@ $this->data['qr_code'] =$resultAarray['data']['qr_code'];
 $this->data['orderId'] =$invoice;
 $this->data['amount'] =$amount;
 $this->data['invoice_total_sum'] =$resultAarray['data']['invoice_total_sum'];
-$this->data['page'] = 'user.invest.confirmDeposit';
+$this->data['page'] = 'user.fund.confirmDeposit';
 return $this->dashboard_layout();  
 
 }

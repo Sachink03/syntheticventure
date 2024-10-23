@@ -107,17 +107,173 @@ class Invest extends Controller
         return $this->dashboard_layout();
     }
 
+    public function generate_roi()
+    {
+        try {
+            $id = Auth::user()->id;
+            date_default_timezone_set("Asia/Kolkata"); // Set timezone to India time (GMT+5:30)
+    
+            // Get all active investments for the user that haven't hit the ROI condition
+            $allResult = Investment::where('status', 'Active')
+                ->where('roiCandition', 0)
+                ->where('user_id', $id)
+                ->get();
+    
+            $todays = date("Y-m-d");
+    
+            Log::info($allResult);
+    
+            if ($allResult->isNotEmpty()) {
+                foreach ($allResult as $investment) {
+                    $userID = $investment->user_id;
+                    $joining_amt = $investment->amount;
+                    $startDate = $investment->sdate;
+    
+                    // Calculate the number of days since the investment started
+                    $daysDifference = \Carbon\Carbon::parse($startDate)->diffInDays($todays);
+    
+                    // Get user details
+                    $userDetails = User::where('id', $userID)
+                        ->where('active_status', 'Active')
+                        ->first();
+    
+                    if ($userDetails) {
+                        // Calculate total expected ROI (200% of the investment)
+                        $total_get = $joining_amt * 200 / 100;
+                        $total_profit_b = Income::where('user_id', $userID)->where('invest_id', $investment->id)->where('credit_type', 0)->sum('comm');
+                        $total_profit = $total_profit_b ? $total_profit_b : 0;
+    
+                        // Daily ROI percentage
+                        $percent = 3.333;
+                        $roi = round($joining_amt * $percent / 100);
+    
+                        Log::info($roi);
+    
+                        // Max income and remaining income
+                        $max_income = $total_get;
+                        $n_m_t = $max_income - $total_profit;
+    
+                        // Ensure ROI doesn't exceed remaining max income
+                        if ($roi >= $n_m_t) {
+                            $roi = $n_m_t;
+                        }
+
+                        Log::info($roi);
+                        Log::info($daysDifference);
+
+    
+                        Log::info($roi > 0 && $daysDifference < 60);
+    
+                        // Apply ROI if valid and user has been active for more than 60 days
+                        if ($roi > 0 && $daysDifference < 60) {
+                            // Prepare data for income insertion
+                            $data = [
+                                'remarks' => 'Task Income',
+                                'comm' => $roi,
+                                'amt' => $joining_amt,
+                                'invest_id' => $investment->id,
+                                'level' => 0,
+                                'ttime' => date("Y-m-d"),
+                                'user_id_fk' => $userDetails->username,
+                                'user_id' => $userDetails->id,
+                                'credit_type' => 1,
+                            ];
+    
+                            // Insert or update the ROI record
+                            $income = Income::firstOrCreate([
+                                'remarks' => 'Task Income',
+                                'ttime' => date("Y-m-d"),
+                                'user_id' => $userID,
+                                'invest_id' => $investment->id,
+                            ], $data);
+    
+                            \DB::table('users')->where('id', $userID)->update(['last_trade' => date("Y-m-d H:i:s")]);
+    
+                            // Uncomment to add leadership bonuses if necessary
+                            // $this->add_level_income($userDetails->id, $roi);
+    
+                        } else {
+                            // Mark the investment as having fulfilled the ROI condition
+                            Investment::where('id', $investment->id)->update(['roiCandition' => 1]);
+                        }
+                    }
+                }
+    
+                // Success notification
+                $notify[] = ['success', 'ROI generated successfully for your investments.'];
+                return redirect()->route('user.strategy')->withNotify($notify);
+            } else {
+                // No active investments found
+                return redirect()->route('user.strategy')->withErrors('No active investments found.');
+            }
+        } catch (\Exception $e) {
+            Log::info('Error in generating ROI');
+            Log::info($e->getMessage());
+            return redirect()->route('user.strategy')->withErrors('An error occurred while generating ROI: ' . $e->getMessage());
+        }
+    }
+    
+
 
     public function strategy()
     {
-        $user = Auth::user();
+      $user = Auth::user();
+      date_default_timezone_set("Asia/Kolkata"); // Set timezone to India time (GMT+5:30)
+  
+      // Get the user's last trade
+      $last_trade = $user->last_trade; 
+  
+      // Initialize $button to default value
+      $button = 1; 
+  
+      // Get the current time
+      $current_time = new \DateTime();
+  
+      // Check if last_trade is not null
+      if ($last_trade) {
+          // Convert $last_trade to a DateTime object
+          $last_trade_time = new \DateTime($last_trade);
+
+
+  
+          // Calculate the time difference in hours
+          $time_diff = $current_time->diff($last_trade_time);
+          $hours_diff = $time_diff->h + ($time_diff->days * 24); // Total hours difference
+
+  
+          if ($hours_diff < 1) {
+              // If last trade is within the last hour
+              $button = 2;
+          } elseif ($hours_diff >= 24) {
+              // If last trade is more than or equal to 24 hours ago
+              $button = 1;
+          } else {
+              // If last trade is more than 1 hour but less than 24 hours
+              $button = 3;
+          }
+      }
+
+
         $todaysIncome = Income::where('user_id',$user->id)->where('ttime',Date("Y-m-d"))->sum('comm');
         $totalRoi = Income::where('user_id',$user->id)->where('remarks','Trading Bonus')->sum('comm');
 
-        $invest_check = Investment::where('user_id', $user->id)
-                                   ->where('status', 'Active')
-                                   ->orderBy('id', 'desc')
-                                   ->get();
+         // Check for active investments
+    $invest_check = Investment::where('user_id', $user->id)
+    ->where('status', 'Active')
+    ->where('roiCandition', 0)
+    ->get();
+
+// Initialize investment-related variables
+$active_investment = 0;
+$total_amount = 0;
+$total_profit = 0;
+
+// If there are active investments, calculate totals
+if ($invest_check->isNotEmpty()) {
+$active_investment = 1;
+$total_amount = $invest_check->sum('amount'); // Sum of the 'amount' field
+$total_profit = $invest_check->sum('plan');   // Sum of the 'plan' field
+}
     
     
         $notes = DB::table('plans')->get();
@@ -176,11 +332,21 @@ $active_gen_team3total = $gen_team3->where('active_status', 'Active')->count();
 $active_gen_team23total = $active_gen_team2total + $active_gen_team3total;
 
 
-$this->data['active_gen_team1total'] = $gen_team1total;
+$this->data['active_gen_team1total'] = $active_gen_team1total;
+$this->data['active_gen_team2total'] = $active_gen_team2total;
+$this->data['active_gen_team3total'] = $active_gen_team3total;
+
 $this->data['active_gen_team23total'] = $active_gen_team23total;
+
+
 
         $this->data['recharges'] = ($invest_check) ? $invest_check : [];
         $this->data['data'] = $notes;
+        $this->data['button'] = $button;
+        $this->data['last_trade'] = $last_trade;
+        $this->data['active_investment'] = $active_investment;
+        $this->data['total_amount'] = $total_amount;
+        $this->data['total_profit'] = $total_profit;
         $this->data['todaysIncome'] = $todaysIncome;
         $this->data['totalRoi'] = $totalRoi;
         $this->data['page'] = 'user.invest.strategy';
@@ -445,6 +611,9 @@ public function viewdetail($txnId)
             'created_at' => date("Y-m-d H:i:s"),
         ];
         $payment =  Investment::insert($data);
+
+        add_direct_income($user->id,$amount);
+
                 
             
     $this->data['page'] = 'user.dashboard';

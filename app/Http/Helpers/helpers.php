@@ -347,104 +347,196 @@ return true;
 
 
 
- function add_level_income($id,$amt)
-        {
+function add_level_income($id,$amt)
+{
 
-          //$user_id =$this->session->userdata('user_id_session')
-      $data = User::where('id',$id)->orderBy('id','desc')->first();
+  //$user_id =$this->session->userdata('user_id_session')
+$data = User::where('id',$id)->orderBy('id','desc')->first();
 
-        $user_id = $data->username;
-        $fullname=$data->name;
+$user_id = $data->username;
+$fullname=$data->name;
 
-        $rname = $data->username;
-        $user_mid = $data->id;
-
-
-              $cnt = 1;
-
-              $amount = $amt/100;
+$rname = $data->username;
+$user_mid = $data->id;
 
 
-                while ($user_mid!="" && $user_mid!="1"){
+      $cnt = 1;
 
-                      $Sposnor_id = User::where('id',$user_mid)->orderBy('id','desc')->first();
-                      $sponsor=$Sposnor_id->sponsor;
-                      if (!empty($sponsor))
-                       {
-                        $Sposnor_status = User::where('id',$sponsor)->orderBy('id','desc')->first();
-                        $Sposnor_cnt = User::where('sponsor',$sponsor)->where('active_status','Active')->count("id");
-                        $sp_status=$Sposnor_status->active_status;
-                        $rank=$Sposnor_status->rank;
-                        $lastPackage = \DB::table('investments')->where('user_id',$Sposnor_status->id)->where('status','Active')->orderBy('id','DESC')->limit(1)->first();
-                        $plan = ($lastPackage)?$lastPackage->plan:0;
-                      }
-                      else
-                      {
-                        $Sposnor_status =array();
-                        $sp_status="Pending";
-                        $Sposnor_cnt=0;
-                        $rank=0;
-                      }
+      $amount = $amt/100;
 
-                      $pp=0;
-                       if($sp_status=="Active")
-                       {
-                         if($cnt==1)
-                          {
-                            $pp= $amount*12;
 
-                          } if($cnt==2)
-                          {
-                            $pp= $amount*4;
+        while ($user_mid!="" && $user_mid!="1"){
 
-                          } if($cnt==3)
-                          {
-                            $pp= $amount*2;
+              $Sposnor_id = User::where('id',$user_mid)->orderBy('id','desc')->first();
+              $sponsor=$Sposnor_id->sponsor; 
+              if (!empty($sponsor))
+               {
+                $Sposnor_status = User::where('id',$sponsor)->orderBy('id','desc')->first();
 
-                          }  
-                          
-                       
-
-                        }
-                        else
+                $my_level_team=$this->my_level_team_count($Sposnor_status->id);
+                $gen_team1 =  (array_key_exists(1,$my_level_team) ? $my_level_team[1]:array());
+                $gen_team2 =  (array_key_exists(2,$my_level_team) ? $my_level_team[2]:array());
+                $gen_team3 =  (array_key_exists(3,$my_level_team) ? $my_level_team[3]:array());
+              
+                $gen_team1 = User::where(function($query) use($gen_team1)
                         {
-                          $pp=0;
-                        }
+                          if(!empty($gen_team1)){
+                            foreach ($gen_team1 as $key => $value) {
+                            //   $f = explode(",", $value);
+                            //   print_r($f)."<br>";
+                              $query->orWhere('id', $value);
+                            }
+                          }else{$query->where('id',null);}
+                        })->orderBy('id', 'DESC')->get();
+                        
+                  $gen_team2 = User::where(function($query) use($gen_team2)
+                        {
+                          if(!empty($gen_team2)){
+                            foreach ($gen_team2 as $key => $value) {
+                            //   $f = explode(",", $value);
+                            //   print_r($f)."<br>";
+                              $query->orWhere('id', $value);
+                            }
+                          }else{$query->where('id',null);}
+                        })->orderBy('id', 'DESC')->get();
+                   $gen_team3 = User::where(function($query) use($gen_team3)
+                        {
+                          if(!empty($gen_team3)){
+                            foreach ($gen_team3 as $key => $value) {
+                            //   $f = explode(",", $value);
+                            //   print_r($f)."<br>";
+                              $query->orWhere('id', $value);
+                            }
+                          }else{$query->where('id',null);}
+                        })->orderBy('id', 'DESC')->get();
+          
+          
+                
+          // Calculate totals
+        $gen_team1total = $gen_team1->count();
+        $active_gen_team1total = $gen_team1->where('active_status', 'Active')->count();
+        
+        $gen_team2total = $gen_team2->count();
+        $active_gen_team2total = $gen_team2->where('active_status', 'Active')->count();
+        
+        $gen_team3total = $gen_team3->count();
+        $active_gen_team3total = $gen_team3->where('active_status', 'Active')->count();
+        
+        // Combine totals for team 2 and team 3
+        $active_gen_team23total = $active_gen_team2total + $active_gen_team3total;
+        
+        // Initialize VIP status
+        $vip = 1;
+        
+        // Determine VIP level based on conditions
+        if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
+            $vip = 7;
+        } elseif ($active_gen_team1total >= 15 && $active_gen_team23total >= 20) {
+          $vip = 6;
+        } elseif ($active_gen_team1total >= 8 && $active_gen_team23total >= 15) {
+            $vip = 5;
+        } elseif ($active_gen_team1total >= 5 && $active_gen_team23total >= 10) {
+            $vip = 4;
+        } elseif ($active_gen_team1total >= 3 && $active_gen_team23total >= 5) {
+            $vip = 3;
+        } elseif ($active_gen_team1total >= 2) {
+            $vip = 2;
+        } elseif ($active_gen_team1total > 0 || $active_gen_team2total > 0 || $active_gen_team3total > 0) {
+            $vip = 1;
+        }
 
 
 
-                      $user_mid = @$Sposnor_status->id;
-                      $spid = @$Sposnor_status->id;
-                      $idate = date("Y-m-d");
 
-                      $user_id_fk=$sponsor;
-                      if($spid>0 && $cnt<=3){
-                        if($pp>0){
+                $Sposnor_cnt = User::where('sponsor',$sponsor)->where('active_status','Active')->count("id");
+                $sp_status=$Sposnor_status->active_status;
+                $rank=$Sposnor_status->rank;
+                $lastPackage = \DB::table('investments')->where('user_id',$Sposnor_status->id)->where('status','Active')->orderBy('id','DESC')->limit(1)->first();
+                $plan = ($lastPackage)?$lastPackage->plan:0;
+              }
+              else
+              {
+                $Sposnor_status =array();
+                $sp_status="Pending";
+                $Sposnor_cnt=0;
+                $rank=0;
+              }
 
-                         $data = [
-                        'user_id' => $user_mid,
-                        'user_id_fk' =>$Sposnor_status->username,
-                        'amt' => $amt,
-                        'comm' => $pp,
-                        'remarks' =>'Quantify Level Income',
-                        'level' => $cnt,
-                        'rname' => $rname,
-                        'fullname' => $fullname,
-                        'ttime' => Date("Y-m-d"),
+              $pp=0;
+               if($sp_status=="Active")
+               {
+                 if($cnt==1 && $vip>=2)
+                  {
+                    $pp= $amount*10;
 
-                    ];
-                     $user_data =  Income::create($data);
+                  } if($cnt==2 && $vip>=3)
+                  {
+                    $pp= $amount*5;
 
+                  } if($cnt==3 && $vip>=4)
+                  {
+                    $pp= $amount*4;
+
+                  }  
+                  if($cnt==4 && $vip>=5)
+                  {
+                    $pp= $amount*3;
+
+                  }  
+                  if($cnt==5 && $vip>=6)
+                  {
+                    $pp= $amount*2;
+
+                  }  
+                  if($cnt==6 && $vip>=7)
+                  {
+                    $pp= $amount*1;
+
+                  }  
+                  
+               
 
                 }
-               }
+                else
+                {
+                  $pp=0;
+                }
 
-                $cnt++;
-     }
 
-     return true;
-  }
 
+              $user_mid = @$Sposnor_status->id;
+              $spid = @$Sposnor_status->id;
+              $idate = date("Y-m-d");
+
+              $user_id_fk=$sponsor;
+              if($spid>0 && $cnt<=6){
+                if($pp>0){
+
+                 $data = [
+                'user_id' => $user_mid,
+                'user_id_fk' =>$Sposnor_status->username,
+                'amt' => $amt,
+                'comm' => $pp,
+                'remarks' =>'Level Income',
+                'level' => $cnt,
+                'rname' => $rname,
+                'fullname' => $fullname,
+                'ttime' => Date("Y-m-d"),
+                'credit_type' => 1,
+
+
+            ];
+             $user_data =  Income::create($data);
+
+
+        }
+       }
+
+        $cnt++;
+}
+
+return true;
+}
 
 
 function add_direct_income_new($id,$amt,$newDate,$newDateTime)
@@ -561,7 +653,7 @@ $user_mid = $data->id;
                 $total_profit =0;
                 $total_get =0;
               }
-             $percent = 8;
+             $percent = 5;
 
              if($sp_status=="Active")
                {

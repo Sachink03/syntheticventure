@@ -240,6 +240,23 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+.timer  {
+                                        padding-top: 5px;
+                                        text-align: center;
+                                        opacity: 0.9;
+                                    }
+
+.times{
+    position: relative;
+    bottom: 24px;
+    color: white; /* White text color */
+    text-shadow: 
+        -1px -1px 0 black, /* Top left shadow */
+         1px -1px 0 black, /* Top right shadow */
+        -1px  1px 0 black, /* Bottom left shadow */
+         1px  1px 0 black; /* Bottom right shadow */
+}                                    
 </style>
 <body class="mein_cn">
     <div id="app" class="applang">
@@ -591,6 +608,7 @@
                                 @endforeach
                             </ul> --}}
 
+                            @if($active_investment)
                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="container">
                                 <div data-v-cc3ce6d2="" data-v-1fa86597="" class="levelBox" data-v-cfc9a7fc=""><img
                                         data-v-cc3ce6d2="" src="{{asset('')}}assets/static/img/lv1.0c323966.png" class="leve-bg">
@@ -630,43 +648,16 @@
                                         <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Subscription</div>
                                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
-                                                {{-- @if($id=="1")
-                                                   $30
-                                                @elseif($id=="2")
-                                                $120
-                                                @elseif($id=="3")
-                                                $300
-                                                @elseif($id=="4")
-                                                $1200
-                                                @elseif($id=="5")
-                                                $3600
-                                                @elseif($id=="6")
-                                                $6000
-                                                @elseif($id=="7") --}}
-                                                $15000
-                                                {{-- @endif --}}
+                                                
+                                                ${{ $total_amount }}
         
                                             </div>
                                         </li>
                                         <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
                                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
-                                                {{-- @if($id=="1")
-                                                   $1
-                                                @elseif($id=="2")
-                                                $4
-                                                @elseif($id=="3")
-                                                $10
-                                                @elseif($id=="4")
-                                                $40
-                                                @elseif($id=="5")
-                                                $120
-                                                @elseif($id=="6")
-                                                $200
-                                                @elseif($id=="7") --}}
-                                                $500
-                                                {{-- @endif --}}
-        
+                                               
+                                                ${{ $total_profit }}
                                             </div>
                                         </li>
                                         <li data-v-1fa86597="" data-v-cfc9a7fc="">
@@ -676,21 +667,7 @@
                                         <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Total Reward</div>
                                             <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
-                                                {{-- @if($id=="1")
-                                                   $60
-                                                @elseif($id=="2")
-                                                $240
-                                                @elseif($id=="3")
-                                                $600
-                                                @elseif($id=="4")
-                                                $2400
-                                                @elseif($id=="5")
-                                                $7200
-                                                @elseif($id=="6")
-                                                $12000
-                                                @elseif($id=="7") --}}
-                                                $30000
-                                                {{-- @endif --}}
+                                                ${{ $total_amount*2 }}
         
                                             </div>
                                         </li>
@@ -709,16 +686,51 @@
                                         </li>
                                     </ul>
                                     
-                                    <form method="post" name="add" action="{{ route('user.confirmDeposit') }}" onsubmit="return validateForm()">
+                                    @if($button == 1)
+                                    <!-- Button to start the task -->
+                                    <form method="post" name="add" action="{{ route('user.generate_roi') }}" onsubmit="return validateForm()">
                                         {{ csrf_field() }}
-                                       
                                         <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
-                                            <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Run') </button>
+                                            <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Run')</button>
                                         </div>
                                     </form>
+                                @elseif($button == 2)
+                                    <!-- Progress bar and countdown for 1 hour -->
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress">
+                                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons">
+                                            <div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 25px;">
+                                                <div class="van-slider__bar" id="progress-bar-1h" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%)!important; width: 0%;">
+                                                    <div role="slider" tabindex="0" class="van-slider__button-wrapper">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="times">
+                                            <p id="timer-1h" class="timer">You will be rewarded in: 1:00:00</p>
+                                        </div>
+                                    </div>
+                                @else
+                                    <!-- Progress bar and countdown for 24 hours -->
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress">
+                                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons">
+                                            <div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 25px;">
+                                                <div class="van-slider__bar" id="progress-bar-24h" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%)!important; width: 0%;">
+                                                    <div role="slider" tabindex="0" class="van-slider__button-wrapper">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="times">
+                                            <p id="timer-24h" class="timer">Next task will be unlocked in: 24:00:00</p>
+                                        </div>
+                                    </div>
+                                @endif
 
 
-                                    
+
+
                                     {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
                                         <div data-v-1fa86597="" role="checkbox" tabindex="0" aria-checked="true"
                                             class="van-checkbox" data-v-cfc9a7fc="">
@@ -735,6 +747,11 @@
                                 </div>
                               
                             </div>
+                            @else
+                            <div style="margin: 5px">
+                                <img src="{{ asset('') }}assets/static/img/nodata.png">
+                            </div>
+                            @endif
 
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list" style="display: none;"></ul>
                         </div>
@@ -777,8 +794,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                         <div data-v-167ffb9b="" class="s" style="padding-bottom: 5px;">
                                             <span style="color: #170529d9;" data-v-167ffb9b="">$1</span> Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top: 5px;">
-                                            <div><span style="font-size: 11px; margin-right: 269px;">1 times</span></div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top: 5px;justify-content: space-between">
+                                            <div><span style="font-size: 11px;">1 times</span></div>
                                             <div style="font-size: 11px;">1 hour</div>
                                         </div>
                                     </div>
@@ -792,8 +809,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                     </div>
                                     @endif
                                     <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/vip1.png" style="padding: 8px; bottom: 43px;" class="img">
-                                    <div class="flex" style="opacity: 0.7;">
-                                        <div style="margin-right: 180px;">Daily Run Times</div>
+                                    <div class="flex" style="opacity: 0.7;justify-content: space-between">
+                                        <div>Daily Run Times</div>
                                         <div>Running time</div>
                                     </div>
                                 </li>                                
@@ -804,7 +821,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                         <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$4</span>
                                             Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px;">1 times</span>
                                            </div>
                                          
                                             <div style="font-size:11px">1 hour</div>
@@ -821,8 +838,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                     </div>
                                     @endif
                                     <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip2.png" style="padding:8px;bottom:43"class="img">
-                                        <div class="flex" style="opacity:0.7">
-                                        <div style="margin-right:180px">  Daily Run Times</div>
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div >  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
@@ -834,7 +851,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                         <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$10</span>
                                             Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px">1 times</span>
                                            </div>
                                          
                                             <div style="font-size:11px">1 hour</div>
@@ -851,8 +868,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                     </div>
                                     @endif
                                     <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip3.png" style="padding:8px;bottom:43"class="img">
-                                        <div class="flex" style="opacity:0.7">
-                                        <div style="margin-right:180px">  Daily Run Times</div>
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
@@ -864,7 +881,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                         <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$40</span>
                                             Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px;">1 times</span>
                                            </div>
                                          
                                             <div style="font-size:11px">1 hour</div>
@@ -881,8 +898,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                     </div>
                                     @endif
                                     <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip4.png" style="padding:8px;bottom:43"class="img">
-                                        <div class="flex" style="opacity:0.7">
-                                        <div style="margin-right:180px">  Daily Run Times</div>
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
@@ -894,7 +911,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                         <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$120</span>
                                             Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px;">1 times</span>
                                            </div>
                                          
                                             <div style="font-size:11px">1 hour</div>
@@ -911,8 +928,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                     </div>
                                     @endif
                                     <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip5.png" style="padding:8px;bottom:43"class="img">
-                                        <div class="flex" style="opacity:0.7">
-                                        <div style="margin-right:180px">  Daily Run Times</div>
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
@@ -924,7 +941,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                         <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$200</span>
                                             Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px">1 times</span>
                                            </div>
                                          
                                             <div style="font-size:11px">1 hour</div>
@@ -941,8 +958,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                     </div>
                                     @endif
                                     <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip6.png" style="padding:8px;bottom:43"class="img">
-                                        <div class="flex" style="opacity:0.7">
-                                        <div style="margin-right:180px">  Daily Run Times</div>
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
@@ -954,7 +971,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                         <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$500</span>
                                             Daily Reward
                                         </div>
-                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px"> <div><span  style="font-size:11px;margin-right:269px">1 times</span>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px">1 times</span>
                                            </div>
                                          
                                             <div style="font-size:11px">1 hour</div>
@@ -971,8 +988,8 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                     </div>
                                     @endif
                                     <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip7.png" style="padding:8px;bottom:43"class="img">
-                                        <div class="flex" style="opacity:0.7">
-                                        <div style="margin-right:180px">  Daily Run Times</div>
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
                                         <div> Running time</div>
                                         </div>
 
@@ -1046,6 +1063,59 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
 });
 
               </script>
+              <script>
+                // Function to calculate and display remaining time for both 1-hour and 24-hour timers
+                document.addEventListener("DOMContentLoaded", function() {
+                    @if($button == 2)
+                        // Timer for 1 hour
+                        var lastTradeTime = new Date('{{ $last_trade }}'); // Server time of last trade
+                        var currentTime = new Date(); // Current time
+                        var diffInSeconds = Math.max(0, 3600 - Math.floor((currentTime - lastTradeTime) / 1000)); // Time difference in seconds (max 1 hour)
+            
+                        startCountdown(diffInSeconds, 'timer-1h', 'progress-bar-1h', 3600); // Start the 1-hour countdown
+                    @else
+                        // Timer for 24 hours
+                        var lastTradeTime = new Date('{{ $last_trade }}');
+                        var currentTime = new Date();
+                        var diffInSeconds = Math.max(0, 86400 - Math.floor((currentTime - lastTradeTime) / 1000)); // Time difference in seconds (max 24 hours)
+            
+                        startCountdown(diffInSeconds, 'timer-24h', 'progress-bar-24h', 86400); // Start the 24-hour countdown
+                    @endif
+                });
+            
+                // Function to start a countdown timer and update progress bar
+                function startCountdown(secondsLeft, timerId, progressBarId, totalSeconds) {
+                    var timerElement = document.getElementById(timerId);
+                    console.log(timerElement);
+                    var progressBarElement = document.getElementById(progressBarId);
+            
+                    function updateTimer() {
+                        var hours = Math.floor(secondsLeft / 3600);
+                        var minutes = Math.floor((secondsLeft % 3600) / 60);
+                        var seconds = secondsLeft % 60;
+            
+                        if (timerId === 'timer-24h') {
+                timerElement.textContent = `Next task will be available in: ${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            } else {
+                timerElement.textContent = `You will be rewarded in: ${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            }
+
+                        var percentage = ((totalSeconds - secondsLeft) / totalSeconds) * 100;
+                        progressBarElement.style.width = percentage + "%";
+            
+                        if (secondsLeft > 0) {
+                            secondsLeft--;
+                            setTimeout(updateTimer, 1000);
+                        } else {
+                            // Timer is done, reload the page
+                            location.reload(); 
+                        }
+                    }
+            
+                    updateTimer(); // Start the timer
+                }
+            </script>
+            
           
             
           

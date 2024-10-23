@@ -160,7 +160,7 @@ class User extends Authenticatable
 
     public function users_incomes()
     {
-        return  Income::where('user_id',Auth::user()->id)->sum('comm');
+        return  Income::where('user_id',Auth::user()->id)->where('credit_type',0)->sum('comm');
     } 
     
 

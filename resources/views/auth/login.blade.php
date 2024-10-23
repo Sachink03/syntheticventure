@@ -118,8 +118,8 @@
     margin-top: .4rem;
     color: var(--COcolor3);
     font-size: .26rem;
-    text-align: center;
-    margin-bottom: 6em;
+    text-align: left;
+    margin-bottom: .4em;
 }
 body {
     background: none;
@@ -133,6 +133,10 @@ body {
     transform: translateX(-50%);
     font-family: Poppins,PingFang SC,Microsoft Yahei,sans-serif
 }
+.agreement{
+    color:var(--COcolor3);;
+}
+
 </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -154,7 +158,23 @@ body {
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-2a0b1332.0436ba68.1717187934571.chunk.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset('')}}assets/static/css/chunk-f8e2ce82.4965c1ba.css">
     <script charset="utf-8" src="{{asset('')}}assets/static/js/chunk-f8e2ce82.8a913baf.1717187934571.chunk.js"></script>
- 
+ <style>
+    .go .wrap[data-v-a34da882] {
+    margin-top: .4rem;
+    color: var(--COcolor3);
+    font-size: .26rem;
+    display: flex;
+    justify-content: left;
+    margin-bottom: .4em;
+}
+.go .wrap .wr[data-v-a34da882] {
+    
+    color: var(--COcolor3);
+    font-size: .26rem;
+    display: flex;
+    justify-content: left;
+    margin-bottom: .4em;}
+ </style>
 </head>
 
 <body class="mein_cn">
@@ -228,17 +248,29 @@ body {
                                             class="van-checkbox__icon van-checkbox__icon--square van-checkbox__icon--checked">
                                             <i class="van-icon van-icon-success"
                                                 style="border-color: rgb(113, 219, 129); background-color: rgb(113, 219, 129);">
-                                                <!----></i></div><span class="van-checkbox__label">@lang('Remember account password') </span>
+                                                <!----></i></div> <span
+                                            data-v-a34da882="" data-v-cfc9a7fc="" style="
+    font-size: 10px;
+    margin-left: 13px;
+">@lang('By logging in, I agree to the VG CUBE') <a href="{{route('service-agreement')}}" style="color:#55b2c2 ; margin-top: 1;"
+    >@lang('Service Agreement')</a></span>
                                     </div>
                                 </div>
                                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="kfBox"> @lang('Forgot password') </div>
                             </div>
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="go"><button data-v-a34da882=""
                                     data-v-cfc9a7fc="" type="submit" class="btn2">@lang('Login') </button>
-                                <div data-v-a34da882="" data-v-cfc9a7fc="" class="wrap bet">
-                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="wr"> @lang('No account') <span
+                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="wrap bet">
+                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="agreement" style="font-size:10px;"></div>
+                                </div>
+                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="wrap bet">
+                                    
+                                    <div data-v-a34da882="" data-v-cfc9a7fc="" class="wr" style="
+    margin-top: -12px;
+"> @lang('No account') <span
                                             data-v-a34da882="" data-v-cfc9a7fc=""><a href="{{route('register')}}" style="color:#55b2c2 ;">@lang('Register now')</a></span></div>
                                 </div>
+                                
                             </div>
                             </form>
                         </div>

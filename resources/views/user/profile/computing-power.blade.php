@@ -166,6 +166,8 @@ input[type=text], textarea{
             border-radius: 10px;
             padding: 20px;
             width: 100%;
+            margin-bottom: 12px;
+            height: 52px;
         }
         .header {
             display: flex;
@@ -202,9 +204,10 @@ input[type=text], textarea{
             margin-bottom: 10px;
         }
         .content .label {
-            color: #aaaaaa;
+            /* color: #aaaaaa; */
+            color: #fff;
             /* padding-top: 6px; */
-            font-size: 10px;
+            font-size: 12px;
             font-family: PingFang SC;
             margin-top: -3px;
         }
@@ -227,8 +230,9 @@ input[type=text], textarea{
         }
         .data{
             margin-top:-7px;
-            font-size: 12px;
-            padding-top: 4px;
+            font-size: 10px;
+            padding-top: 0px;
+            color: #aaaaaa;
             font-family: PingFang SC;
         }
         div.date_wrapper {
@@ -312,6 +316,60 @@ margin: 0 2px;
     font-size: 13;
 }
 /* Black theme for the date picker container */
+
+.invest {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .invest div {
+            text-align: center;
+        }
+        .invest div span {
+            display: block;
+            font-size: 12px;
+            color: #b0b0b0;
+            font-family: PingFang SC;
+        }
+        .invest div .content {
+            font-size: 14px;
+            color: #ffff;
+            padding-top:8px;
+            font-family: PingFang SC;
+        }
+
+        .history {
+            width: 100%;
+            padding: 20px;
+            background-color: #2b2b2b;
+            border-radius: 5px;
+            margin: 15px auto;
+        }
+        .header {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .status {
+            float: right;
+            font-size: 12px;
+            color: #b3b3b3;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        .label {
+            font-size: 12px;
+            color: #f4fafa59;
+        }
+        .value {
+            float: right;
+        }
+
+        
             </style>
          
 
@@ -322,7 +380,7 @@ margin: 0 2px;
                 <div data-v-397da544="" data-v-6df100a6="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <!---->
-                        <div data-v-397da544="" class="left_title">@lang('Run Record') </div>
+                        <div data-v-397da544="" class="left_title">@lang('Computing Power Income') </div>
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
@@ -335,14 +393,14 @@ margin: 0 2px;
             <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                 <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="container">
-                        <div data-v-6df100a6="" data-v-cfc9a7fc="" class="com-1">
+                        <!-- <div data-v-6df100a6="" data-v-cfc9a7fc="" class="com-1">
                            
                             
                             <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col">
                              
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="col-right">
-                                    <!-- <span data-v-6df100a6=""
-                                        data-v-cfc9a7fc="">Pending: 0 U</span> -->
+                                   <span data-v-6df100a6=""
+                                        data-v-cfc9a7fc="">Pending: 0 U</span>
                                     </div>
                             </div>
                             
@@ -362,31 +420,63 @@ margin: 0 2px;
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"> 1 </div>                                </div>
                             
                            
-                        </div>
-                        
-                        <ul data-v-6df100a6="" data-v-cfc9a7fc="" class="tab flex">
-                            <li data-v-6df100a6="" data-v-cfc9a7fc="">
-        
-        <input type="text" readonly class="custom-input" id="date-group1-2" placeholder="Start Date" >
-    
-                        
+                        </div> -->
+                        <!-- <div class="box">
+        <div>
+            <div class="text">Profit to be collected</div>
+            <div class="amount">0</div>
+        </div>
+        <button class="button">Claim</button>
+    </div> -->
+    <div class="invest">
+        <div>
+            <span>Total Investment:</span>
+            <span class="content">293.25768622 EUR</span>
+        </div>
+        <div>
+            <span>Total Earnings:</span>
+            <span class="content">5.57189603 EUR</span>
+        </div>
+    </div>
 
-                            </li>
-                            <li  style="display: flex; align-items: center; justify-content: center; font-size: 16px; color:#ffffffb3;">
-        to
-    </li>
-                            <li data-v-6df100a6="" data-v-cfc9a7fc="">
-                            <input type="text" id="date-group1-1" readonly class="custom-input" placeholder="End Date">
-                            </li>
-                        </ul>
+    <div class="history">
+        <div class="header">
+            Computing power income
+            <span class="status">Already Disbursed</span>
+        </div>
+        <div class="item">
+            <span class="label">Run product</span>
+            <span class="value">GPU 4-core computing package</span>
+        </div>
+        <div class="item">
+            <span class="label">Earning Currency</span>
+            <span class="value">EUR</span>
+        </div>
+        <div class="item">
+            <span class="label">Quantity</span>
+            <span class="value">5.57189603</span>
+        </div>
+        <div class="item">
+            <span class="label">Running total</span>
+            <span class="value">327.84449773</span>
+        </div>
+        <div class="item">
+            <span class="label">Daily Interest Rate</span>
+            <span class="value">1.9%</span>
+        </div>
+        <div class="item">
+            <span class="label">Issuing Time</span>
+            <span class="value">2024-10-22</span>
+        </div>
+    </div>
 
-
+                       
                     </div>
                     <div data-v-ac2db8a0="" data-v-6df100a6="" class="revenue" data-v-cfc9a7fc="">
                         <div data-v-ac2db8a0="" class="container">
                             <div data-v-ac2db8a0="" class="total-income">
                                 <div data-v-ac2db8a0="" class="title_box">
-                                    <div data-v-ac2db8a0="" class="title" style="font-size: 14px">@lang('Running Record List')</div>
+                                   
                                     <!-- <div data-v-ac2db8a0="" class="choose_day">
                                         <i data-v-ac2db8a0=""
                                             class="arrow_down van-icon van-icon-arrow-down">
@@ -425,7 +515,7 @@ margin: 0 2px;
                                     
                                         
                                        
-
+<!-- 
                                     <div data-v-65a522d0="" class="it">
                                         <div data-v-65a522d0="" class="jbox_07">
                                             <div data-v-65a522d0="" class="jt"></div>
@@ -508,7 +598,7 @@ margin: 0 2px;
   </div>
                                                 
                                                         
-                                                        <!---->
+                                                      
                                                     </div>
                                                 </div>
                                             </div>
@@ -517,7 +607,10 @@ margin: 0 2px;
                                     </div>
 
                                     
-                                </div>
+                                </div> -->
+
+                               
+
                             </div>
                         </div>
                         
@@ -546,6 +639,9 @@ margin: 0 2px;
                         </div> -->
                     </div>
                 </div>
+
+
+                
             </div>
             <script>
 		window.onload = function() {

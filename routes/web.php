@@ -63,6 +63,8 @@ Route::get('/Index', [App\Http\Controllers\FrontController::class, 'index'])->na
 Route::get('/run-record', [App\Http\Controllers\FrontController::class, 'run_record'])->name('run-record');
 
 Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])->name('about-us');
+Route::get('/service-agreement', [App\Http\Controllers\FrontController::class, 'agreement'])->name('service-agreement');
+
 Route::get('/services', [App\Http\Controllers\FrontController::class, 'services'])->name('services');
 Route::get('/contact-us', [App\Http\Controllers\FrontController::class, 'contact'])->name('contact-us');
 Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');
@@ -101,7 +103,8 @@ Route::post('/lastWithdrawal', [App\Http\Controllers\UserPanel\Dashboard::class,
 Route::get('/article', [App\Http\Controllers\UserPanel\Profile::class, 'terms'])->name('user.terms');
 Route::get('/meassage', [App\Http\Controllers\UserPanel\Profile::class, 'meassage'])->name('user.meassage');
 
-
+Route::get('/team-record', [App\Http\Controllers\UserPanel\Profile::class, 'team_record'])->name('user.team-record');
+Route::get('/computing-power', [App\Http\Controllers\UserPanel\Profile::class, 'computing_power'])->name('user.computing-power');
 Route::get('/profile', [App\Http\Controllers\UserPanel\Profile::class, 'index'])->name('user.profile');
 
 Route::get('/setting', [App\Http\Controllers\UserPanel\Profile::class, 'setting'])->name('user.setting');

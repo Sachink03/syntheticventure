@@ -90,8 +90,11 @@
         html,
         body {
             width: 100%;
+           
             background-color: #000;
         }
+       
+
     </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -149,13 +152,7 @@
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
     }
-    .go p[data-v-607a0cfb] {
-    margin-top: .4rem;
-    color: var(--COcolor3);
-    font-size: .26rem;
-    text-align: center;
-    margin-bottom: 6em;
-}
+   
 body {
     background: none;
     width: 100%;
@@ -168,6 +165,20 @@ body {
     transform: translateX(-50%);
     font-family: Poppins,PingFang SC,Microsoft Yahei,sans-serif
 }
+.agreement{
+
+}
+.set{
+
+}
+.go p[data-v-607a0cfb] {
+    margin-top: .4rem;
+    color: var(--COcolor3);
+    font-size: .26rem;
+    text-align: left;
+    margin-bottom: .4em;
+}
+
 </style>
 
 <body class="main_en">
@@ -298,13 +309,17 @@ body {
                                                     style="border-color: rgb(113, 219, 129); background-color: rgb(113, 219, 129);">
                                                     <!----></i>
                                             </div>
-                                        </div><span data-v-607a0cfb="" data-v-cfc9a7fc=""
-                                            style="margin-left: 0.14rem;">I
-                                           @lang('have read the privacy agreement')</span>
+                                        </div><span data-v-607a0cfb="" data-v-cfc9a7fc="" class="agreement" style="font-size:10px; margin-left: 9px;
+}"> @lang('By registering in, I agree to the VG CUBE') <span
+                                        data-v-607a0cfb="" data-v-cfc9a7fc=""><a href="{{ route('service-agreement') }}"
+                                            style="color:#55b2c2 ; ">@lang('Service Agreement')</a></span></>
                                     </div>
                                 </div><button data-v-607a0cfb="" data-v-cfc9a7fc="" type="submit" class="btn2">
                                    @lang('Registration') </button>
-                                <p data-v-607a0cfb="" data-v-cfc9a7fc=""> @lang('Already have an account') <span
+                                   
+                                
+
+                                            <p data-v-607a0cfb="" data-v-cfc9a7fc="" class="set" > @lang('Already have an account') <span
                                         data-v-607a0cfb="" data-v-cfc9a7fc=""><a href="{{ route('login') }}"
                                             style="color:#55b2c2 ;">@lang('Log in now')</a></span></p>
                                 <!---->

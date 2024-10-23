@@ -252,7 +252,7 @@ public function viewdetail($txnId)
      
 }
 
-    public function confirmDeposit(Request $request)
+    public function confirmDeposit1(Request $request)
     {
    try{
      $validation =  Validator::make($request->all(), [
@@ -366,6 +366,98 @@ public function viewdetail($txnId)
     return Redirect::back()->withErrors(array('try again'));
   }
 
+  }
+   catch(\Exception $e){
+    Log::info('error here');
+    Log::info($e->getMessage());
+    print_r($e->getMessage());
+    die("hi");
+    return  redirect()->route('user.strategy')->withErrors('error', $e->getMessage())->withInput();
+      }
+
+ }
+
+
+
+ public function confirmDeposit(Request $request)
+    {
+   try{
+     $validation =  Validator::make($request->all(), [
+        'Sum' => 'required|numeric|min:10',
+        'plan' => 'required|numeric',
+
+     ]);
+
+
+    //  dd($request->all());
+    if($validation->fails()) {
+        Log::info($validation->getMessageBag()->first());
+
+        return redirect()->route('user.invest')->withErrors($validation->getMessageBag()->first())->withInput();
+    }
+
+
+
+
+    $user=Auth::user();
+
+    $amount = $request->Sum;
+    $amount=$amount/2;
+    $plan = $request->plan;
+
+
+    $balance=$balance = round($user->available_balance(),2);
+
+    if($amount>$balance){
+      return  Redirect::back()->withErrors(array('Balance Insufficient'));
+
+    }
+   
+    
+     $invest_check=Investment::where('user_id',$user->id)->where('amount', $amount)->where('roiCandition', 0)->first();
+
+    if ($invest_check) 
+    {
+      return  Redirect::back()->withErrors(array('You already have this Package'));
+    }
+   
+    $paymentMode= "USDT";
+  
+
+       $invoice = substr(str_shuffle("0123456789"), 0, 7);
+      
+           date_default_timezone_set("Asia/Kolkata");   //India time (GMT+5:30)
+
+
+    
+
+       $data = [
+            'plan' => $plan,
+            'orderId' => $invoice,
+            'transaction_id' =>$invoice,
+            'user_id' => $user->id,
+            'user_id_fk' => $user->username,
+            'amount' => $amount,
+            'payment_mode' =>$paymentMode,
+            'status' => 'Active',
+            'sdate' => Date("Y-m-d"),
+            'active_from' => $user->username,
+            'created_at' => date("Y-m-d H:i:s"),
+        ];
+        $payment =  Investment::insert($data);
+                
+            
+    $this->data['page'] = 'user.dashboard';
+
+    $notify[] = ['success','Package Buy Successfully'];
+
+
+    return  redirect()->route('user.strategy')->withNotify($notify);
+
+
+    return $this->dashboard_layout();  
+
+ 
   }
    catch(\Exception $e){
     Log::info('error here');

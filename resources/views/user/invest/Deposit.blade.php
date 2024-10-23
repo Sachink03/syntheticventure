@@ -215,24 +215,22 @@
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
-                                        @if($id=="1")
-                                           $1
-                                        @elseif($id=="2")
-                                        $4
-                                        @elseif($id=="3")
-                                        $10
-                                        @elseif($id=="4")
-                                        $40
-                                        @elseif($id=="5")
-                                        $120
-                                        @elseif($id=="6")
-                                        $200
-                                        @elseif($id=="7")
-                                        $500
-                                        @endif
-
+                                        <?php
+                                        $plans = [
+                                            "1" => 1,
+                                            "2" => 4,
+                                            "3" => 10,
+                                            "4" => 40,
+                                            "5" => 120,
+                                            "6" => 200,
+                                            "7" => 500
+                                        ];
+                                        
+                                        $plan = isset($plans[$id]) ? $plans[$id] : 0; // Default to 0 if $id is not found
+                                        ?>
+                                        ${{ $plan }}
                                     </div>
-                                </li>
+                                                                    </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Subscription Duration')</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">  60 @lang('Days')</div>
@@ -240,23 +238,23 @@
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Total Reward</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
-                                        @if($id=="1")
-                                           $60
-                                        @elseif($id=="2")
-                                        $240
-                                        @elseif($id=="3")
-                                        $600
-                                        @elseif($id=="4")
-                                        $2400
-                                        @elseif($id=="5")
-                                        $7200
-                                        @elseif($id=="6")
-                                        $12000
-                                        @elseif($id=="7")
-                                        $30000
-                                        @endif
-
+                                        <?php
+                                        $amounts = [
+                                            "1" => 60,
+                                            "2" => 240,
+                                            "3" => 600,
+                                            "4" => 2400,
+                                            "5" => 7200,
+                                            "6" => 12000,
+                                            "7" => 30000
+                                        ];
+                                        
+                                        // Check if the id exists in the amounts array, otherwise default to 0 or another value
+                                        $amount = isset($amounts[$id]) ? $amounts[$id] : 0;
+                                        ?>
+                                        ${{ $amount }}
                                     </div>
+                                    
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Run Time</div>
@@ -275,32 +273,10 @@
 							
                             <form method="post" name="add" action="{{ route('user.confirmDeposit') }}" onsubmit="return validateForm()">
                                 {{ csrf_field() }}
-                                {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-                                        <input data-v-1fa86597="" data-v-cfc9a7fc="" id="amount" name="Sum" type="text" style="color:white;" placeholder="Enter Amount">
-                                    </div>
-                                    <input data-v-1fa86597="" data-v-cfc9a7fc="" id="plan" name="plan" type="hidden" value="{{ $profile->id}}">
+                                
+                                <input type="hidden" name="Sum" value={{ $amount }}>
+                                <input type="hidden" name="plan" value={{ $plan }}>
 
-                                </div>
-                                </br></br>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-                                        <!--<input data-v-1fa86597="" data-v-cfc9a7fc="" id="PSys" name="PSys" type="text" value="USDT (TRC20)" readonly style="color:white;" placeholder="">-->
-                                        
-                                        
-                                        <select id="PSys" name="PSys" style="width:100%;color:#fff">
-                                            <option value="USDT_TRX">USDT (TRC20)</option>
-                                            <option value="USDT_BSC">USDT (BEP20)</option>
-                                            <option value="LTC">Litecoin</option>
-                                            <option value="DOGE">Dogecoin</option>
-                                            <option value="BCH">Bitcoin Cash</option>
-                                            <option value="ETC">Ethereum Classic</option>
-                                        </select>
-                                    </div>
-                                    
-                                </div>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
-                                </br></br></br> --}}
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
                                     <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Confirm') </button>
                                 </div>

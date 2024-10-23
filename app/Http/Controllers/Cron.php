@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Investment;
+use App\Models\BuyFund;
 use App\Models\Income;
 use App\Models\User;
 use App\Models\Contract;
@@ -659,7 +660,7 @@ public function dynamicupicallback()
               $orderId= $result['order_number'];
               $username= $result['order_name'];
               $amount= $result['source_amount'];
-              $updateTrue = Investment::where('orderId',$orderId)->where('status','Pending')->update(['status' => 'Active']);
+              $updateTrue = BuyFund::where('orderId',$orderId)->where('status','Pending')->update(['status' => 'Active']);
            
            if($updateTrue)  
            {
@@ -698,7 +699,7 @@ public function dynamicupicallback()
               $orderId= $result['order_number'];
               $username= $result['order_name'];
               $amount= $result['source_amount'];
-              $updateTrue = Investment::where('orderId',$orderId)->where('status','Pending')->update(['status' => 'Active']);
+              $updateTrue = BuyFund::where('orderId',$orderId)->where('status','Pending')->update(['status' => 'Active']);
            
            if($updateTrue)  
            {

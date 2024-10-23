@@ -148,10 +148,10 @@
                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="container">
                         <div data-v-636522ac="" data-v-cfc9a7fc="" class="heads">
                             <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex">
-                                <div data-v-636522ac="" data-v-cfc9a7fc="" ><img data-v-636522ac=""
+                                <!-- <div data-v-636522ac="" data-v-cfc9a7fc="" ><img data-v-636522ac=""
                                         data-v-cfc9a7fc=""
                                         src="{{ asset('') }}assets/static/img/logo1.png" style="width:250px;">
-                                </div>
+                                </div> -->
                                 <!-- <div data-v-636522ac="" data-v-cfc9a7fc="" class="flex1">
                                     <div data-v-636522ac="" data-v-cfc9a7fc="" class="n"> riteshkk <img
                                             data-v-636522ac="" data-v-cfc9a7fc="" src="{{asset('')}}assets/static/img/lv1.0c323966.png">

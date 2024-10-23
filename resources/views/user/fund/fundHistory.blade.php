@@ -369,6 +369,24 @@ margin: 0 2px;
             line-height: normal;
             font-family: PingFang SC;
         }
+
+        .container {
+    padding: 8px .4rem;
+}
+.head .name[data-v-397da544] {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 5rem;
+    margin-left: -2.5rem;
+    left: 50%;
+    font-size: 14px;
+    font-weight: 300;
+}
             </style>
          
 
@@ -379,7 +397,10 @@ margin: 0 2px;
                 <div data-v-397da544="" data-v-6df100a6="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <!---->
-                        <div data-v-397da544="" class="left_title">@lang('Earning Record') </div>
+                        <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <!----></i></a></div>
+                        <div data-v-397da544="" class="name tac">  @lang('Earning Record') </div>
+                        <div data-v-397da544="" class="left_title"></div>
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
@@ -628,10 +649,12 @@ margin: 0 2px;
      <div class="label">
       Computing Power Income
      </div>
+     <a href="{{route('user.computing-power')}}">
      <div class="label">
      55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
      <!----></i>
      </div>
+     </a>
     </div>
     <div class="row">
      <div class="data">
@@ -655,10 +678,12 @@ margin: 0 2px;
    <div class="label">
     Team Income
    </div>
+   <a href="{{route('user.team-record')}}">
    <div class="label">
    55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
    <!----></i>
    </div>
+   </a>
   </div>
   <div class="row">
    <div class="data">
@@ -683,10 +708,12 @@ margin: 0 2px;
    <div class="label">
     Computing Power Income
    </div>
+   <a href="{{route('user.computing-power')}}">
    <div class="label">
    55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
    <!----></i>
    </div>
+   </a>
   </div>
   <div class="row">
    <div class="data">

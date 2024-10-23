@@ -105,7 +105,7 @@
     .line[data-v-3d4e4f5e] {
     border-radius: .1rem;
     background: transparent;
-    padding: 0 .32rem
+    padding: 10px .32rem
 }
 .btn_list .go button[data-v-3d4e4f5e] {
     width: 100%;
@@ -123,6 +123,116 @@
     vertical-align: middle;
     filter: brightness(7) saturate(94%) invert(89%) sepia(0%) saturate(7500%) hue-rotate(343deg) brightness(104%) contrast(104%);
 }
+
+.profile-container {
+            display: flex;
+            align-items: center;
+            background-color: #000;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: -21px;
+        }
+        .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .profile-info .span1 {
+            margin-bottom: 5px;
+        }
+        .badges {
+            display: flex;
+            align-items: center;
+        }
+        .badge {
+            display: flex;
+            align-items: center;
+            background-color: #e0e0e0;
+            color: #000;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        .badge i {
+            margin-right: 5px;
+        }
+        .level {
+            display: flex;
+            align-items: center;
+            background-color: #55B2C2;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+        .level i {
+            margin-right: 5px;
+           
+        }
+        .arrow {
+            margin-left: 10px;
+            color: #ffffff;
+        }
+
+        .invite-card {
+            background-color: #0d1117;
+            color: white;
+            border-radius: 10px;
+            margin-top: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-image: url("{{asset('')}}assets/static/img/banner_i.jpg");
+            background-size: cover;
+            background-position: center;
+            padding-top: 11px;
+    padding-bottom: 12px;
+        }
+        .invite-card .text {
+            flex: 1;
+        }
+        .invite-card h2 {
+            margin: 0;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: Bai Jamjuree;
+        }
+        .invite-card p {
+            margin: 5px 0 0;
+            font-family: Bai Jamjuree;
+    font-size: 12px;
+        }
+        .invite-card .icons {
+            display: flex;
+            align-items: center;
+        }
+        .invite-card .icons img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .invite-card .go-button {
+            background-color: #00bfa5;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
 </style>
 <body class="mein_cn">
     <div id="app" class="applang">
@@ -158,7 +268,49 @@
                                     </div>
                                 </div>
                             </div>
-                            <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="com-wallet flex">
+
+                            <div class="profile-container">
+                                
+   <img alt="Profile image of a person wearing a hat" class="profile-image" height="50" src="https://storage.googleapis.com/a1aa/image/G73XOHdSHeTQdivhQ4v8fuzDVnHkcf77chUPrFQFQIx6fdmOB.jpg" width="50"/>
+   <div class="profile-info" onclick="location.href='{{route('user.profile')}}'" >
+    <span class="span1">
+     79012755596
+    </span>
+    <div class="badges">
+     <!-- <div class="badge">
+      <i class="fas fa-gem">
+      </i>
+      free membership
+     </div> -->
+     <div class="level">
+      <i class="fas fa-star">
+      </i>
+      P1Level
+     </div>
+
+    </div>
+   </div>
+   <i class="fas fa-chevron-right arrow">
+   </i>
+  </div>
+  <a href="{{route('user.invite')}}">
+  <div class="invite-card">
+   <div class="text">
+    <h2>
+     Invite Friends
+    </h2>
+    <p>
+     Explore the wonderful world of artificial intelligence
+    </p>
+   </div>
+   <!-- <div class="icons">
+    <button class="go-button">
+     Go
+    </button>
+   </div> -->
+  </div>
+  </a>
+                            <!-- <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="com-wallet flex">
                                 <ul data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1">
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
@@ -185,10 +337,14 @@
                                         data-v-cfc9a7fc=""
                                         src="{{asset('')}}assets/static/img/profile_i.png"></a><span
                                         data-v-3d4e4f5e="" data-v-cfc9a7fc="" style="color:#fff;">@lang('Profile')</span></div>
-                            </div>
+                            </div> -->
+
+
+
                         </div>
+                        
                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="container">
-                            <ul data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="nav1 flex">
+                            <!-- <ul data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="nav1 flex">
                                 <li data-v-3d4e4f5e="" data-v-cfc9a7fc="">
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.strategy')}}" style="color:#fff;"><img data-v-3d4e4f5e=""
                                             data-v-cfc9a7fc=""
@@ -217,7 +373,7 @@
                                     </div>
                                     <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="n">@lang('Help Center')</div>
                                 </li>
-                            </ul>
+                            </ul> -->
                             <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="line">
                                 <ul data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ul1">
                                     <!-- <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
@@ -232,6 +388,19 @@
                                                 
                                         </div>
                                     </li> -->
+                                    <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
+                                                data-v-cfc9a7fc=""
+                                                src="{{asset('')}}assets/static/img/team_i.png">
+                                        </div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex1"><a href="{{route('user.team')}}"  style="color:#fff;">@lang('My Team')
+                                        </a></div>
+                                        <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="right">
+                                            <!---->
+                                            <!----><i data-v-3d4e4f5e="" data-v-cfc9a7fc=""
+                                                class="van-icon van-icon-arrow">
+                                                <!----></i></div>
+                                    </li>
                                     <li data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="flex">
                                         <div data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="ico"><img data-v-3d4e4f5e=""
                                                 data-v-cfc9a7fc=""

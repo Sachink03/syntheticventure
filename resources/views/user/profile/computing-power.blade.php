@@ -156,6 +156,9 @@
     font-weight: 550;
     color: #000;
     padding-top: 4px;
+
+
+    
 }
 input[type=text], textarea{
     margin-left: 31px;
@@ -174,6 +177,7 @@ input[type=text], textarea{
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            font-family: PingFang SC;
         }
         .header img {
             width: 50px;
@@ -207,7 +211,7 @@ input[type=text], textarea{
             /* color: #aaaaaa; */
             color: #fff;
             /* padding-top: 6px; */
-            font-size: 12px;
+            font-size: 10px;
             font-family: PingFang SC;
             margin-top: -3px;
         }
@@ -347,6 +351,8 @@ margin: 0 2px;
             background-color: #2b2b2b;
             border-radius: 5px;
             margin: 15px auto;
+            padding-top: 16px;
+    padding-bottom: 3px;
         }
         .header {
             font-size: 14px;
@@ -359,7 +365,8 @@ margin: 0 2px;
             color: #b3b3b3;
         }
         .item {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            font-family: PingFang SC;
         }
         .label {
             font-size: 12px;
@@ -367,9 +374,38 @@ margin: 0 2px;
         }
         .value {
             float: right;
+            font-size: 10px;
         }
 
-        
+        .left_title[data-v-397da544] {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container {
+    padding: 8px .4rem;
+}
+.head_right[data-v-397da544] {
+    margin-right: 139px;
+}
+
+a {
+    text-decoration: none;
+    color: #ebf4f2;
+    font-size: 22px;
+}
+.head_right[data-v-397da544] {
+    margin-left: auto;
+    font-size: 12px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 50%;
+    width: 5rem;
+    margin-left: -2.5rem;
+}
             </style>
          
 
@@ -380,13 +416,14 @@ margin: 0 2px;
                 <div data-v-397da544="" data-v-6df100a6="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <!---->
-                        <div data-v-397da544="" class="left_title">@lang('Computing Power Income') </div>
+                        <div data-v-397da544="" class="left_title"><a href="{{route('user.recharge')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <!----></i></a></div>
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
                         <!---->
-                        <div data-v-397da544="" class="head_right"></div>
+                        <div data-v-397da544="" class="head_right">@lang('Computing Power Income') </div>
                     </div>
                 </div>
             </div>

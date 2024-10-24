@@ -190,7 +190,7 @@
             align-items: center;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            background-image: url("{{asset('')}}assets/static/img/banner_i.jpg");
+            /* background-image: url("{{asset('')}}assets/static/img/banner_i.jpg"); */
             background-size: cover;
             background-position: center;
             padding-top: 11px;

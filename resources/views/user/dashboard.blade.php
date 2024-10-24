@@ -288,7 +288,7 @@
                                         class="swiper-slide swiper-slide-active"
                                         data-swiper-slide-index="2" style="width: 425px;">
                                         <div data-v-45836ea7="" class="item"><img data-v-45836ea7=""
-                                                src="{{asset('')}}assets/static/img/dashboard3.png">
+                                                src="{{asset('')}}assets/static/image/dashboard.png">
                                         </div>
                                     </div>
                                     <div data-v-45836ea7="" class="swiper-slide swiper-slide-prev"
@@ -300,7 +300,7 @@
                                     <div data-v-45836ea7="" class="swiper-slide swiper-slide-active"
                                         data-swiper-slide-index="1" style="width: 425px;">
                                           <div data-v-45836ea7="" class="item"><img data-v-45836ea7="" style="    border-radius: 15px;"
-                                                src="{{asset('')}}assets/static/img/dashboard3.png">
+                                                src="{{asset('')}}assets/static/image/dashboard.png">
                                         </div>
                                     </div>
                                     <div data-v-45836ea7="" class="swiper-slide swiper-slide-next"
@@ -313,7 +313,7 @@
                                         class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
                                         data-swiper-slide-index="0" style="width: 425px;">
                                         <div data-v-45836ea7="" class="item"><img data-v-45836ea7=""
-                                            src="{{asset('')}}assets/static/img/dashboard3.png">
+                                            src="{{asset('')}}assets/static/image/dashboard.png">
                                         </div>
                                     </div>
                                 </div> <span class="swiper-notification" aria-live="assertive"

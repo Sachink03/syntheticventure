@@ -195,7 +195,7 @@ body {
                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
                 <div data-v-a34da882="" data-v-cfc9a7fc="" class="logo"><img data-v-a34da882=""
                                 data-v-cfc9a7fc=""
-                                src="{{asset('')}}assets/static/img/bg-image.png">
+                                src="{{asset('')}}assets/static/image/loginbg.png">
                             <div data-v-a34da882="" data-v-cfc9a7fc="" class="s" ></div>
                         </div>
                     <div data-v-a34da882="" data-v-cfc9a7fc="" class="container">

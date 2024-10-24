@@ -163,9 +163,9 @@ Route::get('/register/{sponsorCode}', [App\Http\Controllers\Register::class, 'sh
 
 Route::get('/recharge', [App\Http\Controllers\UserPanel\Invest::class, 'showrecord'])->name('user.recharge');
 Route::get('/invest', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
-Route::get('/edit/{id}', [App\Http\Controllers\UserPanel\Invest::class, 'edit'])->name('edit');
+Route::get('/confirm-node/{id}', [App\Http\Controllers\UserPanel\Invest::class, 'edit'])->name('edit');
 // Route::get('/packege', [App\Http\Controllers\UserPanel\Invest::class, 'index'])->name('user.invest');
-Route::get('/strategy', [App\Http\Controllers\UserPanel\Invest::class, 'strategy'])->name('user.strategy');
+Route::get('/subscribe', [App\Http\Controllers\UserPanel\Invest::class, 'strategy'])->name('user.strategy');
 Route::get('/package', [App\Http\Controllers\UserPanel\Invest::class, 'package'])->name('user.package');
 Route::get('/viewdetail/{txnId}', [App\Http\Controllers\UserPanel\Invest::class, 'viewdetail'])->name('user.viewdetail');
 Route::get('/deposit', [App\Http\Controllers\UserPanel\Invest::class, 'deposit'])->name('user.deposit');

@@ -142,14 +142,16 @@
                         <div data-v-397da544="" class="back"><a href="{{route('user.strategy')}}"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                                 <!----></i></a></div>
                         <!---->
-                        <div data-v-397da544="" class="name tac"> Confirm Package</div>
+                        <div data-v-397da544="" class="name tac"> Confirm Node</div>
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
                         <!---->
                         <!---->
-                        <div data-v-397da544="" class="head_right"><img data-v-1fa86597="" data-v-397da544=""
+                        <div data-v-397da544="" class="head_right">
+                            <!-- <img data-v-1fa86597="" data-v-397da544=""
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAPFBMVEUAAAD////////////////////////////////////////////////////////////////////////////YSWgTAAAAE3RSTlMAv8Ag30Bg76AQMHDPkICwn1DQSxq5iQAAAYFJREFUSMfdlUG2gyAMRdUYIyBi6/73+oOk5KDA+ZNO+iZV8m4IQcrwQzLuGBvyWPHb+ezoMA8/nV1tdyDmp6mudyT20r/w0GiGhpA4WxkNPAJDUzvnKxc+nucUO2XxppQFGFhqQKVT2ANsraE9wDxmEJ/hh1etJHgtN6Gs+r0PT6Cv7wDo/OEdmv8B4Cm3ChoALCzQ3WUp0m4rRnQT5/z5hfbGLey/fJODa9opvpCtlLSlXPK1uxx+zTL+WDSwpH6Nfyocm12C7OfS4jyyPGwBa/7WPJNyhmWKKjBn2ypPkgXqAF4TKKCjrg44DtkHMBBvXx3wDOQ6tP+behS4p91PIcTTnIHk0WxCNABdA5SErCH0u6REkI3Y64ChtEdKeNkHVKD4uw1FzPiYGEhbITgUNc23cxlynWqxRXQrCB8N5YFg0Zzkze37hysMak9HTGXT/XJgiu0kB7Eg1lMFnxuM+Iaj9JT9irhVhPEtKK8L7GqZ9IZzfavOGfiKWx0Ov6Y/i5cqRP3WDagAAAAASUVORK5CYII="
-                                class="record_icon"></div>
+                                class="record_icon"> -->
+                            </div>
                     </div>
                 </div>
             </div>
@@ -179,7 +181,8 @@
 
                                    @endphp
 									
-								<span data-v-cc3ce6d2="">{{$package[$id-1]}}
+								<span data-v-cc3ce6d2="">
+                                {{$package[0]}}
                                         </span></div>
                             </div>
                           
@@ -192,7 +195,7 @@
                             </div> --}}
                             <ul data-v-1fa86597="" data-v-cfc9a7fc="" class="com-1">
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Subscription</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Subscription Server</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
                                         @if($id=="1")
                                            $30
@@ -213,54 +216,8 @@
                                     </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily Node Power Reward</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
-<<<<<<< HEAD
-                                        @if($id=="1")
-                                           $1
-                                        @elseif($id=="2")
-                                        $4
-                                        @elseif($id=="3")
-                                        $10
-                                        @elseif($id=="4")
-                                        $40
-                                        @elseif($id=="5")
-                                        $120
-                                        @elseif($id=="6")
-                                        $200
-                                        @elseif($id=="7")
-                                        $500
-                                        @endif
-
-                                    </div>
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Subscription Duration')</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">  60 @lang('Days')</div>
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Total Reward</div>
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
-                                        @if($id=="1")
-                                           $60
-                                        @elseif($id=="2")
-                                        $240
-                                        @elseif($id=="3")
-                                        $600
-                                        @elseif($id=="4")
-                                        $2400
-                                        @elseif($id=="5")
-                                        $7200
-                                        @elseif($id=="6")
-                                        $12000
-                                        @elseif($id=="7")
-                                        $30000
-                                        @endif
-
-                                    </div>
-                                </li>
-                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
-=======
                                         <?php
                                         $plans = [
                                             "1" => 1,
@@ -303,7 +260,6 @@
                                     
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Run Time</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
                                         1 hour
@@ -320,43 +276,17 @@
 							
                             <form method="post" name="add" action="{{ route('user.confirmDeposit') }}" onsubmit="return validateForm()">
                                 {{ csrf_field() }}
-<<<<<<< HEAD
-                                {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-                                        <input data-v-1fa86597="" data-v-cfc9a7fc="" id="amount" name="Sum" type="text" style="color:white;" placeholder="Enter Amount">
-                                    </div>
-                                    <input data-v-1fa86597="" data-v-cfc9a7fc="" id="plan" name="plan" type="hidden" value="{{ $profile->id}}">
-
-                                </div>
-                                </br></br>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices" style="height:47px;">
-                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
-                                        <!--<input data-v-1fa86597="" data-v-cfc9a7fc="" id="PSys" name="PSys" type="text" value="USDT (TRC20)" readonly style="color:white;" placeholder="">-->
-                                        
-                                        
-                                        <select id="PSys" name="PSys" style="width:100%;color:#fff">
-                                            <option value="USDT_TRX">USDT (TRC20)</option>
-                                            <option value="USDT_BSC">USDT (BEP20)</option>
-                                            <option value="LTC">Litecoin</option>
-                                            <option value="DOGE">Dogecoin</option>
-                                            <option value="BCH">Bitcoin Cash</option>
-                                            <option value="ETC">Ethereum Classic</option>
-                                        </select>
-                                    </div>
-                                    
-                                </div>
-                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
-                                </br></br></br> --}}
-=======
                                 
                                 <input type="hidden" name="Sum" value={{ $amount }}>
                                 <input type="hidden" name="plan" value={{ $plan }}>
 
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
+                                <p style="font-weight:300; font-size:10px;color:gray"><b>Note:</b> Rewards from completed tasks are credited to the VG CUBE wallet, allowing users to track and withdraw their funds</p>
+
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
                                     <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Confirm') </button>
                                 </div>
                             </form>
+                            
                             {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
                                 <div data-v-1fa86597="" role="checkbox" tabindex="0" aria-checked="true"
                                     class="van-checkbox" data-v-cfc9a7fc="">

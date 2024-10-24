@@ -4,7 +4,9 @@
     background-size: cover;
     position: relative;
     border-radius: .34rem;
-    overflow: hidden
+    overflow: hidden;
+    opacity:1;
+    height:140px
 }
 
 .levelBox .leve-bg[data-v-cc3ce6d2] {
@@ -12,8 +14,8 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 6.5rem;
-    opacity: .1
+    width: 8.5rem;
+    opacity: 1.1
 }
 
 .levelBox .levelBox-head[data-v-cc3ce6d2] {

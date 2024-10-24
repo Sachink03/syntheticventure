@@ -353,7 +353,15 @@
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="#" style="color:white;"><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.team')}}" style="color:white;">
+                                        <img data-v-6df716d9=""
+                                            data-v-cfc9a7fc=""
+                                            src="{{asset('')}}assets/static/img/15.png" class="icon-custom">
+                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Team')</a></p>
+                                    </div>
+                                </li>
+                                <li data-v-6df716d9="" data-v-cfc9a7fc="">
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.meassage')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/14.png" class="icon-custom">
                                              <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Tutorial')</a></p>
@@ -366,14 +374,7 @@
                                         <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Invitation')</a></p>
                                     </div>
                                 </li>
-                                <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;">
-                                        <img data-v-6df716d9=""
-                                            data-v-cfc9a7fc=""
-                                            src="{{asset('')}}assets/static/img/15.png" class="icon-custom">
-                                        <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('About Us')</a></p>
-                                    </div>
-                                </li>
+                               
                             </ul>
                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="incomeBox" style="background:none;border:none;">
                                 <ul data-v-6df716d9="" data-v-cfc9a7fc="">

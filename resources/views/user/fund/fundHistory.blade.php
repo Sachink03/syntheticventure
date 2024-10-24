@@ -369,8 +369,6 @@ margin: 0 2px;
             line-height: normal;
             font-family: PingFang SC;
         }
-<<<<<<< HEAD
-=======
 
         .container {
     padding: 8px .4rem;
@@ -389,7 +387,6 @@ margin: 0 2px;
     font-size: 14px;
     font-weight: 300;
 }
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
             </style>
          
 
@@ -400,14 +397,10 @@ margin: 0 2px;
                 <div data-v-397da544="" data-v-6df100a6="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">
                         <!---->
-<<<<<<< HEAD
-                        <div data-v-397da544="" class="left_title">@lang('Earning Record') </div>
-=======
                         <div data-v-397da544="" class="back"><a href="{{route('user.dashboard')}}" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
                         <!----></i></a></div>
                         <div data-v-397da544="" class="name tac">  @lang('Earning Record') </div>
                         <div data-v-397da544="" class="left_title"></div>
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                         <!---->
                         <div data-v-397da544="" class="flex1"></div>
                         <!---->
@@ -656,18 +649,12 @@ margin: 0 2px;
      <div class="label">
       Computing Power Income
      </div>
-<<<<<<< HEAD
-=======
      <a href="{{route('user.computing-power')}}">
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
      <div class="label">
      55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
      <!----></i>
      </div>
-<<<<<<< HEAD
-=======
      </a>
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
     </div>
     <div class="row">
      <div class="data">
@@ -691,18 +678,12 @@ margin: 0 2px;
    <div class="label">
     Team Income
    </div>
-<<<<<<< HEAD
-=======
    <a href="{{route('user.team-record')}}">
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
    <div class="label">
    55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
    <!----></i>
    </div>
-<<<<<<< HEAD
-=======
    </a>
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
   </div>
   <div class="row">
    <div class="data">
@@ -727,18 +708,12 @@ margin: 0 2px;
    <div class="label">
     Computing Power Income
    </div>
-<<<<<<< HEAD
-=======
    <a href="{{route('user.computing-power')}}">
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
    <div class="label">
    55.03 EUR <i data-v-3d4e4f5e="" data-v-cfc9a7fc="" class="van-icon van-icon-arrow">
    <!----></i>
    </div>
-<<<<<<< HEAD
-=======
    </a>
->>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
   </div>
   <div class="row">
    <div class="data">

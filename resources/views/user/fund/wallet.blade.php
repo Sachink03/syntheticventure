@@ -178,7 +178,7 @@
                         
                         <ul data-v-6df100a6="" data-v-cfc9a7fc="" class="tab flex">
                             <li data-v-6df100a6="" data-v-cfc9a7fc="">
-                                <a href="{{route('user.strategy')}}" style="color: #fff">
+                                <a href="{{route('user.fund')}}" style="color: #fff">
                                 <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                 src="{{asset('')}}assets/static/img/deposit_i.png"> 
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">@lang('Deposit')    </a></div>

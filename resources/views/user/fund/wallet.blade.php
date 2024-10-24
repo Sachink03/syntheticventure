@@ -189,7 +189,6 @@
                                 <a href="{{route('user.Withdraw')}}" style="color: #fff">
                                 <img data-v-6df100a6="" data-v-cfc9a7fc=""
                                 src="{{asset('')}}assets/static/img/Withdraw_i.png">
-                                src="{{asset('')}}assets/static/img/Withdraw_i.png">
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="s">@lang('Withdraw')  </a> </div>
                             </li>
                         </ul>

@@ -19,6 +19,8 @@ use Redirect;
 use Hash;
 use Helper;
 
+
+
 class Invest extends Controller
 {
 
@@ -171,7 +173,7 @@ class Invest extends Controller
                                 'remarks' => 'Task Income',
                                 'comm' => $roi,
                                 'amt' => $joining_amt,
-                                'invest_id' => $investment->id,
+                                'invest_id' => $investment->id, 
                                 'level' => 0,
                                 'ttime' => date("Y-m-d"),
                                 'user_id_fk' => $userDetails->username,
@@ -190,7 +192,7 @@ class Invest extends Controller
                             \DB::table('users')->where('id', $userID)->update(['last_trade' => date("Y-m-d H:i:s")]);
     
                             // Uncomment to add leadership bonuses if necessary
-                            // $this->add_level_income($userDetails->id, $roi);
+                           add_level_income($userDetails->id, $roi);
     
                         } else {
                             // Mark the investment as having fulfilled the ROI condition

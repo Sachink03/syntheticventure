@@ -346,6 +346,40 @@ return true;
 }
 
 
+ function my_level_team_count($userid,$level=10){
+  $arrin=array($userid);
+  $ret=array();
+
+  $i=1;
+  while(!empty($arrin)){
+      $alldown=User::select('id')->whereIn('sponsor',$arrin)->get()->toArray();
+      if(!empty($alldown)){
+          $arrin = array_column($alldown,'id');
+          $ret[$i]=$arrin;
+          $i++;
+
+          if ($i>$level) {
+            break;
+           }
+
+      }else{
+          $arrin = array();
+      }
+  }
+
+  // $final = array();
+  // if(!empty($ret)){
+  //     array_walk_recursive($ret, function($item, $key) use (&$final){
+  //         $final[] = $item;
+  //     });
+  // }
+
+
+  return $ret;
+
+}
+
+
 
 function add_level_income($id,$amt)
 {
@@ -373,7 +407,7 @@ $user_mid = $data->id;
                {
                 $Sposnor_status = User::where('id',$sponsor)->orderBy('id','desc')->first();
 
-                $my_level_team=$this->my_level_team_count($Sposnor_status->id);
+                $my_level_team=my_level_team_count($Sposnor_status->id);
                 $gen_team1 =  (array_key_exists(1,$my_level_team) ? $my_level_team[1]:array());
                 $gen_team2 =  (array_key_exists(2,$my_level_team) ? $my_level_team[2]:array());
                 $gen_team3 =  (array_key_exists(3,$my_level_team) ? $my_level_team[3]:array());

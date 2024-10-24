@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/clear', function() {
+Route::get('/clear1', function() {
 
    Artisan::call('cache:clear');
    Artisan::call('config:clear');
@@ -174,6 +174,10 @@ Route::get('/cancel-payment/{id}', [App\Http\Controllers\UserPanel\Invest::class
 Route::post('/fundActivation', [App\Http\Controllers\UserPanel\Invest::class, 'fundActivation'])->name('user.fundActivation');
 Route::any('/confirmDeposit', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposit'])->name('user.confirmDeposit');
 Route::any('/confirmDeposit_new', [App\Http\Controllers\UserPanel\Invest::class, 'confirmDeposit_new'])->name('user.confirmDeposit_new');
+Route::any('/generate_roi', [App\Http\Controllers\UserPanel\Invest::class, 'generate_roi'])->name('user.generate_roi');
+
+
+Route::any('/confirmFundDeposit', [App\Http\Controllers\UserPanel\AddFund::class, 'confirmDeposit'])->name('user.confirmFundDeposit');
 
 
 Route::any('/confirmFundDeposit', [App\Http\Controllers\UserPanel\AddFund::class, 'confirmDeposit'])->name('user.confirmFundDeposit');

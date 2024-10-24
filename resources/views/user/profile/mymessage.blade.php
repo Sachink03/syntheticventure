@@ -129,7 +129,7 @@
 
 <body class="main_en">
     <div id="app" class="applang">
-        <div data-v-cfc9a7fc="" data-v-aefda5d2="" class="page" style="background: rgb(22, 24, 24);">
+        <div data-v-cfc9a7fc="" data-v-aefda5d2="" class="page" style="background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%);">
             <div data-v-cfc9a7fc="" class="headers">
                 <div data-v-397da544="" data-v-aefda5d2="" class="head" data-v-cfc9a7fc="">
                     <div data-v-397da544="" class="container flex">

@@ -250,6 +250,26 @@
     font-size: 14px;
     font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+.timer  {
+                                        padding-top: 5px;
+                                        text-align: center;
+                                        opacity: 0.9;
+                                    }
+
+.times{
+    position: relative;
+    bottom: 24px;
+    color: white; /* White text color */
+    text-shadow: 
+        -1px -1px 0 black, /* Top left shadow */
+         1px -1px 0 black, /* Top right shadow */
+        -1px  1px 0 black, /* Bottom left shadow */
+         1px  1px 0 black; /* Bottom right shadow */
+}                                    
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
 </style>
 <body class="mein_cn">
     <div id="app" class="applang">
@@ -400,88 +420,97 @@
                         <div id="tab2" class="tab" style="color: grey;">My Computing Power</div>
 
                         </div>
+<<<<<<< HEAD
                         <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="orderList" style="display: none;">
                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="cname">@lang('My Strategy')</div>
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list">
+=======
+
+                        <style>
+                            .Progress {
+                                    margin-top: .32rem;
+                                }
+                             .Progress .van-slider {
+                                background: hsla(0, 0%, 100%, .1) !important;
+                            }
+                            
+                            .van-slider {
+                                position: relative;
+                                width: 100%;
+                                height: .03448rem;
+                                background-color: #ebedf0;
+                                border-radius: 17.22414rem;
+                                cursor: pointer;
+                            }
+                            .van-slider:before {
+                                position: absolute;
+                                top: -.13793rem;
+                                right: 0;
+                                bottom: -.13793rem;
+                                left: 0;
+                                content: "";
+                            }
+                            .Progress .van-slider__bar {
+                                background: #55b2c2 !important;
+                            }
+                            
+                            .van-slider__bar {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #1989fa;
+                                border-radius: inherit;
+                                -webkit-transition: all .2s;
+                                transition: all .2s;
+                            }
+                            .van-slider__button-wrapper, .van-slider__button-wrapper-right {
+                                position: absolute;
+                                top: 50%;
+                                right: 0;
+                                -webkit-transform: translate3d(50%, -50%, 0);
+                                transform: translate3d(50%, -50%, 0);
+                                cursor: grab;
+                            }
+                            .Progress .van-slider__button {
+                                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAgCAMAAABabbp1AAAAtFBMVEUAAAD///////////////////////////////////////////+f6pSP5Y2H44qB4Yic6pOs7pqV55Cq7pmF4ol734Wo7ZiR5o6a6ZKD4YmJ5IuT549+4Iez8Z2x8JyY6JGM5Iy28p6l7Jav75um7Zeh65Wj7Jbz/fJ43oSu75rG8cnu++/f+dT4/vbw+/Ha+NDK9bm68qO978LA8rOk6aea5qO08KKI4pDT9seu67TA86qa6ZT+kNadAAAAC3RSTlMA3yDvkBDQYKCfMLC2wLEAAAHvSURBVDjLlZTZWsJADEYrZYA6Uugi2EUFpVRBlE0Wff/3MssYmKrwmQuuznf4M03iHEo1vYarK+U2vKZyflatbqFWebUKrOr6ZNVt9YU+UxdHf3DJ9Gyy/kwH7X4/C8P7m+7VVTF+CFZvJfOXtnu6ThI/BbwN+L3Bx6NeFMxLy0/0ZJskcewTHpK9i/ZeFAXPmxfiFdHU5TLPO4nP9naWkR3xEfKPd2/Sb43c13mnA3YJI3YIA/gt+TFOC3MngEMY3x8IfsN2gy9K1isNtb9GO2V/fYWnCcsSw5Ql4L3gGfDhHDBXOU2UPxEeY3it8SG1xjBao53x4QzAJmWZME5htG4TDmFsHLv1nAb8vguepoJ3Ce8ZnNM0HBys3IQBO+Eh47b9A8M7GuqJcPpMnD2j7IXWY3p3wodICo52n+2VViMOs0CSwmxPZI8YHxLu2q3GVXwk2blVesgl4jnZB3arPAQUBsfAo880E7u8u7wM46Av6TMpF9N8Z6chyLKjIYiMfaehFM/vNDFhrIksCnjH4xHzZIARj2UiZT3G3KoMsKwHhkkMLvNecKt3sh5Qyiwftyo40mwPzPLZq72nVg9hZD1WstrW4ZhO1v0U9GxnfLPazeRw/PcsSZ07eqp6Ult/sm5d1NbBbv12sFvHB/sLfD5h+WOezsEAAAAASUVORK5CYII=) no-repeat;
+                                background-size: 100% 100%;
+                                width: .38rem;
+                                height: .24rem;
+                                border-radius: .1rem;
+                            }
+                            
+                            .van-slider__button {
+                                width: .41379rem;
+                                height: .41379rem;
+                                background-color: #fff;
+                                border-radius: 50%;
+                                box-shadow: 0 .01724rem .03448rem rgba(0, 0, 0, .5);
+                            }
+                            .Progress .ul {
+                                margin-top: .16rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                color: #6b7285;
+                                font-size: .26rem;
+                                font-weight: 500;
+                            }
+                            
+                            </style>
+
+
+                        <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="orderList" style="display: none;" id="orderList">
+                            {{-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="cname">@lang('My Strategy')</div> --}}
+                            {{-- <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list">
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                 
-<style>
-.Progress {
-        margin-top: .32rem;
-    }
- .Progress .van-slider {
-    background: hsla(0, 0%, 100%, .1) !important;
-}
 
-.van-slider {
-    position: relative;
-    width: 100%;
-    height: .03448rem;
-    background-color: #ebedf0;
-    border-radius: 17.22414rem;
-    cursor: pointer;
-}
-.van-slider:before {
-    position: absolute;
-    top: -.13793rem;
-    right: 0;
-    bottom: -.13793rem;
-    left: 0;
-    content: "";
-}
-.Progress .van-slider__bar {
-    background: #55b2c2 !important;
-}
-
-.van-slider__bar {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #1989fa;
-    border-radius: inherit;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-}
-.van-slider__button-wrapper, .van-slider__button-wrapper-right {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translate3d(50%, -50%, 0);
-    transform: translate3d(50%, -50%, 0);
-    cursor: grab;
-}
-.Progress .van-slider__button {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAgCAMAAABabbp1AAAAtFBMVEUAAAD///////////////////////////////////////////+f6pSP5Y2H44qB4Yic6pOs7pqV55Cq7pmF4ol734Wo7ZiR5o6a6ZKD4YmJ5IuT549+4Iez8Z2x8JyY6JGM5Iy28p6l7Jav75um7Zeh65Wj7Jbz/fJ43oSu75rG8cnu++/f+dT4/vbw+/Ha+NDK9bm68qO978LA8rOk6aea5qO08KKI4pDT9seu67TA86qa6ZT+kNadAAAAC3RSTlMA3yDvkBDQYKCfMLC2wLEAAAHvSURBVDjLlZTZWsJADEYrZYA6Uugi2EUFpVRBlE0Wff/3MssYmKrwmQuuznf4M03iHEo1vYarK+U2vKZyflatbqFWebUKrOr6ZNVt9YU+UxdHf3DJ9Gyy/kwH7X4/C8P7m+7VVTF+CFZvJfOXtnu6ThI/BbwN+L3Bx6NeFMxLy0/0ZJskcewTHpK9i/ZeFAXPmxfiFdHU5TLPO4nP9naWkR3xEfKPd2/Sb43c13mnA3YJI3YIA/gt+TFOC3MngEMY3x8IfsN2gy9K1isNtb9GO2V/fYWnCcsSw5Ql4L3gGfDhHDBXOU2UPxEeY3it8SG1xjBao53x4QzAJmWZME5htG4TDmFsHLv1nAb8vguepoJ3Ce8ZnNM0HBys3IQBO+Eh47b9A8M7GuqJcPpMnD2j7IXWY3p3wodICo52n+2VViMOs0CSwmxPZI8YHxLu2q3GVXwk2blVesgl4jnZB3arPAQUBsfAo880E7u8u7wM46Av6TMpF9N8Z6chyLKjIYiMfaehFM/vNDFhrIksCnjH4xHzZIARj2UiZT3G3KoMsKwHhkkMLvNecKt3sh5Qyiwftyo40mwPzPLZq72nVg9hZD1WstrW4ZhO1v0U9GxnfLPazeRw/PcsSZ07eqp6Ult/sm5d1NbBbv12sFvHB/sLfD5h+WOezsEAAAAASUVORK5CYII=) no-repeat;
-    background-size: 100% 100%;
-    width: .38rem;
-    height: .24rem;
-    border-radius: .1rem;
-}
-
-.van-slider__button {
-    width: .41379rem;
-    height: .41379rem;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 .01724rem .03448rem rgba(0, 0, 0, .5);
-}
-.Progress .ul {
-    margin-top: .16rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #6b7285;
-    font-size: .26rem;
-    font-weight: 500;
-}
-
-</style>
                                 @foreach($recharges as $recharge)
                                 
                                 @php
                                      $planDetail = \DB::table('plans')->where('id',$recharge->plan)->first(); 
                                      $todayEarning = \DB::table('incomes')->where('invest_id',$recharge->id)->where('ttime',Date("Y-m-d"))->sum('comm'); 
 
-                                    // dd($planDetail);
                                 @endphp
 
                                 
@@ -495,38 +524,29 @@
                                 $process = 100/($planDetail?$planDetail->days:0);
                                 $days = (strtotime($endDate) - strtotime($startDate)) / (60 * 60 * 24);
                                 $processBar = $process*$days;
-                                //   echo $days;
                                 ?>
 
                                 <script>
-                                // Set the date we're counting down to
                                 var x = setInterval(function() {
                                     
                                     var countDownDate = new Date("{{$new_date1}}").getTime();
                                  
-                                     // Get todays date and time
-                                     // var now = new Date().getTime();
-
+                                    
 
                                      var now =  new Date(new Date().toLocaleString('en-US', {timeZone: 'Asia/Kolkata'}))
 
-                                     // Find the distance between now an the count down date
                                      var distance = countDownDate - now;
                                      
-                                     // Time calculations for days, hours, minutes and seconds
                                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
                                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                                      
-                                     // Output the result in an element with id="demo"
                                      
                                  
                                      
                                      document.getElementById("countdown-{{ $recharge->id }}").innerHTML = "<span>" + days + ":</span><span>" + "<span>" + hours + ":</span><span>" + minutes + ":</span><span>" + seconds + "</span>";
-                                         //   $('#left_time').html('Hello');
-                                     
-                                     // If the count down is over, write some text 
+                                        
                                      if (distance < 0) {
                                      clearInterval(timer);
                                          document.getElementById("countdown-{{ $recharge->id }}").innerHTML = "EXPIRED";
@@ -561,12 +581,16 @@
                                                         data-v-167ffb9b="" data-v-cfc9a7fc=""
                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAMAAACrZuH4AAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAYJ/fMCDvEHBAwJCvgFDP9KY6pgAAAJNJREFUOMvNktEOwyAIRVUUUdvu/v/XLjFZxOLWZH3peSBijkpA91Aiy4XhEW4YAZpXNsKBmX19vc7+NBJR7OGr4THC2sjEqYcbdQwEzQ4ErJpE8M5QQfFjbyBnSYQBR2eJ2iC/EBgkqS/zUQFZvNFUpTtQzOy3KW+oJwNIU575dEkxRxrk4vMJgjV+7pTRZbXzKN5DrAf2kOJR1wAAAABJRU5ErkJggg==">
                                                 </div>
+<<<<<<< HEAD
                                                 <!---->
                                                 <!---->
                                                 {{-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="time flex" style="font-size: 13px;">@lang('Contract Time'): <span id="countdown-{{ $recharge->id }}"></span>
                                                 </div> --}}
                                                 {{-- <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="time flex" style="font-size: 13px;">@lang('Contract Time'): <span id="countdown-{{ $recharge->id }}"></span>
                                                 </div> --}}
+=======
+                                                
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                             </div>
                                         </div>
                                     </div>
@@ -578,6 +602,7 @@
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">@lang('Running amount')</div>
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ $recharge->amount }} <span>
                                         </li>
+<<<<<<< HEAD
                                         {{-- <li data-v-167ffb9b="" data-v-cfc9a7fc="">
                                         {{-- <li data-v-167ffb9b="" data-v-cfc9a7fc="">
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">@lang('Today earning')</div>
@@ -586,6 +611,9 @@
                                                 </div>
                                         </li> --}}
                                         </li> --}}
+=======
+                                        
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                         <li data-v-167ffb9b="" data-v-cfc9a7fc="">
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">@lang('Yield')</div>
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">@lang('Yield')</div>
@@ -593,10 +621,7 @@
                                         </li>
                                     </ul>
                                     <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="flex">
-                                        {{-- <li data-v-167ffb9b="" data-v-cfc9a7fc="">
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">@lang('Investment')</div>
-                                            <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ $recharge->amount }} <span>
-                                        </li> --}}
+                                       
                                         <li data-v-167ffb9b="" data-v-cfc9a7fc="">
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="n">Today's executable amount</div>
                                             <div data-v-167ffb9b="" data-v-cfc9a7fc="" class="s"> {{ number_format($todayEarning,2)  }} 
@@ -655,7 +680,7 @@
                                     </li>
                                 </ul>
                                     
-                                    {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style=""><div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons"><div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;"><div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 69%;"><div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50" aria-orientation="horizontal" class="van-slider__button-wrapper"><div class="van-slider__button"></div></div></div></div></div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 0% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 100% </div></div></div> --}}
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style=""><div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons"><div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;"><div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 69%;"><div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50" aria-orientation="horizontal" class="van-slider__button-wrapper"><div class="van-slider__button"></div></div></div></div></div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 0% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 100% </div></div></div>
                                     <div data-v-7bab1ac4="" data-v-cfc9a7fc="" class="item" style="margin:8px"><button data-v-7bab1ac4=""
                                         data-v-cfc9a7fc="" class="btn2" type="submit"> Run </button></div>
                                     {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style=""><div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons"><div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;"><div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 69%;"><div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50" aria-orientation="horizontal" class="van-slider__button-wrapper"><div class="van-slider__button"></div></div></div></div></div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 0% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 100% </div></div></div> --}}
@@ -663,7 +688,152 @@
                                         data-v-cfc9a7fc="" class="btn2" type="submit"> Run </button></div>
                                 </li>
                                 @endforeach
-                            </ul>
+                            </ul> --}}
+
+                            @if($active_investment)
+                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="container">
+                                <div data-v-cc3ce6d2="" data-v-1fa86597="" class="levelBox" data-v-cfc9a7fc=""><img
+                                        data-v-cc3ce6d2="" src="{{asset('')}}assets/static/img/lv1.0c323966.png" class="leve-bg">
+                                    <div data-v-cc3ce6d2="" class="levelBox-head">
+                                        <div data-v-cc3ce6d2="" class="left">LV 1</div>
+                                        {{-- <div data-v-cc3ce6d2="" class="more">
+                                            <a href="{{route('user.recharge')}}">
+                                           @lang('Package list')<img data-v-cc3ce6d2=""
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWNxwqAAAAB3RSTlMAgECgUJBwE7RqWgAAAFBJREFUKM9joBtgcoAQcKBeCCHgwL1cAELAAGN5IYSAA3GQrDhpSlhBsqzISsxBsuZISpjLy8AEpgCmFkxDMa1FOIywAgzv4w4gJgUIQUcAAPJCHQUHfZ8eAAAAAElFTkSuQmCC">
+                                            </a>
+                                        </div> --}}
+                                    </div>
+                                    <div data-v-cc3ce6d2="" class="bann">
+                                       <div>
+                                        <img data-v-cc3ce6d2="" src="{{ asset('')}}assets/static/img/vip7.png">
+                                    </div>
+                                        
+                                                
+                                        <div data-v-cc3ce6d2="" class="cur-level">
+                                            @php
+                                            $package=["ServerCore","ServerCore Prime","ServerCore Plus","ServerCore Max","ServerCore Pro","ServerCore Edge","ServerCore Hub"]
+        
+                                           @endphp
+                                            
+                                        <span data-v-cc3ce6d2="">{{$package[1]}}
+                                                </span></div>
+                                    </div>
+                                  
+                                </div>
+                                <div data-v-1fa86597="" data-v-cfc9a7fc="" class="buySeting" style="background:none">
+                                    {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="title flex"><img data-v-1fa86597=""
+                                            data-v-cfc9a7fc=""
+                                            src="data:image/png;base64,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">
+                                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="flex1"> @lang('Package Information') </div>
+                                    </div> --}}
+                                    <ul data-v-1fa86597="" data-v-cfc9a7fc="" class="com-1">
+                                        <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Subscription</div>
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                                
+                                                ${{ $total_amount }}
+        
+                                            </div>
+                                        </li>
+                                        <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                               
+                                                ${{ $total_profit }}
+                                            </div>
+                                        </li>
+                                        <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Subscription Duration')</div>
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">  60 @lang('Days')</div>
+                                        </li>
+                                        <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Total Reward</div>
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                                ${{ $total_amount*2 }}
+        
+                                            </div>
+                                        </li>
+                                        <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Run Time</div>
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                                1 hour
+        
+                                            </div>
+                                        </li>
+                                        <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Maximum Quantity</div>
+                                            <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                                1 
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                    @if($button == 1)
+                                    <!-- Button to start the task -->
+                                    <form method="post" name="add" action="{{ route('user.generate_roi') }}" onsubmit="return validateForm()">
+                                        {{ csrf_field() }}
+                                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
+                                            <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Run')</button>
+                                        </div>
+                                    </form>
+                                @elseif($button == 2)
+                                    <!-- Progress bar and countdown for 1 hour -->
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress">
+                                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons">
+                                            <div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 25px;">
+                                                <div class="van-slider__bar" id="progress-bar-1h" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%)!important; width: 0%;">
+                                                    <div role="slider" tabindex="0" class="van-slider__button-wrapper">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="times">
+                                            <p id="timer-1h" class="timer">You will be rewarded in: 1:00:00</p>
+                                        </div>
+                                    </div>
+                                @else
+                                    <!-- Progress bar and countdown for 24 hours -->
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress">
+                                        <div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons">
+                                            <div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 25px;">
+                                                <div class="van-slider__bar" id="progress-bar-24h" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%)!important; width: 0%;">
+                                                    <div role="slider" tabindex="0" class="van-slider__button-wrapper">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="times">
+                                            <p id="timer-24h" class="timer">Next task will be unlocked in: 24:00:00</p>
+                                        </div>
+                                    </div>
+                                @endif
+
+
+
+
+                                    {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="check">
+                                        <div data-v-1fa86597="" role="checkbox" tabindex="0" aria-checked="true"
+                                            class="van-checkbox" data-v-cfc9a7fc="">
+                                            <div
+                                                class="van-checkbox__icon van-checkbox__icon--round van-checkbox__icon--checked">
+                                                <i class="van-icon van-icon-success"
+                                                    style="border-color: rgb(122, 222, 133); background-color: rgb(122, 222, 133);">
+                                                    <!----></i></div><span class="van-checkbox__label">
+                                                <div data-v-1fa86597=""> @lang('Creating a policy means agreeing to') <span
+                                                        data-v-1fa86597="">[@lang('the Fund Agreement')]</span></div>
+                                            </span>
+                                        </div>
+                                    </div> --}}
+                                </div>
+                              
+                            </div>
+                            @else
+                            <div style="margin: 5px">
+                                <img src="{{ asset('') }}assets/static/img/nodata.png">
+                            </div>
+                            @endif
 
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list" style="display: none;"></ul>
                         </div>
@@ -672,6 +842,7 @@
 
                     <div data-v-167ffb9b="" 
                        >
+<<<<<<< HEAD
                        <div data-v-167ffb9b="" class="popBox" style="background: none;">
                             
                            
@@ -683,9 +854,49 @@
                                         <div data-v-167ffb9b="" class="s"><span data-v-167ffb9b="">1.8-2%</span><img
                                                 data-v-167ffb9b=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAsCAMAAAD4va5DAAAB71BMVEUAAAD////////////////////////////////7yY34mir////////////////////4p0b5oTf////////////6tWL6w4H++/b4lBr6sFb806Tkz6H4myr5qUnNrHDizJv3myn4minQtHvPsnn7wHj6v3j3kxr///9ifurlz5/kzp3jzZviy5nhyZjgyJbawIrZv4jVuYH2+P7+8uPXvIXexZLdxI/cw47bwYzYvYfWuoNshut1ju3fx5T+/Pj9+vWwvvSnt/P++fGTpvH95MX6wn/Ttn3QsnfRs3nPsHT5pD7//vzx59Dm067816rfxpPUt37StXv6u274oTfY3/ro2Lrq27n927Ll0aX80Jv4njG6xvZ/lu7w5Mrt3r7NrnH6tWH3liHj6Pz+9Of48ub07Nz94b7p2LP806ThzaL6xIT6tmX4ojv4oDX1kx3s7/z79/GJnu/+793z6tbv4sXo1av8y5H7x4j6vnPF0Pixv/WdrvJ6ku727+H+7Nf96tP+58zw5Mvl1bXn06b5s135rlL5rE75qUjs7/3BzPearfKdrvFviOz59Or96dL95cft4Mbr3cL837reyZ78zpfTtoHxrV/qpVr4mCTr7/3O1/iFm+5wiexog+v92Kzzzqflzp7bxJr1wILynz3xmTFSpJKxAAAAJnRSTlMA71CwkBDf0L/+/cBwIIB//vrgYED9+vn38fDv6OXg3/T07+/q6uLdKcsAAATKSURBVEjHhZdnVxNBFIZZAikUBXvv7huRmkUUEpOQYktRAymERCNFilIEaQqCVHvvvf1QZ3aT7MyG8n7JmcmZ59w6czdPo8L8Ap1eAASDsSC/cMP1etpmFMBKt9E6f01Uvh6Ap217eZEoFpWlTB4QWdrdNqvZbE24na0gsvsjC7GKiljPNX8XAP3WVVGlRsBl2icyutQvAR02c0a2+4+A57HKkycrKk4Qjd11AIbSXFaJAJd3l6jRYEiCpdmsiuDsdxWaLIITSrSszcCeQ+IqagkCToZmmwIeMrSxbmBzDssrrqF+nmZuZmhUSULjWTt3i2vqo4OnJSyEVklovxRaj52llQD7ueM3eNoHoJml3QHuVjLGRYCSbB4F7OBZL6OXuA0vLDbeU3uMpSUhZHJqQFDktASUxTtv3lZ3etFqZtWOriqWNgqjwtoKaSB7aiDVIooTmBUX4WOsi7vgZmFWCyKEEYudUGgLdijNoEdIPRUCRqIj6BXb8JJ3dMjMO6roWtq2JPRyE0FiDr2DrM43Etq4MLpwh6NZ0rCMp3ZsIzAdjrGnbo8jLendALNv0kTNmYbRwFGYn0atECgXuYYE4JjzybiUuv0XFisXtTQsk4YFCIXES4/I6RaAm+Kn0AMQLan7Hj4F5lbM+P3+QDapXSQFBTDxsDYAE+S3iNKi7P5jTXX4L5+trq7K0EZRkGdEioe9ALCsRAmYZS0emmZhbnSfunz2LKFVybRr0JGKLcsJmSS3U5T6y2QGFq5DbRiuIrRqYlwl7dQxUhwCijjYJIhe9PZ73wBgK7AIvsduPgOBSM/rvoyreyHkASKnH2B0k70ngSfOZwwNON3QcCrSXaXQDgIENsjBRgBMTnjk0ugVWQGJaR52htACvoBsG4Vp3YwDcNHQBQFwiS6C5RtfaPa+nuTzmZ504KibW1CeW2VUcicwvV6Gju93mLpNwD76KlB9uuGUktQxGEg3bVfv+0V642NCWWgSkEJH+1euNGZqas6cOU1p1LgIivMKmIYOQtZS1kYsss3Z8YRvzmRtrUKTjUuigG2nuAOy5sZvLa94JRANsO00ZeXbKdBYW0OMS9NoOxUKyD68K5NRCayibM1imq9Z1DQ2qrb1AWT0MMLE31sjPqQltah//MEXM6unGK2vl2kKLgIdHVbgYh7yFeD2Jx88c52ds+Ns0UiaS2MIsSaG1jCs3Nt6eNlu6hSXgbg4yD93IXzWGDZc19TUlKWFoVeGH7gOqznzRcV+PMgZEiTc5yI2hEBdXV1TPTGuluCqhpEeh4zYw9waLWIvglpYEB2cYVPoOneF0giO2uaHQX2E+UEjHteOG7mPcN85ldYYhlDKjAe7xXX0UTMeJID5C1cJ7YpCewswY9Um7Ny/NuuDA/e4UcOC8PkLKq3Pjk0EwtCwYy2WFzyrGQhfPE9pV2VaGJSloQUHVkP9+8mzrO2URWAK7Vz9K5XFjqFSKAc16HXxY2izBY7A9esXKY7S5tUxlFWpAZCOl3OPi8kFtNpUq5wWoPv9dSKZ9j7sAIppHnO1VR7dTakyOrqXb29TRnenO0FHd5u7vRVEjvnfjUcPHDjS9PZ1NwD9Ol8COrASijdab9MStJ87xQYBELboyOfMhmte/wHeciG5fv//ZgAAAABJRU5ErkJggg==">+4
+=======
+                       <div data-v-167ffb9b="" class="popBox" style="background: none;" id="popBox">
+                         @php
+                          $vip = 1;
+
+// Determine VIP level based on conditions
+if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
+    $vip = 7;
+} elseif ($active_gen_team1total >= 15 && $active_gen_team23total >= 20) {
+  $vip = 6;
+} elseif ($active_gen_team1total >= 8 && $active_gen_team23total >= 15) {
+    $vip = 5;
+} elseif ($active_gen_team1total >= 5 && $active_gen_team23total >= 10) {
+    $vip = 4;
+} elseif ($active_gen_team1total >= 3 && $active_gen_team23total >= 5) {
+    $vip = 3;
+} elseif ($active_gen_team1total >= 2) {
+    $vip = 2;
+} elseif ($active_gen_team1total > 0 || $active_gen_team2total > 0 || $active_gen_team3total > 0) {
+    $vip = 1;
+}
+
+       
+
+@endphp
+                            
+                           
+                            <ul data-v-167ffb9b="" class="cllist" style="scroll:none">
+                                <li class="serverCoreItem" data-id="1" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%); color: #000;">
+                                    <div data-v-167ffb9b="" class="title">ServerCore</div>
+                                    <div data-v-167ffb9b="" class="mini">$30</div>
+                                    <div data-v-167ffb9b="" class="rate">
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom: 5px;">
+                                            <span style="color: #170529d9;" data-v-167ffb9b="">$1</span> Daily Reward
+                                        </div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top: 5px;justify-content: space-between">
+                                            <div><span style="font-size: 11px;">1 times</span></div>
+                                            <div style="font-size: 11px;">1 hour</div>
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                         </div>
                                         <div data-v-167ffb9b="" class="n">Annualized rate</div>
                                     </div>
+<<<<<<< HEAD
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b=""
                                             src="data:image/png;base64,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">LV.1
                                     </div><img data-v-167ffb9b=""
@@ -699,9 +910,39 @@
                                         <div data-v-167ffb9b="" class="s"><span data-v-167ffb9b="">2.2-2.4%</span><img
                                                 data-v-167ffb9b=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAsCAMAAAD4va5DAAAB71BMVEUAAAD////////////////////////////////7yY34mir////////////////////4p0b5oTf////////////6tWL6w4H++/b4lBr6sFb806Tkz6H4myr5qUnNrHDizJv3myn4minQtHvPsnn7wHj6v3j3kxr///9ifurlz5/kzp3jzZviy5nhyZjgyJbawIrZv4jVuYH2+P7+8uPXvIXexZLdxI/cw47bwYzYvYfWuoNshut1ju3fx5T+/Pj9+vWwvvSnt/P++fGTpvH95MX6wn/Ttn3QsnfRs3nPsHT5pD7//vzx59Dm067816rfxpPUt37StXv6u274oTfY3/ro2Lrq27n927Ll0aX80Jv4njG6xvZ/lu7w5Mrt3r7NrnH6tWH3liHj6Pz+9Of48ub07Nz94b7p2LP806ThzaL6xIT6tmX4ojv4oDX1kx3s7/z79/GJnu/+793z6tbv4sXo1av8y5H7x4j6vnPF0Pixv/WdrvJ6ku727+H+7Nf96tP+58zw5Mvl1bXn06b5s135rlL5rE75qUjs7/3BzPearfKdrvFviOz59Or96dL95cft4Mbr3cL837reyZ78zpfTtoHxrV/qpVr4mCTr7/3O1/iFm+5wiexog+v92Kzzzqflzp7bxJr1wILynz3xmTFSpJKxAAAAJnRSTlMA71CwkBDf0L/+/cBwIIB//vrgYED9+vn38fDv6OXg3/T07+/q6uLdKcsAAATKSURBVEjHhZdnVxNBFIZZAikUBXvv7huRmkUUEpOQYktRAymERCNFilIEaQqCVHvvvf1QZ3aT7MyG8n7JmcmZ59w6czdPo8L8Ap1eAASDsSC/cMP1etpmFMBKt9E6f01Uvh6Ap217eZEoFpWlTB4QWdrdNqvZbE24na0gsvsjC7GKiljPNX8XAP3WVVGlRsBl2icyutQvAR02c0a2+4+A57HKkycrKk4Qjd11AIbSXFaJAJd3l6jRYEiCpdmsiuDsdxWaLIITSrSszcCeQ+IqagkCToZmmwIeMrSxbmBzDssrrqF+nmZuZmhUSULjWTt3i2vqo4OnJSyEVklovxRaj52llQD7ueM3eNoHoJml3QHuVjLGRYCSbB4F7OBZL6OXuA0vLDbeU3uMpSUhZHJqQFDktASUxTtv3lZ3etFqZtWOriqWNgqjwtoKaSB7aiDVIooTmBUX4WOsi7vgZmFWCyKEEYudUGgLdijNoEdIPRUCRqIj6BXb8JJ3dMjMO6roWtq2JPRyE0FiDr2DrM43Etq4MLpwh6NZ0rCMp3ZsIzAdjrGnbo8jLendALNv0kTNmYbRwFGYn0atECgXuYYE4JjzybiUuv0XFisXtTQsk4YFCIXES4/I6RaAm+Kn0AMQLan7Hj4F5lbM+P3+QDapXSQFBTDxsDYAE+S3iNKi7P5jTXX4L5+trq7K0EZRkGdEioe9ALCsRAmYZS0emmZhbnSfunz2LKFVybRr0JGKLcsJmSS3U5T6y2QGFq5DbRiuIrRqYlwl7dQxUhwCijjYJIhe9PZ73wBgK7AIvsduPgOBSM/rvoyreyHkASKnH2B0k70ngSfOZwwNON3QcCrSXaXQDgIENsjBRgBMTnjk0ugVWQGJaR52htACvoBsG4Vp3YwDcNHQBQFwiS6C5RtfaPa+nuTzmZ504KibW1CeW2VUcicwvV6Gju93mLpNwD76KlB9uuGUktQxGEg3bVfv+0V642NCWWgSkEJH+1euNGZqas6cOU1p1LgIivMKmIYOQtZS1kYsss3Z8YRvzmRtrUKTjUuigG2nuAOy5sZvLa94JRANsO00ZeXbKdBYW0OMS9NoOxUKyD68K5NRCayibM1imq9Z1DQ2qrb1AWT0MMLE31sjPqQltah//MEXM6unGK2vl2kKLgIdHVbgYh7yFeD2Jx88c52ds+Ns0UiaS2MIsSaG1jCs3Nt6eNlu6hSXgbg4yD93IXzWGDZc19TUlKWFoVeGH7gOqznzRcV+PMgZEiTc5yI2hEBdXV1TPTGuluCqhpEeh4zYw9waLWIvglpYEB2cYVPoOneF0giO2uaHQX2E+UEjHteOG7mPcN85ldYYhlDKjAe7xXX0UTMeJID5C1cJ7YpCewswY9Um7Ny/NuuDA/e4UcOC8PkLKq3Pjk0EwtCwYy2WFzyrGQhfPE9pV2VaGJSloQUHVkP9+8mzrO2URWAK7Vz9K5XFjqFSKAc16HXxY2izBY7A9esXKY7S5tUxlFWpAZCOl3OPi8kFtNpUq5wWoPv9dSKZ9j7sAIppHnO1VR7dTakyOrqXb29TRnenO0FHd5u7vRVEjvnfjUcPHDjS9PZ1NwD9Ol8COrASijdab9MStJ87xQYBELboyOfMhmte/wHeciG5fv//ZgAAAABJRU5ErkJggg==">+5
+=======
+                                    @if($vip >= 1)
+                                    <div data-v-167ffb9b="" class="lv">
+                                        <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv">
+                                        <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/vip1.png" style="padding: 8px; bottom: 43px;" class="img">
+                                    <div class="flex" style="opacity: 0.7;justify-content: space-between">
+                                        <div>Daily Run Times</div>
+                                        <div>Running time</div>
+                                    </div>
+                                </li>                                
+                                <li class="serverCoreItem" data-id="2" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                    <div data-v-167ffb9b="" class="title">ServerCore Prime</div>
+                                    <div data-v-167ffb9b="" class="mini">$120</div>
+                                    <div data-v-167ffb9b="" class="rate">
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$4</span>
+                                            Daily Reward
+                                        </div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px;">1 times</span>
+                                           </div>
+                                         
+                                            <div style="font-size:11px">1 hour</div>
+
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                         </div>
                                         <div data-v-167ffb9b="" class="n">Annualized rate</div>
                                     </div>
+<<<<<<< HEAD
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b=""
                                             src="data:image/png;base64,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">LV.2
                                     </div><img data-v-167ffb9b=""
@@ -715,9 +956,40 @@
                                         <div data-v-167ffb9b="" class="s"><span data-v-167ffb9b="">2.6-2.8%</span><img
                                                 data-v-167ffb9b=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAsCAMAAAD4va5DAAAB71BMVEUAAAD////////////////////////////////7yY34mir////////////////////4p0b5oTf////////////6tWL6w4H++/b4lBr6sFb806Tkz6H4myr5qUnNrHDizJv3myn4minQtHvPsnn7wHj6v3j3kxr///9ifurlz5/kzp3jzZviy5nhyZjgyJbawIrZv4jVuYH2+P7+8uPXvIXexZLdxI/cw47bwYzYvYfWuoNshut1ju3fx5T+/Pj9+vWwvvSnt/P++fGTpvH95MX6wn/Ttn3QsnfRs3nPsHT5pD7//vzx59Dm067816rfxpPUt37StXv6u274oTfY3/ro2Lrq27n927Ll0aX80Jv4njG6xvZ/lu7w5Mrt3r7NrnH6tWH3liHj6Pz+9Of48ub07Nz94b7p2LP806ThzaL6xIT6tmX4ojv4oDX1kx3s7/z79/GJnu/+793z6tbv4sXo1av8y5H7x4j6vnPF0Pixv/WdrvJ6ku727+H+7Nf96tP+58zw5Mvl1bXn06b5s135rlL5rE75qUjs7/3BzPearfKdrvFviOz59Or96dL95cft4Mbr3cL837reyZ78zpfTtoHxrV/qpVr4mCTr7/3O1/iFm+5wiexog+v92Kzzzqflzp7bxJr1wILynz3xmTFSpJKxAAAAJnRSTlMA71CwkBDf0L/+/cBwIIB//vrgYED9+vn38fDv6OXg3/T07+/q6uLdKcsAAATKSURBVEjHhZdnVxNBFIZZAikUBXvv7huRmkUUEpOQYktRAymERCNFilIEaQqCVHvvvf1QZ3aT7MyG8n7JmcmZ59w6czdPo8L8Ap1eAASDsSC/cMP1etpmFMBKt9E6f01Uvh6Ap217eZEoFpWlTB4QWdrdNqvZbE24na0gsvsjC7GKiljPNX8XAP3WVVGlRsBl2icyutQvAR02c0a2+4+A57HKkycrKk4Qjd11AIbSXFaJAJd3l6jRYEiCpdmsiuDsdxWaLIITSrSszcCeQ+IqagkCToZmmwIeMrSxbmBzDssrrqF+nmZuZmhUSULjWTt3i2vqo4OnJSyEVklovxRaj52llQD7ueM3eNoHoJml3QHuVjLGRYCSbB4F7OBZL6OXuA0vLDbeU3uMpSUhZHJqQFDktASUxTtv3lZ3etFqZtWOriqWNgqjwtoKaSB7aiDVIooTmBUX4WOsi7vgZmFWCyKEEYudUGgLdijNoEdIPRUCRqIj6BXb8JJ3dMjMO6roWtq2JPRyE0FiDr2DrM43Etq4MLpwh6NZ0rCMp3ZsIzAdjrGnbo8jLendALNv0kTNmYbRwFGYn0atECgXuYYE4JjzybiUuv0XFisXtTQsk4YFCIXES4/I6RaAm+Kn0AMQLan7Hj4F5lbM+P3+QDapXSQFBTDxsDYAE+S3iNKi7P5jTXX4L5+trq7K0EZRkGdEioe9ALCsRAmYZS0emmZhbnSfunz2LKFVybRr0JGKLcsJmSS3U5T6y2QGFq5DbRiuIrRqYlwl7dQxUhwCijjYJIhe9PZ73wBgK7AIvsduPgOBSM/rvoyreyHkASKnH2B0k70ngSfOZwwNON3QcCrSXaXQDgIENsjBRgBMTnjk0ugVWQGJaR52htACvoBsG4Vp3YwDcNHQBQFwiS6C5RtfaPa+nuTzmZ504KibW1CeW2VUcicwvV6Gju93mLpNwD76KlB9uuGUktQxGEg3bVfv+0V642NCWWgSkEJH+1euNGZqas6cOU1p1LgIivMKmIYOQtZS1kYsss3Z8YRvzmRtrUKTjUuigG2nuAOy5sZvLa94JRANsO00ZeXbKdBYW0OMS9NoOxUKyD68K5NRCayibM1imq9Z1DQ2qrb1AWT0MMLE31sjPqQltah//MEXM6unGK2vl2kKLgIdHVbgYh7yFeD2Jx88c52ds+Ns0UiaS2MIsSaG1jCs3Nt6eNlu6hSXgbg4yD93IXzWGDZc19TUlKWFoVeGH7gOqznzRcV+PMgZEiTc5yI2hEBdXV1TPTGuluCqhpEeh4zYw9waLWIvglpYEB2cYVPoOneF0giO2uaHQX2E+UEjHteOG7mPcN85ldYYhlDKjAe7xXX0UTMeJID5C1cJ7YpCewswY9Um7Ny/NuuDA/e4UcOC8PkLKq3Pjk0EwtCwYy2WFzyrGQhfPE9pV2VaGJSloQUHVkP9+8mzrO2URWAK7Vz9K5XFjqFSKAc16HXxY2izBY7A9esXKY7S5tUxlFWpAZCOl3OPi8kFtNpUq5wWoPv9dSKZ9j7sAIppHnO1VR7dTakyOrqXb29TRnenO0FHd5u7vRVEjvnfjUcPHDjS9PZ1NwD9Ol8COrASijdab9MStJ87xQYBELboyOfMhmte/wHeciG5fv//ZgAAAABJRU5ErkJggg==">+7
+=======
+                                    @if($vip>=2)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip2.png" style="padding:8px;bottom:43"class="img">
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div >  Daily Run Times</div>
+                                        <div> Running time</div>
+                                        </div>
+
+                                </li>
+                                <li class="serverCoreItem" data-id="3" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                    <div data-v-167ffb9b="" class="title">ServerCore Plus</div>
+                                    <div data-v-167ffb9b="" class="mini">$300</div>
+                                    <div data-v-167ffb9b="" class="rate">
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$10</span>
+                                            Daily Reward
+                                        </div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px">1 times</span>
+                                           </div>
+                                         
+                                            <div style="font-size:11px">1 hour</div>
+
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                         </div>
                                         <div data-v-167ffb9b="" class="n">Annualized rate</div>
                                     </div>
+<<<<<<< HEAD
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b=""
                                             src="data:image/png;base64,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">LV.3
                                     </div><img data-v-167ffb9b=""
@@ -731,9 +1003,40 @@
                                         <div data-v-167ffb9b="" class="s"><span data-v-167ffb9b="">3-3.3%</span><img
                                                 data-v-167ffb9b=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAsCAMAAAD4va5DAAAB71BMVEUAAAD////////////////////////////////7yY34mir////////////////////4p0b5oTf////////////6tWL6w4H++/b4lBr6sFb806Tkz6H4myr5qUnNrHDizJv3myn4minQtHvPsnn7wHj6v3j3kxr///9ifurlz5/kzp3jzZviy5nhyZjgyJbawIrZv4jVuYH2+P7+8uPXvIXexZLdxI/cw47bwYzYvYfWuoNshut1ju3fx5T+/Pj9+vWwvvSnt/P++fGTpvH95MX6wn/Ttn3QsnfRs3nPsHT5pD7//vzx59Dm067816rfxpPUt37StXv6u274oTfY3/ro2Lrq27n927Ll0aX80Jv4njG6xvZ/lu7w5Mrt3r7NrnH6tWH3liHj6Pz+9Of48ub07Nz94b7p2LP806ThzaL6xIT6tmX4ojv4oDX1kx3s7/z79/GJnu/+793z6tbv4sXo1av8y5H7x4j6vnPF0Pixv/WdrvJ6ku727+H+7Nf96tP+58zw5Mvl1bXn06b5s135rlL5rE75qUjs7/3BzPearfKdrvFviOz59Or96dL95cft4Mbr3cL837reyZ78zpfTtoHxrV/qpVr4mCTr7/3O1/iFm+5wiexog+v92Kzzzqflzp7bxJr1wILynz3xmTFSpJKxAAAAJnRSTlMA71CwkBDf0L/+/cBwIIB//vrgYED9+vn38fDv6OXg3/T07+/q6uLdKcsAAATKSURBVEjHhZdnVxNBFIZZAikUBXvv7huRmkUUEpOQYktRAymERCNFilIEaQqCVHvvvf1QZ3aT7MyG8n7JmcmZ59w6czdPo8L8Ap1eAASDsSC/cMP1etpmFMBKt9E6f01Uvh6Ap217eZEoFpWlTB4QWdrdNqvZbE24na0gsvsjC7GKiljPNX8XAP3WVVGlRsBl2icyutQvAR02c0a2+4+A57HKkycrKk4Qjd11AIbSXFaJAJd3l6jRYEiCpdmsiuDsdxWaLIITSrSszcCeQ+IqagkCToZmmwIeMrSxbmBzDssrrqF+nmZuZmhUSULjWTt3i2vqo4OnJSyEVklovxRaj52llQD7ueM3eNoHoJml3QHuVjLGRYCSbB4F7OBZL6OXuA0vLDbeU3uMpSUhZHJqQFDktASUxTtv3lZ3etFqZtWOriqWNgqjwtoKaSB7aiDVIooTmBUX4WOsi7vgZmFWCyKEEYudUGgLdijNoEdIPRUCRqIj6BXb8JJ3dMjMO6roWtq2JPRyE0FiDr2DrM43Etq4MLpwh6NZ0rCMp3ZsIzAdjrGnbo8jLendALNv0kTNmYbRwFGYn0atECgXuYYE4JjzybiUuv0XFisXtTQsk4YFCIXES4/I6RaAm+Kn0AMQLan7Hj4F5lbM+P3+QDapXSQFBTDxsDYAE+S3iNKi7P5jTXX4L5+trq7K0EZRkGdEioe9ALCsRAmYZS0emmZhbnSfunz2LKFVybRr0JGKLcsJmSS3U5T6y2QGFq5DbRiuIrRqYlwl7dQxUhwCijjYJIhe9PZ73wBgK7AIvsduPgOBSM/rvoyreyHkASKnH2B0k70ngSfOZwwNON3QcCrSXaXQDgIENsjBRgBMTnjk0ugVWQGJaR52htACvoBsG4Vp3YwDcNHQBQFwiS6C5RtfaPa+nuTzmZ504KibW1CeW2VUcicwvV6Gju93mLpNwD76KlB9uuGUktQxGEg3bVfv+0V642NCWWgSkEJH+1euNGZqas6cOU1p1LgIivMKmIYOQtZS1kYsss3Z8YRvzmRtrUKTjUuigG2nuAOy5sZvLa94JRANsO00ZeXbKdBYW0OMS9NoOxUKyD68K5NRCayibM1imq9Z1DQ2qrb1AWT0MMLE31sjPqQltah//MEXM6unGK2vl2kKLgIdHVbgYh7yFeD2Jx88c52ds+Ns0UiaS2MIsSaG1jCs3Nt6eNlu6hSXgbg4yD93IXzWGDZc19TUlKWFoVeGH7gOqznzRcV+PMgZEiTc5yI2hEBdXV1TPTGuluCqhpEeh4zYw9waLWIvglpYEB2cYVPoOneF0giO2uaHQX2E+UEjHteOG7mPcN85ldYYhlDKjAe7xXX0UTMeJID5C1cJ7YpCewswY9Um7Ny/NuuDA/e4UcOC8PkLKq3Pjk0EwtCwYy2WFzyrGQhfPE9pV2VaGJSloQUHVkP9+8mzrO2URWAK7Vz9K5XFjqFSKAc16HXxY2izBY7A9esXKY7S5tUxlFWpAZCOl3OPi8kFtNpUq5wWoPv9dSKZ9j7sAIppHnO1VR7dTakyOrqXb29TRnenO0FHd5u7vRVEjvnfjUcPHDjS9PZ1NwD9Ol8COrASijdab9MStJ87xQYBELboyOfMhmte/wHeciG5fv//ZgAAAABJRU5ErkJggg==">+9
+=======
+                                    @if($vip>=3)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip3.png" style="padding:8px;bottom:43"class="img">
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
+                                        <div> Running time</div>
+                                        </div>
+
+                                </li>
+                                <li class="serverCoreItem" data-id="4" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                    <div data-v-167ffb9b="" class="title">ServerCore Max</div>
+                                    <div data-v-167ffb9b="" class="mini">$1200</div>
+                                    <div data-v-167ffb9b="" class="rate">
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$40</span>
+                                            Daily Reward
+                                        </div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px;">1 times</span>
+                                           </div>
+                                         
+                                            <div style="font-size:11px">1 hour</div>
+
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                         </div>
                                         <div data-v-167ffb9b="" class="n">Annualized rate</div>
                                     </div>
+<<<<<<< HEAD
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b=""
                                             src="data:image/png;base64,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">LV.4
                                     </div><img data-v-167ffb9b=""
@@ -763,14 +1066,122 @@
                                         <div data-v-167ffb9b="" class="s"><span data-v-167ffb9b="">4-4.6%</span><img
                                                 data-v-167ffb9b=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAsCAMAAAD4va5DAAAB71BMVEUAAAD////////////////////////////////7yY34mir////////////////////4p0b5oTf////////////6tWL6w4H++/b4lBr6sFb806Tkz6H4myr5qUnNrHDizJv3myn4minQtHvPsnn7wHj6v3j3kxr///9ifurlz5/kzp3jzZviy5nhyZjgyJbawIrZv4jVuYH2+P7+8uPXvIXexZLdxI/cw47bwYzYvYfWuoNshut1ju3fx5T+/Pj9+vWwvvSnt/P++fGTpvH95MX6wn/Ttn3QsnfRs3nPsHT5pD7//vzx59Dm067816rfxpPUt37StXv6u274oTfY3/ro2Lrq27n927Ll0aX80Jv4njG6xvZ/lu7w5Mrt3r7NrnH6tWH3liHj6Pz+9Of48ub07Nz94b7p2LP806ThzaL6xIT6tmX4ojv4oDX1kx3s7/z79/GJnu/+793z6tbv4sXo1av8y5H7x4j6vnPF0Pixv/WdrvJ6ku727+H+7Nf96tP+58zw5Mvl1bXn06b5s135rlL5rE75qUjs7/3BzPearfKdrvFviOz59Or96dL95cft4Mbr3cL837reyZ78zpfTtoHxrV/qpVr4mCTr7/3O1/iFm+5wiexog+v92Kzzzqflzp7bxJr1wILynz3xmTFSpJKxAAAAJnRSTlMA71CwkBDf0L/+/cBwIIB//vrgYED9+vn38fDv6OXg3/T07+/q6uLdKcsAAATKSURBVEjHhZdnVxNBFIZZAikUBXvv7huRmkUUEpOQYktRAymERCNFilIEaQqCVHvvvf1QZ3aT7MyG8n7JmcmZ59w6czdPo8L8Ap1eAASDsSC/cMP1etpmFMBKt9E6f01Uvh6Ap217eZEoFpWlTB4QWdrdNqvZbE24na0gsvsjC7GKiljPNX8XAP3WVVGlRsBl2icyutQvAR02c0a2+4+A57HKkycrKk4Qjd11AIbSXFaJAJd3l6jRYEiCpdmsiuDsdxWaLIITSrSszcCeQ+IqagkCToZmmwIeMrSxbmBzDssrrqF+nmZuZmhUSULjWTt3i2vqo4OnJSyEVklovxRaj52llQD7ueM3eNoHoJml3QHuVjLGRYCSbB4F7OBZL6OXuA0vLDbeU3uMpSUhZHJqQFDktASUxTtv3lZ3etFqZtWOriqWNgqjwtoKaSB7aiDVIooTmBUX4WOsi7vgZmFWCyKEEYudUGgLdijNoEdIPRUCRqIj6BXb8JJ3dMjMO6roWtq2JPRyE0FiDr2DrM43Etq4MLpwh6NZ0rCMp3ZsIzAdjrGnbo8jLendALNv0kTNmYbRwFGYn0atECgXuYYE4JjzybiUuv0XFisXtTQsk4YFCIXES4/I6RaAm+Kn0AMQLan7Hj4F5lbM+P3+QDapXSQFBTDxsDYAE+S3iNKi7P5jTXX4L5+trq7K0EZRkGdEioe9ALCsRAmYZS0emmZhbnSfunz2LKFVybRr0JGKLcsJmSS3U5T6y2QGFq5DbRiuIrRqYlwl7dQxUhwCijjYJIhe9PZ73wBgK7AIvsduPgOBSM/rvoyreyHkASKnH2B0k70ngSfOZwwNON3QcCrSXaXQDgIENsjBRgBMTnjk0ugVWQGJaR52htACvoBsG4Vp3YwDcNHQBQFwiS6C5RtfaPa+nuTzmZ504KibW1CeW2VUcicwvV6Gju93mLpNwD76KlB9uuGUktQxGEg3bVfv+0V642NCWWgSkEJH+1euNGZqas6cOU1p1LgIivMKmIYOQtZS1kYsss3Z8YRvzmRtrUKTjUuigG2nuAOy5sZvLa94JRANsO00ZeXbKdBYW0OMS9NoOxUKyD68K5NRCayibM1imq9Z1DQ2qrb1AWT0MMLE31sjPqQltah//MEXM6unGK2vl2kKLgIdHVbgYh7yFeD2Jx88c52ds+Ns0UiaS2MIsSaG1jCs3Nt6eNlu6hSXgbg4yD93IXzWGDZc19TUlKWFoVeGH7gOqznzRcV+PMgZEiTc5yI2hEBdXV1TPTGuluCqhpEeh4zYw9waLWIvglpYEB2cYVPoOneF0giO2uaHQX2E+UEjHteOG7mPcN85ldYYhlDKjAe7xXX0UTMeJID5C1cJ7YpCewswY9Um7Ny/NuuDA/e4UcOC8PkLKq3Pjk0EwtCwYy2WFzyrGQhfPE9pV2VaGJSloQUHVkP9+8mzrO2URWAK7Vz9K5XFjqFSKAc16HXxY2izBY7A9esXKY7S5tUxlFWpAZCOl3OPi8kFtNpUq5wWoPv9dSKZ9j7sAIppHnO1VR7dTakyOrqXb29TRnenO0FHd5u7vRVEjvnfjUcPHDjS9PZ1NwD9Ol8COrASijdab9MStJ87xQYBELboyOfMhmte/wHeciG5fv//ZgAAAABJRU5ErkJggg==">+13
+=======
+                                    @if($vip>=4)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip4.png" style="padding:8px;bottom:43"class="img">
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
+                                        <div> Running time</div>
+                                        </div>
+
+                                </li>
+                                <li class="serverCoreItem" data-id="5" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                    <div data-v-167ffb9b="" class="title">ServerCore Pro</div>
+                                    <div data-v-167ffb9b="" class="mini">$3600</div>
+                                    <div data-v-167ffb9b="" class="rate">
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$120</span>
+                                            Daily Reward
+                                        </div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px;">1 times</span>
+                                           </div>
+                                         
+                                            <div style="font-size:11px">1 hour</div>
+
+                                        </div>
+                                    </div> 
+                                    @if($vip>=5)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip5.png" style="padding:8px;bottom:43"class="img">
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
+                                        <div> Running time</div>
+                                        </div>
+
+                                </li>
+                                <li class="serverCoreItem" data-id="6" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                    <div data-v-167ffb9b="" class="title">ServerCore Edge</div>
+                                    <div data-v-167ffb9b="" class="mini">$6000</div>
+                                    <div data-v-167ffb9b="" class="rate">
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$200</span>
+                                            Daily Reward
+                                        </div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px">1 times</span>
+                                           </div>
+                                         
+                                            <div style="font-size:11px">1 hour</div>
+
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                         </div>
                                         <div data-v-167ffb9b="" class="n">Annualized rate</div>
                                     </div>
+<<<<<<< HEAD
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAiCAMAAAD1eQAHAAACWFBMVEUAAAAOOScNNCMWNSkPOygKKx0LLR4zP0EQMB0JJhk4QEgONiUZLycuPD0mOjQjODQROSg1PUIlNTE3QkciODEYOSsPOykLKh0UKyEMMCE0QEQpPTgOOSYhOjELLB9AT001Q0ghNi4bRDITNycMLyAgNS0POigPOScQQS05QUkuPzwrPDoVNykPNyU3QUUQQSwPKR8MMiIMKBwgOTAONyUQPisZOS0QNCQxOjoMMiIFFQ4QPisGGBAKKRwJJRgIIhcFEg0ONyYHHBMPOygKJxoIGhIQPSoMMCELLR4KKBsJJhoJHxYRQCwKKh0UTTURQi0ONSQLLh8HJBkSRjEcOC0OOScONyUSKyELKx0HIRcEEAsUSjMSRC8PPCkQKh4LIhkFIBec+n8YWj8XVTwVTzcoODYmPDUmNjQWLSUDDgmJvVM5VEk1QEUyPkB7nzkVUTkgNi8XOSsTIh2Z3G6Ox1yFs0s4TkU0Rj8vPD15pDwxQDssOToqPDkrNzkfQzMkOTMTSTIgOC8hLSoSNiYRMiQaJyQrTCEMJhuj8ICe5neI3m6U0WWDy1+Mzl6JxFhosVY8WExyqkd8rkM1TEOBqUI5SUI+dDspRTlhlDh2lTEfOzFNdisuVysdMisbNCoeKikUOChtiycWNR8ULBkkOhQSHxIcKQui73+e73ub73mN7HWc5XSY5HOY5HKV2mqI1WaT0WV2xWB9wVZcmUd1rEZhn0ZVjUFEfj1uoDxQgTQnVC8fQi9Sfy5ljC04Yy03YCwaPidfgSRphCMcMSBFZR9EXRVVbBQ5TQ6rSJNTAAAAOXRSTlMA/v4g/v7+3xD+EP7ggH9gMCD+7+/v79/Pr6Cgj4BvRS8v/u/v4d/f3s/Pz8/Pv7+/f39wb19QQB9GbS6GAAAC+klEQVQ4y6XSZ1faYBTAcYKBau2wtmptbe3ee8tIhAQEAgoIAiogCuKse++999a6R/fee7dfq/fBqnV7Tv+vf7m5Nyeshdx8zWazlM9XhkWHR4Xa42JjY+1erGUBPI7hOGWW4kBBpoEMDTvhtoI8q9eL9HqMwqXK6PBye1pcXKhSqTy/HAaoIyJEIhGGUWhmOcy081EBS+HFIDZbrUYag5no7XY+rAJrX10M9wehQLM9KSkf7RmKY3pMT1GU76JVvY6EQMiq/86MokSwDGAMO+b+z9l+Mg1XE4MK8cRwflh0uZSt1WoV2iDgEf7z0N3PyDHKuKY2m832ToRRIPEgbaPNdu9LaYZazVZfmZP+QpVKxTFy6Mbb9U8zcJB4CLf3Tv3d3uTkMVhd5Hl9Fl6i5XIhpKJvPWx48LqUkpo1monHDffbdO2lrjurDru5zhYKFQqaVshpVczzrKzm94cwjcz06lFW80R7n0YTAlWNnUFXXbBYCIJQKDxoOYd41vTk5aARprc0tXzqyq2WyTQyLrcqwwcNdd9tsFhJ0koo5CphbWt26+cRerIjO7t/OFlnRKdyqjN8vAC6qIEkSS0hF8rIt0lJHd+tQ0lJLyaT+2bXr9bprs19zi0JFsZEEh5ylYx4k5PzobYzp7M2r8tCoAMMOt12QPPUYCK1HjBUMVXQXdDfXTA0mjtCkHCAZVB3GcgCHTaYrAQtFzK8Hzehj9O58SQsT9ZVVOxb/BsfTTeYtB4EIxbzvg4MjE8V5tUxjImpqygDuKiDu9ITSFIsEYsFM9/Gf9b0JIgha3r8tiUQ0bIEiUAgkUiCf/+a7vFGkEFweYHxjkyBq8SZwkIGHmHK4veyVmq705kp4PF4Al5mXg08wDiLAa5MHY5MHkpSCV7gLD7NWq1tDock2BVw7+JTm1mrtrWoRBIZHImsM38TwDVofhEvElWZumnHWhDRkuDExESAN1jrtCcVaI1r4ro0pWg0BeAGOpeSsvMAayNtPrlBCDSQ9V/9AYPi9iAxBINZAAAAAElFTkSuQmCC">LV.6
                                     </div><img data-v-167ffb9b=""
                                         src="https://bitgrid-all.s3.ap-southeast-1.amazonaws.com/upload/20240320/bd13af51ea1d7d1adb9db64ac1ed70b0.png"
                                         class="img">
+=======
+                                    @if($vip>=6)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip6.png" style="padding:8px;bottom:43"class="img">
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
+                                        <div> Running time</div>
+                                        </div>
+
+                                </li>
+                                <li class="serverCoreItem" data-id="7" data-v-167ffb9b="" style="background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);color:#000;">
+                                    <div data-v-167ffb9b="" class="title">ServerCore Hub</div>
+                                    <div data-v-167ffb9b="" class="mini">$15000</div>
+                                    <div data-v-167ffb9b="" class="rate">
+                                        <div data-v-167ffb9b="" class="s" style="padding-bottom:5px"><span style="color:#170529d9" data-v-167ffb9b="">$500</span>
+                                            Daily Reward
+                                        </div>
+                                        <div data-v-167ffb9b="" class="n flex" style="padding-top:5px;justify-content: space-between"> <div><span  style="font-size:11px">1 times</span>
+                                           </div>
+                                         
+                                            <div style="font-size:11px">1 hour</div>
+
+                                        </div>
+                                    </div>
+                                    @if($vip>=7)
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/unlock.png"> Unlocked
+                                    </div>
+                                    @else
+                                    <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
+                                        src="{{ asset('') }}assets/static/img/lock.png"> Locked
+                                    </div>
+                                    @endif
+                                    <img data-v-167ffb9b="" src="{{ asset('')}}assets/static/img/vip7.png" style="padding:8px;bottom:43"class="img">
+                                        <div class="flex" style="opacity:0.7;justify-content: space-between">
+                                        <div>  Daily Run Times</div>
+                                        <div> Running time</div>
+                                        </div>
+
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                 </li>
                             </ul>
                         </div>
@@ -822,8 +1233,80 @@
                   popBox.style.display = 'block'; // Show popBox
                   orderList.style.display = 'none'; // Hide orderList
                 });
+
+                document.querySelectorAll('.serverCoreItem').forEach(function(item) {
+    item.addEventListener('click', function() {
+        // Check if the element contains the unlocked image
+        var isUnlocked = item.querySelector('.lv img[src*="unlock.png"]');
+
+        if (isUnlocked) {
+            // Get the data-id value for dynamic redirection
+            var dataId = item.getAttribute('data-id');
+            // Redirect to the corresponding page using the data-id
+            window.location.href = `/user/edit/${dataId}`;
+        } else {
+            // Optionally show a message or prevent action
+            alert('This item is locked.');
+        }
+    });
+});
+
               </script>
-              
+              <script>
+                // Function to calculate and display remaining time for both 1-hour and 24-hour timers
+                document.addEventListener("DOMContentLoaded", function() {
+                    @if($button == 2)
+                        // Timer for 1 hour
+                        var lastTradeTime = new Date('{{ $last_trade }}'); // Server time of last trade
+                        var currentTime = new Date(); // Current time
+                        var diffInSeconds = Math.max(0, 3600 - Math.floor((currentTime - lastTradeTime) / 1000)); // Time difference in seconds (max 1 hour)
+            
+                        startCountdown(diffInSeconds, 'timer-1h', 'progress-bar-1h', 3600); // Start the 1-hour countdown
+                    @else
+                        // Timer for 24 hours
+                        var lastTradeTime = new Date('{{ $last_trade }}');
+                        var currentTime = new Date();
+                        var diffInSeconds = Math.max(0, 86400 - Math.floor((currentTime - lastTradeTime) / 1000)); // Time difference in seconds (max 24 hours)
+            
+                        startCountdown(diffInSeconds, 'timer-24h', 'progress-bar-24h', 86400); // Start the 24-hour countdown
+                    @endif
+                });
+            
+                // Function to start a countdown timer and update progress bar
+                function startCountdown(secondsLeft, timerId, progressBarId, totalSeconds) {
+                    var timerElement = document.getElementById(timerId);
+                    console.log(timerElement);
+                    var progressBarElement = document.getElementById(progressBarId);
+            
+                    function updateTimer() {
+                        var hours = Math.floor(secondsLeft / 3600);
+                        var minutes = Math.floor((secondsLeft % 3600) / 60);
+                        var seconds = secondsLeft % 60;
+            
+                        if (timerId === 'timer-24h') {
+                timerElement.textContent = `Next task will be available in: ${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            } else {
+                timerElement.textContent = `You will be rewarded in: ${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            }
+
+                        var percentage = ((totalSeconds - secondsLeft) / totalSeconds) * 100;
+                        progressBarElement.style.width = percentage + "%";
+            
+                        if (secondsLeft > 0) {
+                            secondsLeft--;
+                            setTimeout(updateTimer, 1000);
+                        } else {
+                            // Timer is done, reload the page
+                            location.reload(); 
+                        }
+                    }
+            
+                    updateTimer(); // Start the timer
+                }
+            </script>
+            
+          
+            
           
             
           

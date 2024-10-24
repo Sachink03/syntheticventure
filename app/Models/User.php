@@ -55,18 +55,18 @@ class User extends Authenticatable
 
     public function FundBalance()
     {
-    $balance = Auth::user()->buy_fundAmt->sum('amount_total_fiat')-(Auth::user()->buy_packageAmt());
+    $balance = Auth::user()->buy_fundAmt->sum('amount')-(Auth::user()->buy_packageAmt());
     return $balance;
     } 
 
     public function buy_fundAmt(){
-        return $this->hasMany('App\Models\CoinpaymentTransaction','buyer_name','username')->where('status','>=',1);
+        return $this->hasMany('App\Models\BuyFund','user_id','id')->where('status','Approved');
     }
 
 
 
     public function buy_packageAmt(){
-        $amt= Investment::where('active_from',Auth::user()->username)->where('walletType',1)->sum('amount');
+        $amt= Investment::where('active_from',Auth::user()->username)->sum('amount');
         return $amt;
     }
 
@@ -142,7 +142,7 @@ class User extends Authenticatable
     
     public function available_balance()
     {
-    $balance = (Auth::user()->releasePrinciple->sum('amount')+Auth::user()->users_incomes()) - (Auth::user()->withdraw());
+    $balance = (Auth::user()->buy_fundAmt->sum('amount')+Auth::user()->users_incomes()) - (Auth::user()->withdraw()+Auth::user()->buy_packageAmt());
     return $balance;
     } 
 
@@ -160,7 +160,7 @@ class User extends Authenticatable
 
     public function users_incomes()
     {
-        return  Income::where('user_id',Auth::user()->id)->sum('comm');
+        return  Income::where('user_id',Auth::user()->id)->where('credit_type',0)->sum('comm');
     } 
     
 

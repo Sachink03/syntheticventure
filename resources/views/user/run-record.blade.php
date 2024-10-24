@@ -160,7 +160,10 @@
     font-size:12px;
     font-weight: 550;
     color: #000;
+<<<<<<< HEAD
     color: #000;
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
     padding-top: 4px;
 }
 input[type=text], textarea{
@@ -194,8 +197,11 @@ input[type=text], textarea{
         }
         .header button.status {
             color: #000;
+<<<<<<< HEAD
         .header button.status {
             color: #000;
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
             font-size: 9px;
             border: black;
             
@@ -203,12 +209,15 @@ input[type=text], textarea{
     width: 61px;
     border-radius: 15px;
     background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);
+<<<<<<< HEAD
             border: black;
             
     height: 21px;
     width: 61px;
     border-radius: 15px;
     background: linear-gradient(92deg, #55B2C2 1.36%, #fff 103.37%);
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
         }
         .content {
             font-size: 14px;
@@ -246,7 +255,10 @@ input[type=text], textarea{
             text-align: center;
         
             margin-bottom: -33px;
+<<<<<<< HEAD
             margin-bottom: -33px;
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
             margin-top: 2px;
         }
         .data{
@@ -335,10 +347,13 @@ margin: 0 2px;
     font-weight: 600;
     font-size: 13;
 }
+<<<<<<< HEAD
 .dollar{
     font-weight: 600;
     font-size: 13;
 }
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
 /* Black theme for the date picker container */
             </style>
          
@@ -378,14 +393,20 @@ margin: 0 2px;
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Cumulative running total(USDT)')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span class="dollar">$</span> 229.8365923</div>
+<<<<<<< HEAD
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Cumulative running total(USDT)')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span class="dollar">$</span> 229.8365923</div>
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                 </div>
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item2">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Computing power income(USDT)')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span class="dollar">$</span> 4.06810768</div>
+<<<<<<< HEAD
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name1">@lang('Computing power income(USDT)')</div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span class="dollar">$</span> 4.06810768</div>
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                 </div>
                                 
                           
@@ -477,14 +498,20 @@ margin: 0 2px;
 "  />
     <div class="title">
      SeverCore Prime
+<<<<<<< HEAD
      SeverCore Prime
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
     </div>
     <button class="status">
   Success
 </button>
+<<<<<<< HEAD
     <button class="status">
   Success
 </button>
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
    </div>
    <div class="content">
     <div class="center">
@@ -512,10 +539,13 @@ margin: 0 2px;
     <div class="row">
      <div class="data">
       USDT
+<<<<<<< HEAD
      </div>
      <div class="data">
      <div class="data">
       USDT
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
      </div>
      <div class="data">
       1.00 hour
@@ -675,7 +705,10 @@ margin: 0 2px;
 	</script>
 
    @include('layouts.upnl.footer')     
+<<<<<<< HEAD
    @include('layouts.upnl.footer')     
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
         <!----><!---->
 
           

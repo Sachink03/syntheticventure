@@ -192,7 +192,10 @@
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
     
     </style>
 
@@ -262,8 +265,11 @@
                        
                         -->
                     </div>
-                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a  target="_blank" href="https://t.me/synthetic_venture"><img data-v-6df716d9="" data-v-cfc9a7fc=""
-                            src="{{ asset('') }}assets/static/img/teelgram.png">
+                    <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.meassage')}}"><img
+                                                data-v-3d4e4f5e="" data-v-cfc9a7fc=""
+                                                src="{{asset('')}}assets/static/img/bell.png" style="
+    height: 30px;
+"></a>
                     </div>
                     <div data-v-6df716d9="" data-v-cfc9a7fc="" class="ico"><a href="{{route('user.lang')}}"><img data-v-6df716d9="" data-v-cfc9a7fc=""
                             src="{{ asset('') }}assets/static/img/earth.png"></a> </div>
@@ -339,7 +345,7 @@
                                 
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                     <div data-v-6df716d9="" data-v-cfc9a7fc="">
-                                        <a href="{{route('run-record')}}" style="color:white;">
+                                        <a href="{{route('user.strategy')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/13.png" class="icon-custom">
@@ -347,21 +353,21 @@
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.Withdraw')}}" style="color:white;"><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="#" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/14.png" class="icon-custom">
                                              <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Tutorial')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.team')}}" style="color:white;"><img data-v-6df716d9=""
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.invite')}}" style="color:white;"><img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/5b0695f769089437fccc9fd7b5f0ff47.png" class="icon-custom">
                                         <p data-v-6df716d9="" data-v-cfc9a7fc="">@lang('Invitation')</a></p>
                                     </div>
                                 </li>
                                 <li data-v-6df716d9="" data-v-cfc9a7fc="">
-                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.invite')}}" style="color:white;">
+                                    <div data-v-6df716d9="" data-v-cfc9a7fc=""><a href="{{route('user.about')}}" style="color:white;">
                                         <img data-v-6df716d9=""
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/15.png" class="icon-custom">
@@ -387,15 +393,15 @@
                                             <div data-v-6df716d9="" data-v-cfc9a7fc="" class="name">@lang('Daily Yield')</div>
                                         </div>
                                     </li>
-                                    <li data-v-6df716d9="" data-v-cfc9a7fc="" class="x">
+                                    <!-- <li data-v-6df716d9="" data-v-cfc9a7fc="" class="x">
                                         <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress" style="width:100%"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="cons"><div data-v-1fa86597="" class="van-slider" data-v-cfc9a7fc="" style="height: 10px;"><div class="van-slider__bar" style="background: rgb(0, 0, 0); width: 50%;"><div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="50" aria-orientation="horizontal" class="van-slider__button-wrapper"><div class="van-slider__button"></div></div></div></div></div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="ul"><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 0% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 25% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 50% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li"> 75% </div><div data-v-1fa86597="" data-v-cfc9a7fc="" class="li active"> 100% </div></div></div>
 
-                                    </li>
+                                    </li> -->
                                     <li data-v-6df716d9="" data-v-cfc9a7fc="">
                                        
                                         <div data-v-6df716d9="" data-v-cfc9a7fc="" class="flex1">
                                           
-                                            <div data-v-6df716d9="" data-v-cfc9a7fc="" class="amount" style="font-size: .25rem;">Today's training progress</div>
+                                           
                                            
                                         </div>
                                     </li>
@@ -407,14 +413,15 @@
 
                                 <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-con" style="margin-top:0">
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
-                                        <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Make Profit')</div>
+
+                                        <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Assets')</div>
                                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="val"><span>
                                             <img data-v-6df716d9="" 
                                             data-v-cfc9a7fc=""
                                             src="{{asset('')}}assets/static/img/pie.png" style="height: .5rem;width: .5rem;margin-right: 20px;">
                                         </span> 
                                             
-                                            <span style="padding-top: 35px;">{{currency()}}  {{number_format(Auth::user()->available_balance()+Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</span></div>
+                                           <a href="{{route('user.recharge')}}"><span style="padding-top: 35px;">{{currency()}}  {{number_format(Auth::user()->available_balance()+Auth::user()->investment->where('roiCandition',0)->sum('amount'),2)}}</span> </a> </div>
                                     </div>
                                     <div data-v-6df100a6="" data-v-cfc9a7fc="" class="balance-item">
                                         <div data-v-6df100a6="" data-v-cfc9a7fc="" class="name">@lang('Node Partner')</div>

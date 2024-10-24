@@ -215,6 +215,7 @@
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Daily arbitrage earnings</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+<<<<<<< HEAD
                                         @if($id=="1")
                                            $1
                                         @elseif($id=="2")
@@ -259,6 +260,50 @@
                                     </div>
                                 </li>
                                 <li data-v-1fa86597="" data-v-cfc9a7fc="">
+=======
+                                        <?php
+                                        $plans = [
+                                            "1" => 1,
+                                            "2" => 4,
+                                            "3" => 10,
+                                            "4" => 40,
+                                            "5" => 120,
+                                            "6" => 200,
+                                            "7" => 500
+                                        ];
+                                        
+                                        $plan = isset($plans[$id]) ? $plans[$id] : 0; // Default to 0 if $id is not found
+                                        ?>
+                                        ${{ $plan }}
+                                    </div>
+                                                                    </li>
+                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">@lang('Subscription Duration')</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s">  60 @lang('Days')</div>
+                                </li>
+                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Total Reward</div>
+                                    <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
+                                        <?php
+                                        $amounts = [
+                                            "1" => 60,
+                                            "2" => 240,
+                                            "3" => 600,
+                                            "4" => 2400,
+                                            "5" => 7200,
+                                            "6" => 12000,
+                                            "7" => 30000
+                                        ];
+                                        
+                                        // Check if the id exists in the amounts array, otherwise default to 0 or another value
+                                        $amount = isset($amounts[$id]) ? $amounts[$id] : 0;
+                                        ?>
+                                        ${{ $amount }}
+                                    </div>
+                                    
+                                </li>
+                                <li data-v-1fa86597="" data-v-cfc9a7fc="">
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="n">Run Time</div>
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="s"> 
                                         1 hour
@@ -275,6 +320,7 @@
 							
                             <form method="post" name="add" action="{{ route('user.confirmDeposit') }}" onsubmit="return validateForm()">
                                 {{ csrf_field() }}
+<<<<<<< HEAD
                                 {{-- <div data-v-1fa86597="" data-v-cfc9a7fc="" class="prices">
                                     <div data-v-1fa86597="" data-v-cfc9a7fc="" class="inp">
                                         <input data-v-1fa86597="" data-v-cfc9a7fc="" id="amount" name="Sum" type="text" style="color:white;" placeholder="Enter Amount">
@@ -301,6 +347,12 @@
                                 </div>
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="Progress"></div>
                                 </br></br></br> --}}
+=======
+                                
+                                <input type="hidden" name="Sum" value={{ $amount }}>
+                                <input type="hidden" name="plan" value={{ $plan }}>
+
+>>>>>>> aa5ae9399f3c7a900a8389df5ded117c9e2f4ce9
                                 <div data-v-1fa86597="" data-v-cfc9a7fc="" class="conf">
                                     <button data-v-1fa86597="" data-v-cfc9a7fc="" class="btn2" type="submit">@lang('Confirm') </button>
                                 </div>

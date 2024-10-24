@@ -85,7 +85,7 @@ class Register extends Controller
     {
         try{
             $validation =  Validator::make($request->all(), [
-                'phone' => 'required',
+                'phone' => 'required|unique:users,phone',
                 'password' => 'required|confirmed|min:5',
                 'sponsor' => 'required|exists:users,username',
                 'email' => 'required|unique:users,email',
@@ -120,7 +120,7 @@ class Register extends Controller
            $tpassword =substr(time(),-2).substr(rand(),-2).substr(mt_rand(),-1);
             $post_array  = $request->all();
                 //  
-            $data['name'] = $post_array['name'];
+            // $data['name'] = $post_array['name'];
             $data['phone'] = $post_array['phone'];
             $data['email'] = $post_array['email'];
             $data['username'] = $username;
@@ -164,7 +164,9 @@ class Register extends Controller
             Log::info('error here');
             Log::info($e->getMessage());
             print_r($e->getMessage());
-            die("hi");
+            die('hi');
+
+      
             return back()->withErrors('error', $e->getMessage())->withInput();
            
         }

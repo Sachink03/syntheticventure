@@ -118,28 +118,107 @@
 {
 text-transform: lowercase !important;
 }
+/* .home[data-v-422886cf], [data-v-422886cf] .head{
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%);
+} */
+.head[data-v-397da544] {
+    background-color: #000;
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%);
+}
+.head_right[data-v-397da544] {
+    margin-left: auto;
+    font-size: 12px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 50%;
+    width: 5rem;
+    margin-left: -2.5rem;
+}
+.head[data-v-397da544] {
+    
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%)
+}
+
+.page .content-container[data-v-cfc9a7fc] {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%)
+}
+
+.link_list[data-v-422886cf] {
+    margin: -7px 0 0;
+    padding: 0 .28rem;
+    border-radius: .24rem;
+    border: .01724rem solid hsla(0, 0%, 100%, .2);
+    background: #000;
+}
+.link_list .link_box .title[data-v-422886cf] {
+    margin-bottom: 1px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.link_list .link_box .link_content .link[data-v-422886cf] {
+    color: #e0e0e0;
+    font-size: 10px;
+    line-height: .32rem;
+    font-style: normal;
+    font-weight: 400;
+    flex: 1;
+    min-width: 0;
+}
+
+.link_list .link_box[data-v-422886cf] {
+    padding: 8px 5px;
+}
+
+.link_list .link_box1[data-v-422886cf] {
+    padding: 8px 5px;
+    padding-bottom: 1px;
+
+}
+[data-v-422886cf] .head:after{
+    content: "";
+    display: block;
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%)
+    height: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.head .flex[data-v-397da544] {
+    align-items: center;
+    position: relative;
+    background: linear-gradient(92deg, #55B2AC -155.64%, #090909 103.37%);
+}
 </style>
 
 <body class="mein_cn">
     <div id="app" class="applang">
         <div data-v-422886cf="" class="home">
             <div data-v-cfc9a7fc="" data-v-422886cf="" class="page" style="background: transparent;">
-                <div data-v-cfc9a7fc="" class="headers">
-                    <div data-v-397da544="" data-v-422886cf="" class="head" data-v-cfc9a7fc="">
-                        <div data-v-397da544="" class="container flex">
-                            <div data-v-397da544="" class="back"><a href="{{route('user.Mine')}}" style="color:#fff;"><i data-v-397da544=""
-                                    class="van-icon van-icon-arrow-left">
-                                    <!----></i></a></div>
-                            <!---->
-                            <div data-v-397da544="" class="name tac"> @lang('Invite friends') </div>
-                            <div data-v-397da544="" class="flex1"></div>
-                            <!---->
-                            <!---->
-                            <!---->
-                            <div data-v-397da544="" class="head_right"></div>
-                        </div>
+            <div data-v-cfc9a7fc="" class="headers">
+                <div data-v-397da544="" data-v-6df100a6="" class="head" data-v-cfc9a7fc="">
+                    <div data-v-397da544="" class="container flex">
+                        <!---->
+                        <div data-v-397da544="" class="left_title"><a href="http://127.0.0.1:8000/user/recharge" style="color:#fff;"><i data-v-397da544="" class="van-icon van-icon-arrow-left">
+                        <!----></i></a></div>
+                        <!---->
+                        <div data-v-397da544="" class="flex1"></div>
+                        <!---->
+                        <!---->
+                        <!---->
+                        <div data-v-397da544="" class="head_right">Invite Friends </div>
                     </div>
                 </div>
+            </div>
+                
                 <div data-v-cfc9a7fc="" id="scroll" class="content-container">
                     <div data-v-cfc9a7fc="" id="content" class="content-scroll">
                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="container">
@@ -147,7 +226,7 @@ text-transform: lowercase !important;
                                 <div data-v-422886cf="" data-v-cfc9a7fc="" class="flex">
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" ><img data-v-422886cf=""
                                             data-v-cfc9a7fc=""
-                                            src="{{ asset('') }}assets/static/img/logo2.png" style="width:80px;"> 
+                                            src="{{ asset('') }}assets/static/img/logo2.png" style="width:60px;"> 
                                     </div>
                                     <div data-v-422886cf="" data-v-cfc9a7fc="" class="info">
                                         <div data-v-422886cf="" data-v-cfc9a7fc="" class="n"> {{Auth::user()->name}} <img

@@ -668,16 +668,16 @@ public function dynamicupicallback()
              $user_detail=User::where('username',$username)->first();
               if ($user_detail->active_status=="Pending")
               {   
-              $user_update=array('active_status'=>'Active','adate'=>Date("Y-m-d H:i:s"),'package'=>$amount);
-              User::where('id',$user_detail->id)->update($user_update);
+              // $user_update=array('active_status'=>'Active','adate'=>Date("Y-m-d H:i:s"),'package'=>$amount);
+              // User::where('id',$user_detail->id)->update($user_update);
             \DB::table('general_settings')->where('id',1)->update(['people_online'=>generalDetail()->people_online+1]);
             \DB::table('general_settings')->where('id',1)->update(['our_investors'=>generalDetail()->our_investors+1]);
              }
              else
              {
                $total=$user_detail->package+$amount;
-                $user_update=array('package'=>$total,'active_status'=>'Active');
-              User::where('id',$user_detail->id)->update($user_update); 
+              //   $user_update=array('package'=>$total,'active_status'=>'Active');
+              // User::where('id',$user_detail->id)->update($user_update); 
              }
                 
                   
@@ -699,33 +699,33 @@ public function dynamicupicallback()
               $orderId= $result['order_number'];
               $username= $result['order_name'];
               $amount= $result['source_amount'];
-              $updateTrue = BuyFund::where('orderId',$orderId)->where('status','Pending')->update(['status' => 'Active']);
+              // $updateTrue = BuyFund::where('orderId',$orderId)->where('status','Pending')->update(['status' => 'Active']);
            
-           if($updateTrue)  
-           {
+          //  if($updateTrue)  
+          //  {
             
-             $user_detail=User::where('username',$username)->first();
-              if ($user_detail->active_status=="Pending")
-              {   
-              $user_update=array('active_status'=>'Active','adate'=>Date("Y-m-d H:i:s"),'package'=>$amount);
-              User::where('id',$user_detail->id)->update($user_update);
-            \DB::table('general_settings')->where('id',1)->update(['people_online'=>generalDetail()->people_online+1]);
-            \DB::table('general_settings')->where('id',1)->update(['our_investors'=>generalDetail()->our_investors+1]);
-             }
-             else
-             {
-               $total=$user_detail->package+$value->amount;
-                $user_update=array('package'=>$total,'active_status'=>'Active');
-              User::where('id',$user_detail->id)->update($user_update); 
-             }
+          //    $user_detail=User::where('username',$username)->first();
+          //     if ($user_detail->active_status=="Pending")
+          //     {   
+          //     $user_update=array('active_status'=>'Active','adate'=>Date("Y-m-d H:i:s"),'package'=>$amount);
+          //     User::where('id',$user_detail->id)->update($user_update);
+          //   \DB::table('general_settings')->where('id',1)->update(['people_online'=>generalDetail()->people_online+1]);
+          //   \DB::table('general_settings')->where('id',1)->update(['our_investors'=>generalDetail()->our_investors+1]);
+          //    }
+          //    else
+          //    {
+          //      $total=$user_detail->package+$value->amount;
+          //       $user_update=array('package'=>$total,'active_status'=>'Active');
+          //     User::where('id',$user_detail->id)->update($user_update); 
+          //    }
                 
                   
-             \DB::table('general_settings')->where('id',1)->update(['total_fund_invested'=>generalDetail()->total_fund_invested+$amount]);
-                  $plan ='BEGINNER';
+          //    \DB::table('general_settings')->where('id',1)->update(['total_fund_invested'=>generalDetail()->total_fund_invested+$amount]);
+          //         $plan ='BEGINNER';
                 
 
                     
-           }
+          //  }//
            
            
                     

@@ -475,7 +475,19 @@
                                 font-size: .26rem;
                                 font-weight: 500;
                             }
-                            
+                            .image-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    /* height: 100vh; Adjust based on your layout */
+}
+
+.no-data {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #666; /* Text color */
+    text-align: center;
+}
                             </style>
 
 
@@ -748,9 +760,12 @@
                               
                             </div>
                             @else
-                            <div style="margin: 5px">
-                                <img src="{{ asset('') }}assets/static/img/nodata.png">
+                            <div style="margin: 5px" class="image-container">
+                                <img src="{{ asset('') }}assets/static/img/nodata.png" style="max-width: 70%;
+   ">
+                                
                             </div>
+                            <p class="no-data">No Data</p>
                             @endif
 
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list" style="display: none;"></ul>
@@ -762,7 +777,7 @@
                        >
                        <div data-v-167ffb9b="" class="popBox" style="background: none;" id="popBox">
                          @php
-                          $vip = 1;
+                         
 
 // Determine VIP level based on conditions
 if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
@@ -775,7 +790,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
     $vip = 4;
 } elseif ($active_gen_team1total >= 3 && $active_gen_team23total >= 5) {
     $vip = 3;
-} elseif ($active_gen_team1total >= 2) {
+} elseif ($active_gen_team1total > 0 || $active_gen_team2total > 0 || $active_gen_team3total > 0) {
     $vip = 2;
 } elseif ($active_gen_team1total > 0 || $active_gen_team2total > 0 || $active_gen_team3total > 0) {
     $vip = 1;

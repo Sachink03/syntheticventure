@@ -561,7 +561,7 @@ $user_mid = $data->id;
 
             ];
              $user_data =  Income::create($data);
-
+          
 
         }
        }

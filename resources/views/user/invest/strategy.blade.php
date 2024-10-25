@@ -570,7 +570,19 @@
                                 font-size: .26rem;
                                 font-weight: 300;
                             }
-                            
+                            .image-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    /* height: 100vh; Adjust based on your layout */
+}
+
+.no-data {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #666; /* Text color */
+    text-align: center;
+}
                             </style>
 
 
@@ -858,9 +870,12 @@
                               
                             </div>
                             @else
-                            <div style="margin: 5px">
-                                <img src="{{ asset('') }}assets/static/img/nodata.png">
+                            <div style="margin: 5px" class="image-container">
+                                <img src="{{ asset('') }}assets/static/img/nodata.png" style="max-width: 70%;
+   ">
+                                
                             </div>
+                            <p class="no-data">No Data</p>
                             @endif
 
                             <ul data-v-167ffb9b="" data-v-cfc9a7fc="" class="list" style="display: none;"></ul>
@@ -871,29 +886,7 @@
                     <div data-v-167ffb9b="" 
                        >
                        <div data-v-167ffb9b="" class="popBox" style="background: none;" id="popBox">
-                         @php
-                          $vip = 1;
-
-// Determine VIP level based on conditions
-if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
-    $vip = 7;
-} elseif ($active_gen_team1total >= 15 && $active_gen_team23total >= 20) {
-  $vip = 6;
-} elseif ($active_gen_team1total >= 8 && $active_gen_team23total >= 15) {
-    $vip = 5;
-} elseif ($active_gen_team1total >= 5 && $active_gen_team23total >= 10) {
-    $vip = 4;
-} elseif ($active_gen_team1total >= 3 && $active_gen_team23total >= 5) {
-    $vip = 3;
-} elseif ($active_gen_team1total >= 2) {
-    $vip = 2;
-} elseif ($active_gen_team1total > 0 || $active_gen_team2total > 0 || $active_gen_team3total > 0) {
-    $vip = 1;
-}
-
-       
-
-@endphp
+                        
                             
                            
                             <ul data-v-167ffb9b="" class="cllist" style="scroll:none">
@@ -909,7 +902,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
                                             <div style="font-size: 11px;">1 hour</div>
                                         </div>
                                     </div>
-                                    @if($vip >= 1)
+                                    @if($vip >= 0)
                                     <div data-v-167ffb9b="" class="lv">
                                         <img data-v-167ffb9b="" src="{{ asset('') }}assets/static/img/unlock.png"> Unlock
                                     </div>
@@ -938,7 +931,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
 
                                         </div>
                                     </div>
-                                    @if($vip>=2)
+                                    @if($vip>=0)
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/unlock.png"> Unlock
                                     </div>
@@ -968,7 +961,7 @@ if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
 
                                         </div>
                                     </div>
-                                    @if($vip>=3)
+                                    @if($vip>=0)
                                     <div data-v-167ffb9b="" class="lv"><img data-v-167ffb9b="" 
                                         src="{{ asset('') }}assets/static/img/unlock.png"> Unlock
                                     </div>

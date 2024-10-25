@@ -230,7 +230,7 @@
             align-items: center;
             justify-content: center;
             font-size: 14px;
-            margin-left: 1px;
+            margin-left: 10px;
             cursor: pointer;
         }
 </style>

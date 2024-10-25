@@ -233,6 +233,7 @@
             margin-left: 10px;
             cursor: pointer;
         }
+        
 </style>
 <body class="mein_cn">
     <div id="app" class="applang">

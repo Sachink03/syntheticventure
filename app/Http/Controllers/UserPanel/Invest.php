@@ -792,13 +792,25 @@ public function viewdetail($txnId)
            date_default_timezone_set("Asia/Kolkata");   //India time (GMT+5:30)
 
           $vip=$user->vip;
-          if( $request->plan=='4' ){
+
+          if( $request->plan=='200' && $vip<=5 ){
+            $vip=6;
+          }
+          else if( $request->plan=='120' && $vip<=4){
+            $vip=5;
+          }
+          else if($request->plan=='40' && $vip<=3){
+            $vip=4;
+          }
+          else if($request->plan=='10' && $vip<=2 ){
+            $vip=3;
+          }
+          else if($request->plan=='4' && $vip<=1){
             $vip=2;
           }
           else if($request->plan=='1' && $vip<=0){
             $vip=1;
           }
-          
           DB::table('users')
           ->where('id', $user->id)
           ->update(['vip' => $vip]);
